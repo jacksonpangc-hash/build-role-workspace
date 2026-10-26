@@ -1,0 +1,42 @@
+{
+  "format_version": 1,
+  "kind": "actual-model-output-not-author-expectation",
+  "examples": [
+    {
+      "flow": "02-W1",
+      "role": "director_script",
+      "source": "# 完整合成来源\n\n原创拍摄Brief：目标首次购买者了解包装与使用，渠道抖音，商品事实250g辣椒面、标价20元，事实版本F2；无健康功效依据，品牌只准描述食品用途。此任务不需参考原片，给3个可实际拍摄的镜头、口播、字幕、道具和事实出处，制作草稿不发布。\n\nComplete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled.\n",
+      "source_sha256": "f3262e2b1b783c86cdb05b995dced2de83ec565bcb8460c93fa0478527451fdb",
+      "actual_report": "# 三镜头拍摄包\n已完成原创制作草稿：面向抖音首次购买者，介绍250g辣椒面的包装与食品用途，标价20元；不含健康功效主张。\n\n**主要行动：按[拍摄包](workpack.md)准备三镜头试拍。** 包内已填口播、字幕、道具和剪辑顺序，总时长建议18秒。\n\n本轮只交文件，未拍摄、听看原片或发布。包装画面是待拍设计，非已核实实物；拍前核对实物与本项F2一致。上轮200g及缺件结论原样保留，不适用于此分支。\n\n[来源与判断](evidence.md)｜[交接](handoff.json)\n",
+      "actual_report_sha256": "7f6d5ddb7a83aae3dd15607fd7a219c9227f05538bb08d56f05875de1352583f",
+      "actual_detail_filename": "workpack.md",
+      "actual_detail": "# 02-W1 原创拍摄包 complete-v1\n目的：让首次购买者看清包装、净重、标价及食品使用场景。渠道：抖音。全部为新写制作建议，无参考原片要求。\n\n|镜头／建议时间|机位、动作及剪辑|逐字口播|屏幕字幕|道具|事实依据|\n|---|---|---|---|---|---|\n|1／0–5秒|手机固定近景，包装正面对镜，手指轻扶包装，留一秒读标识；不添加未证品牌或包装功能|第一次买辣椒面？先看看包装。|辣椒面｜先看包装|本项对应商品实物、桌面、手机支架|S1产品及受众；画面为创作建议|\n|2／5–11秒|切净重标识特写，叠加独立价格字卡；不得改印包装。若实物标识不符，暂停该镜头并记录差异|这款辣椒面250克，标价20元。|净重250g｜标价20元|商品实物、20元字卡|S1：250g、标价20元、F2|\n|3／11–18秒|俯拍一碗面，勺取少量辣椒面加入并拌匀，结尾定格成品；不做食疗或效果对比|拌面时加一点辣椒面，拌匀就可以。选购前，再核对商品信息。|食品用途示意：拌面｜选购前核对信息|熟面、碗、筷子、勺、对应辣椒面|S1只准食品用途；拌面为制作示例，非已观察产品效果|\n\n执行交接：拍摄者依1→2→3拍摄，剪辑者保持口播与字幕同义；时间轴为设计，5+6+7=18秒，非实测成片时长。字幕与口播只采用本项F2。价格不写成优惠价；不添加口味强度、配料、产地、功效等未给信息。建议竖屏拍摄是创作选择，不称已核平台规格。\n\n本地验收：三个镜头均具备动作、口播、字幕、道具及出处；未制作图像、字幕文件、音轨或成片。实物未提供不是本地文案完成障碍；试拍时发现事实冲突只暂停相关镜头，其他镜头可继续准备。\n",
+      "actual_detail_sha256": "7c1b75f298bc62ae87bf5a5e605fdf224233eeaf9a16712fe6ac81bfb439aff6",
+      "provenance": "Actual independent ephemeral Codex CLI GPT-6.1 Sol output; synthetic source; primary-agent semantic review. File names in report refer to original test folder; all copied contents are in this JSON. No production or human acceptance."
+    },
+    {
+      "flow": "05-W2",
+      "role": "finance_reconciliation",
+      "source": "# 完整合成来源\n\n完整合成平台CNY：期初100、销售200、费用20、退款10、打款150、期末120；打款PO1在6月1日100、6月2日50均已银行回读，同ID两次银行事件分别唯一。平台活动期5月、到账期6月分开；平台无其他活动。本次桥接和未决表，不认定结账/付款授权。\n\nComplete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled.\n",
+      "source_sha256": "02e5483a4cf8d134527309b2afeaf022c999c6e808398a6ab5aa2f87f099f02d",
+      "actual_report": "平台结算到银行｜完整合成分支\n\n5月平台余额：100＋200－20－10－150＝120，与期末一致。打款PO1共150，按合成来源，6月1日到账100、6月2日到账50，两次为独立事件，待到账0。平台期末仍120，不能再扣一次打款。\n\n主要行动：按“5月活动、6月到账”留存桥接表与两次到账记录。当前给定范围内无未达差额；平台余额120不等于已全部结清。\n\n本地桥接已完成；年份未给，不推断。银行回读仅为合成来源陈述，未访问账号，不能视为结账、付款授权或专业签核。明细和交接另存。\n",
+      "actual_report_sha256": "91ed7ee68f9d50885934aa2bcbe1daee13160cc2f310fbdb68ec1e784240a03e",
+      "actual_detail_filename": "normal-complete.details.md",
+      "actual_detail": "来源：inputs/complete/05-W2/source.md第3行，全量平台活动和两次银行回读的合成陈述；未提供独立银行回单，不声称实际连接或验证银行。\n\n计算：5月CNY期初100＋销售200－费用20－退款10－平台打款150＝120，残差120－120＝0。PO1银行事件为6月1日100、6月2日50，累计150，未达150－150＝0。银行回读只解释打款去向，不再冲减平台期末120。\n\n事件判断：来源明确同ID的两次事件各自唯一；PO1为打款关联键，不是银行事件去重键。本地事件标签由日期、金额派生，仅定位当前来源，不伪造银行事件号。再次导入同一快照重新计算，不能追加累计。\n\n未决表：本题范围未达项为空，差额0；年份未知，且没有真实回单与结账审批，这些是范围限制，不伪造金额未决项。未达0不代表所有平台余额结清。\n\n范围：仅限 inputs/complete 的独立完整合成分支；previous-results 为旧受限/更正分支，仅读取背景，不作为本轮金额依据，不修改、不补写其当时完整性。金额采用Decimal；不跨币种净额；未给年份、到期日、真实凭证和审批人不推断。无图片、字幕或音轨输入，未进行视听识别。\n\n交接：财务接收者按来源核对两个事件后归档本地桥接；若输入变版重算受影响关系。\n来源逐行摘录与SHA256见 ../sources.json；机器续接见 normal-complete.state.json。\n",
+      "actual_detail_sha256": "61de9a2b851a27497a737ed981cf38b1b92eee9d6ece662f692bd85e162a9c37",
+      "provenance": "Actual independent ephemeral Codex CLI GPT-6.1 Sol output; synthetic source; primary-agent semantic review. File names in report refer to original test folder; all copied contents are in this JSON. No production or human acceptance."
+    },
+    {
+      "flow": "13-W3",
+      "role": "business_analytics",
+      "source": "# 完整合成来源\n\n合成v1订单数2、v2购买件数，六月生效；O1=2件、O2=4件均有商品行，五月回算标比较版，旧报告实际文件有“保留我这句话”的人工备注。只替换受影响分区，不累计旧新口径，不重放业务动作；保留旧版/人改。\n\nComplete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled.\n",
+      "source_sha256": "35856d1a45d58aed629a8602bfde47001f88160cc21eeab9e96344e3c80816aa",
+      "actual_report": "# 指标改版与回补｜完整合成分支\n五月已回算：O1为2件、O2为4件，v2比较版共6件；旧版仍为2单。二者单位不同，不能算增长或相加。v2六月生效，五月只作比较；六月实绩未提供。\n\n主要行动：比较历史时使用“五月v2比较版6件”，并向报表读者说明口径变化。原报告已留副本，人工备注逐字保留在比较版中；只生成受影响的五月指标分区，未重放业务动作。\n\n本地回补完成，未发布或取得真实签核。[回补报告](may-v2-comparison.md) · [来源明细](evidence-complete.md) · [交接](handoff-complete.json)\n",
+      "actual_report_sha256": "60c2268293d6b86f4104c19e2ac24545ae075f8317bafd9da85a2df30b7e8e9b",
+      "actual_detail_filename": "may-v2-comparison.md",
+      "actual_detail": "# 五月指标分区｜v2比较版\n\n五月v1历史订单数：2单（保留历史口径）。\n五月v2购买件数：O1 2件 + O2 4件 = 6件（比较回算）。\n六月起v2生效；本文件不宣称五月已正式采用v2，也不提供六月实绩。\n\n人工备注（合成编辑测试）：保留我这句话。\n",
+      "actual_detail_sha256": "415b026bf9a71ea44b630968eb39b5f0a9eb423a4518ba879f6b65becbb96b21",
+      "provenance": "Actual independent ephemeral Codex CLI GPT-6.1 Sol output; synthetic source; primary-agent semantic review. File names in report refer to original test folder; all copied contents are in this JSON. No production or human acceptance."
+    }
+  ]
+}

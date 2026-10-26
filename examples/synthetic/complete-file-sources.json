@@ -1,0 +1,296 @@
+[
+  {
+    "id": "01-W1",
+    "role": "video_analysis",
+    "title": "商品视频参考库",
+    "complete_source": "已提供自有静音示意视频media/silent-demo.mp4、真正由该视频提取的0/1/2秒PNG、metadata.json及中英字幕。声明：这是色块演示素材，不是真实商品效果；所有素材允许内部教学至2025-06-30。任务日期2025-05-31，制作可定位参考库，分别记录实际画面、字幕和音轨有无；不能借此主张商品功效或销售表现。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "01-W2",
+    "role": "video_analysis",
+    "title": "直播切片候选",
+    "complete_source": "同media原片，场次基准2025-05-01T20:00:00+08:00，字幕0秒“示例价18”，1秒“仅本场，无赠品”。此次做内部旧场次切片索引，许可至2025-06-30；6月1日对外活动未获授权。请给相对/绝对位置和必须保留的条件，实际定位原文件，不把旧价当现价。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "01-W3",
+    "role": "video_analysis",
+    "title": "多语版本与误解检查",
+    "complete_source": "同media静音原片，基准zh.srt和英文en.srt都已给，时间以原片起点为0。商品示例资料明确无赠品；一条合成评论“以为送勺”。核两版字幕在1秒处的否定词和误解，只覆盖本次给定模态。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "02-W1",
+    "role": "director_script",
+    "title": "短视频拍摄包",
+    "complete_source": "原创拍摄Brief：目标首次购买者了解包装与使用，渠道抖音，商品事实250g辣椒面、标价20元，事实版本F2；无健康功效依据，品牌只准描述食品用途。此任务不需参考原片，给3个可实际拍摄的镜头、口播、字幕、道具和事实出处，制作草稿不发布。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "02-W2",
+    "role": "director_script",
+    "title": "直播台本与场中变化",
+    "complete_source": "场次2025-06-01，A标价20元，已批活动文案“20:00—21:00满40减2”，批准记录AP1；B标价30元无优惠，均为商品事实F2。按A→B顺序排台本，20:30库存提示改为仅接受登记、不承诺发货日；资料均为合成完整版本，仅交台本和场中变化表。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "02-W3",
+    "role": "director_script",
+    "title": "达人和多载体修订",
+    "complete_source": "达人D1确认允许抖音中文及官网英文草稿审核，不含真实发布授权；有效至6月30日。产品F2净重200g，旧稿250g；作者原句“你平时怎么拌面？”须保留。修改Brief及两语言/载体稿，列事实更正和未获得的发布动作权限。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "03-W1",
+    "role": "ecommerce_operations",
+    "title": "多源日报与异常",
+    "complete_source": "完整合成范围2025-05-01一天、Asia/Shanghai、CNY。订单O1应付30，商品行L1购买2件、每件1袋；唯一支付P1=30在5月1日；退款R1=5在6月1日；广告归因AD1=20、AD2=15，均指向O1，实际消耗共10。只报告本日订单/支付/发生日退款/袋数和广告去重限制，不计算利润。控制总数：订单1、商品行1、唯一支付1。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "03-W2",
+    "role": "ecommerce_operations",
+    "title": "新品大促就绪",
+    "complete_source": "合成商品A主档F2、标价20已批AP1、素材F2写20；活动6月1日生效。5月31日回读：抖音及渠道B均已配置可售，活动未提前生效；库存可售10件，SKU与描述一致，签署来源已给。检查逐渠道准备情况和发布前条件，仅交文件就绪表，不执行上架。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "03-W3",
+    "role": "ecommerce_operations",
+    "title": "拆单换货与反馈",
+    "complete_source": "同一合成时点2025-06-02T10:00+08:00，O1共3件，P1两件、P2一件都已有唯一签收回执。换货A1已批准一件，新包裹P3已签一件；退款R1唯一事件到账5元。客服回执说明该次申请已确认结束。重复P1通知不新增业务。输出各项义务及所据回证，不实际退/发。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "04-W1",
+    "role": "advertising_operations",
+    "title": "测量核查与诊断",
+    "complete_source": "合成同窗5月1日、CNY：花费100，平台初始归因150后已明确撤回50（撤回不是退款），两平台各指同一O1，店铺O1实际支付100。点击20、购买事件2，去重店铺订单1。归因成熟窗7日，本快照5月10日冻结；本次仅观察测量，不计算利润或修改投放。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "04-W2",
+    "role": "advertising_operations",
+    "title": "创意测试与变更单",
+    "complete_source": "两素材同期5月1—7日、相同价格/受众/归因7日；A点击20成交2，B点击10成交1。合成批准预算总额300、只改开头一句，其余不动；允许研究方案不允许真实投放。窗口最迟6月7日结束，最大损失上限由本合成批准写为100，低样本可无结论，不给通用行业阈值。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "04-W3",
+    "role": "advertising_operations",
+    "title": "达人授权和拒登",
+    "complete_source": "原帖D1，抖音内部草稿编辑许可至2025-06-30，原授权及延期确认已在合成来源中给定；平台拒登原因无证功效，商品事实仅食品规格。申诉方案采用删去功效、提交规格依据，不捏造医学证明；平台还没有批准，任务只交权利/整改/申诉材料包。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "05-W1",
+    "role": "finance_reconciliation",
+    "title": "银行与账簿差异",
+    "complete_source": "两份完整合成流水同一日CNY：银行B1=100、B2=50；账簿B1=100、B2=40，映射均为稳定业务键，USD5独立两侧一致。无其他行。匹配规则同键同币种，B2差异原因未知，到期日未给不报账龄。做可复算差异，未知原因留待查而非为对平造调整。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "05-W2",
+    "role": "finance_reconciliation",
+    "title": "平台结算到银行到账",
+    "complete_source": "完整合成平台CNY：期初100、销售200、费用20、退款10、打款150、期末120；打款PO1在6月1日100、6月2日50均已银行回读，同ID两次银行事件分别唯一。平台活动期5月、到账期6月分开；平台无其他活动。本次桥接和未决表，不认定结账/付款授权。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "05-W3",
+    "role": "finance_reconciliation",
+    "title": "部分分配与变更",
+    "complete_source": "合成发票I1=100、I2=80 CNY；P1最终收款110 CNY。已确认分配证据AL2：I1分100、I2分10；原AL1收120且I2分20作为旧版保留。两单同一客户/币种/期间，不含税差。输出关系、已分配和余额，不核销、不付款。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "06-W1",
+    "role": "administration",
+    "title": "合同包版本和义务",
+    "complete_source": "合成合同C1正文、附件A及模拟双方签署页已齐，签署为5月10日；附件载明交付完成日期2025-05-15。条款为交付后30个自然日付款，本例明确不顺延。源文件只作算法/文书演练，不认证真实签名。登记版本/附件、提义务与日期，不实际付款。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "06-W2",
+    "role": "administration",
+    "title": "调动离职资产交接",
+    "complete_source": "合成E1调动已批AP1，6月1日生效；电脑A1、门卡A2均有独立签收回执，资料库接收方已回执接受，台账版本F2对应。仅输出交接材料包和逐项回执，不修改人事或账号。源提供个人证件但摘要不复制号码。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "06-W3",
+    "role": "administration",
+    "title": "费用预审交接",
+    "complete_source": "完整合成费用政策AP1：E1的6月交通费候选上限200 CNY，预审不代表报销批准。T1票号唯一120，重复导入两份；T2票号唯一70；票据均属E1/6月/交通，票号和源页已给。做去重预审和最小财务交接，不付款。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "07-W1",
+    "role": "customer_service",
+    "title": "一条咨询多个诉求",
+    "complete_source": "合成五月订单O1、包裹运输中；v1全文：已发货退款先核申请/包裹，不自动重退；个人资料删除须身份核验后移交隐私负责人；v2六月起才用。客户同时问物流、退款与删除资料。身份匹配已由合成受理记录确认，但无退款或删除执行授权。逐项写可发送前审核的回复草稿，不真的发送。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "07-W2",
+    "role": "customer_service",
+    "title": "部分退款补发",
+    "complete_source": "合成O1两件，批准AS1退一件10 CNY并补发一件；退款R1已到账10，补发S1已签，客户回执已确认本次两项处理。所有回证事件ID唯一，同一次申请。仅核验/交接，不再退钱或发货，实际系统关闭仍未执行。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "07-W3",
+    "role": "customer_service",
+    "title": "中断投诉与争议",
+    "complete_source": "合成事件：09:00客户未收，09:05物流已签，09:10客服答复，09:20物流更正为误扫且仍运输；客户未确认解决。责任人与下一查询方已指定为物流联络岗E2，来源证明均给。无赔付授权，输出矛盾证据、剩余配送和升级包。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "08-W1",
+    "role": "sales_crm",
+    "title": "商机到报价交付",
+    "complete_source": "合成客户K1书面接受Q1商品价100 CNY含税运，有效至6月15日；PoC条件为6月10日前完成演示，负责人E2已接受。公司合成阶段标准：合同未签前为报价接受，不能记已成交。当前合同未签。交商机/承诺/报价及交付包，不更新CRM或发出报价。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "08-W2",
+    "role": "sales_crm",
+    "title": "达人合作履约",
+    "complete_source": "合成D1样品已收，签收Brief明确2条视频；两条均发布并各有验收通过记录，抖音许可至6月30日，结算条件验收后100 CNY，当前只是结算草稿未付款。输出履约与结算交接，实际付款需独立授权。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "08-W3",
+    "role": "sales_crm",
+    "title": "续约与渠道冲突",
+    "complete_source": "合成合同至6月30日，客户只接受7月1日续约沟通时间，未接受新价；公司已书面确认渠道A负责该客户，B原重复主张留作已解差异。已有联系记录ID唯一，本次不重复外联；交到期/承诺和未定价格清单。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "09-W1",
+    "role": "human_resources",
+    "title": "已批准入职交接",
+    "complete_source": "合成批准AP1：E1于2025-06-01入职该岗位；工位、邮件、业务账号都有6月1日逐系统回证，接收人已确认。资料含证件但交接仅人员ID/岗位/生效日。输出分工与状态，不录用、不定薪、不实际开权限。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "09-W2",
+    "role": "human_resources",
+    "title": "考勤到薪酬输入",
+    "complete_source": "合成六月一日两人班表均8h：E1考勤6h且批准请假2h，E2考勤8h；同一时区同一天，无跨夜。合成政策请假按已批时数单列，不由本任务决定扣薪。输出中性差异和薪酬输入候选，不改正式薪资。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "09-W3",
+    "role": "human_resources",
+    "title": "调动离职与保留",
+    "complete_source": "合成已批E1六月1日离职，电脑签收，邮件/CRM均有禁用回证；合成保留政策AP2指定工作文档保留至2026-06-01由档案岗负责，个人资料限制访问。不删档、不实际撤权，只交已知记录/责任与待现实复核。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "10-W1",
+    "role": "procurement",
+    "title": "可批准采购方案",
+    "complete_source": "同规格版本F2、需求48件：A单价10 CNY含税运、MOQ24、24整数箱、3日到、30天账期；B单价9另含税运总60、MOQ24、24整数箱、5日到、预付。预算500，要求5日内到，剩余可售30日。质量条件同等且仅合成。输出总价/现金/到期取舍与推荐草稿，不选商下单。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "10-W2",
+    "role": "procurement",
+    "title": "收货验收到发票差异",
+    "complete_source": "合成PO1=10件，净收8，其中合格7待检1；唯一收货R1重复通知不新增，发票I1=7件单价10 CNY，已付唯一P1=40 CNY。质检7有放行回证，期间及币种一致。输出三单差异及支付未决，不自动核销或付余款。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "10-W3",
+    "role": "procurement",
+    "title": "框架调用与中断",
+    "complete_source": "合成框架上限100件、期间6月、已承诺60；其中20取消已被供应商接受并有回证，新增计划50尚待批准。替代规格未提出，已给数量单位与主体一致。列可用额度、计划影响和中断预案，不把50当已下单。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "11-W1",
+    "role": "warehouse_logistics",
+    "title": "到货到放行上架",
+    "complete_source": "合成批次B1实收20、质检已放行20、系统上架20，回证为同一2025-05-31时点、基础件；效期6月30日，存储要求与库位已记录。只交到货/放行/上架匹配，模拟记录不代表真实库存写入。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "11-W2",
+    "role": "warehouse_logistics",
+    "title": "拣货到签收",
+    "complete_source": "合成O1需10件、发货前预留10（发货后已释放，当前预留0）、已拣10；P1/P2各发5并各有唯一签收5。P1重复通知不增加签收；发货前库存100，台账现在90，时点一致、预留不额外重复扣。输出履约状态与控制总数，不操作仓库系统。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "11-W3",
+    "role": "warehouse_logistics",
+    "title": "调拨盘点和追溯",
+    "complete_source": "合成来源A批次期初50，T1调拨20至B，A同一时点系统及实盘均30；B对本次T1实收20，暂无在途，批次号和效期6月30日可追。只对该批来源桥接，不推B全部库存，不写入调拨。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "12-W1",
+    "role": "project_delivery",
+    "title": "计划基线和容量",
+    "complete_source": "合成已批A需6h，B需5h且依赖A，同一负责人本周可用12h、每日8h，周一/周二可安排。目标是本周计划基线，不是执行状态；所有需求/估时有来源确认，变更需负责人决定。输出依赖/容量/待接受计划。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "12-W2",
+    "role": "project_delivery",
+    "title": "周报变更与行动",
+    "complete_source": "合成T1唯一行动，E1已接受周五交；两次会议为同一承诺的重复记录。周五成果已收到且接收人明确验收通过；其余无新事项。给证据周报、唯一行动与完成边界，不自动建单催人或扩大到项目上线。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "12-W3",
+    "role": "project_delivery",
+    "title": "验收切换和回退",
+    "complete_source": "合成A/B/C文档分别有接受回执，权限前置已回读就绪，备份恢复演练已通过并有时间记录。任务仅交切换与回退方案；真实生产切换尚未授权，不能真的上线。输出逐条件验收和审批前方案。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "13-W1",
+    "role": "business_analytics",
+    "title": "支付退款周报",
+    "complete_source": "完整合成事件窗2025-05-01—07，Asia/Shanghai，发生日归期：P1 5月1日100 CNY、P2 5月2日50 CNY、P1重复快照；R2 5月3日退10 CNY关联P1；P3 5月4日5 USD；R1 6月1日退30 CNY只作后续窗。5月8日快照明确此合成窗全量，控制唯一支付3、窗口内退款1，无汇率转换，不算利润。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "13-W2",
+    "role": "business_analytics",
+    "title": "异常调查与比较",
+    "complete_source": "完整合成同窗同商品同单位CNY/件：预算10000×50，实际11000×47；数据已覆盖全月、控制总量与金额一致。同时有促销和两天缺货记录，但无因果试验。做两因素金额拆解、替代解释和低成本调查/情景，不保证预测。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "13-W3",
+    "role": "business_analytics",
+    "title": "指标改版与回补",
+    "complete_source": "合成v1订单数2、v2购买件数，六月生效；O1=2件、O2=4件均有商品行，五月回算标比较版，旧报告实际文件有“保留我这句话”的人工备注。只替换受影响分区，不累计旧新口径，不重放业务动作；保留旧版/人改。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "14-W1",
+    "role": "it_service_desk",
+    "title": "无法登录排查",
+    "complete_source": "合成E1于6月2日09:00登录失败，手册v2适用且只读；09:30该用户登录及付款测试都成功，用户回执确认本次可用，根因仍待查。给实际恢复与后续记录，不声称已知根因或自动重置账号。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "14-W2",
+    "role": "it_service_desk",
+    "title": "标准请求受控履行",
+    "complete_source": "合成已批E1自6月1日访问A/B，观察时间6月2日10:00+08:00；逐系统回证A/B都匹配批准范围、版本与有效期。只作核验文件，不实际授予权限；外层200不是唯一证据。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  },
+  {
+    "id": "14-W3",
+    "role": "it_service_desk",
+    "title": "集中故障与SLA",
+    "complete_source": "合成三工单同一故障：6月2日09:00开始、10:00三用户都完成业务验证并同意关闭。合成SLA为工作日09—17时4工作小时，6月2日为工作日且无例外；恢复/解决/关闭各回证已给，根因未定。做计时、复盘和候选已知问题，不猜实际公司SLA。",
+    "qualification": "Complete synthetic file-task source; simulated approvals/readbacks are not real-world permissions. No real business gaps filled."
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "files": {
+    "frame-2.png": "3138e796be705f4e7f9c9b197d6e36daa1ba248d35f9689a321a9eee532b2c7a",
+    "zh.srt": "33b3ab738bd0d2df4e197ced822ff1c11eae1bb9c8da8f28ff67255f7426c7fd",
+    "frame-1.png": "e81d55f693ff53232394e4aead6ea41aec85031d53062026dd067bc8a37565be",
+    "frame-0.png": "ea1a956f61f907fe26aba99293d1b0f7293fd928f4ff3a12dd991e6a6ece11d4",
+    "en.srt": "a11ff7106cebac031a58a3620a4db39312af714e190911c9d1c26d66de288720",
+    "metadata.json": "20c466a2aab213ace2a03800314510ae5561a55beeb438c77fe9687fe5b3bbd5",
+    "silent-demo.mp4": "1a2c21d3379c84d5060ead2185e66784eeba9f2a41eeafe8db1f3c42a3cff000",
+    "LICENSE.txt": "2377866e115f407b2211331d5213f24af7eecf0d04f4b625408874bd2fa1d841"
+  },
+  "audio_tracks": 0,
+  "source": "owned fixture; actual audio/video track count in metadata.json",
+  "frame_locators": {
+    "frame-0.png": 0,
+    "frame-1.png": 1,
+    "frame-2.png": 2
+  }
+}

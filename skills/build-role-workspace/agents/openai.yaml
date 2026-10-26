@@ -1,0 +1,6 @@
+interface:
+  display_name: "岗位知识库助手"
+  short_description: "先查资料、完成工作，再保存依据和进度，方便继续和修改"
+  default_prompt: "请用 $build-role-workspace 查看我授权的资料，先完成一份我能直接使用的工作成果，并保存下次继续所需的信息。"
+policy:
+  allow_implicit_invocation: true

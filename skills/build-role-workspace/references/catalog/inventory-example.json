@@ -1,0 +1,19 @@
+{
+  "demand": 100,
+  "buffer": 20,
+  "on_hand": 40,
+  "inbound": [{"day": 3, "quantity": 30}],
+  "commitments": 10,
+  "reservations_already_deducted": false,
+  "lead_days": 5,
+  "horizon_days": 10,
+  "daily_demand": 10,
+  "moq": 48,
+  "multiple": 24,
+  "unit_cost": 2,
+  "budget": 200,
+  "sellable_days": 20,
+  "unit": "synthetic-bag",
+  "as_of": "2025-05-31",
+  "assumption_ref": "Synthetic teaching case only; confirmed 20-unit buffer is a fixture, not company policy. Expected position 60, gap 60, candidate 72."
+}

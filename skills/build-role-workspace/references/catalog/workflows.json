@@ -1,0 +1,2994 @@
+[
+  {
+    "id": "01-W1",
+    "role_id": "01",
+    "runtime_role_id": "video_analysis",
+    "title": "商品视频参考库",
+    "inputs": [
+      "获准原片",
+      "商品事实",
+      "使用范围"
+    ],
+    "steps": [
+      "登记版本和来源",
+      "按实际工具分别提取音声字幕画面",
+      "定位有上下文的演示片段"
+    ],
+    "exceptions": "模态缺失注明覆盖，权利不足阻止复用",
+    "output": "片段索引与主张候选",
+    "acceptance": "定位能播放；整片表现不归因单镜头",
+    "execution_status": "not_run",
+    "trigger": "帮我商品视频参考库",
+    "decision_checks": [
+      "逐片段登记原片版本、商品、渠道和权利期限；音轨/字幕/画面分别记实际覆盖",
+      "主张定位到时间段并保留前后限制，不以整片成交证明某镜头有效",
+      "交付可定位片段和待核主张；授权不足阻止复用"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "模态缺失注明覆盖，权利不足阻止复用",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "定位能播放；整片表现不归因单镜头",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "video_analysis",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "原片v1只提供字幕：00:00“250g”，00:04“仅展示包装，不说明疗效”；已批内部培训至2025-06-30，无音轨和画面。做商品参考索引。",
+      "sample_file_sections": [
+        "片段索引与主张候选",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "授权期限页缺失，其余同正常资料。",
+      "correction_case": "授权更正为内部培训至2025-05-31，素材版本未变。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "01-W2",
+    "role_id": "01",
+    "runtime_role_id": "video_analysis",
+    "title": "直播切片候选",
+    "inputs": [
+      "回放",
+      "分段记录",
+      "讲品时间"
+    ],
+    "steps": [
+      "对齐两套时间",
+      "保留问题到限制的完整语义",
+      "核当前价格活动"
+    ],
+    "exceptions": "断段和偏移不能强行关联成交峰值",
+    "output": "切片候选与过期信息清单",
+    "acceptance": "前后句可回放，旧活动不冒充现行",
+    "execution_status": "not_run",
+    "trigger": "帮我直播切片候选",
+    "decision_checks": [
+      "对齐回放相对时间与场次绝对时间，并记录时区及偏移证据",
+      "截取必须保留问答、否定词、价格与活动有效条件；核当前版本",
+      "交付切片候选与过期项；无原片仅交字幕定位，不宣称可播放验证"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "断段和偏移不能强行关联成交峰值",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "前后句可回放，旧活动不冒充现行",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "video_analysis",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "场次2025-05-01 20:00+08:00，字幕00:10“今天券后18元”，00:14“仅本场”；规划复用2025-06-01，未提供原片。做切片候选。",
+      "sample_file_sections": [
+        "切片候选与过期信息清单",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "缺场次开始时间和时区；保留相对字幕。",
+      "correction_case": "场次实际开始20:05+08:00，字幕不变。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "01-W3",
+    "role_id": "01",
+    "runtime_role_id": "video_analysis",
+    "title": "多语版本与误解检查",
+    "inputs": [
+      "基准成片",
+      "字幕",
+      "评论"
+    ],
+    "steps": [
+      "对齐版本",
+      "检查字幕否定词和主张",
+      "整理有出处的误解"
+    ],
+    "exceptions": "不能凭语气推断真实人群和购买意图",
+    "output": "版本差异与复核项",
+    "acceptance": "差异有时间位置，翻译范围明确",
+    "execution_status": "not_run",
+    "trigger": "帮我多语版本与误解检查",
+    "decision_checks": [
+      "逐段对齐基准与各语言版本，区分翻译差异和内容修订",
+      "重点检查否定词、单位、主张与适用条件，评论只代表样本原话",
+      "交付差异位置、修改建议及待语言复核项，缺模态不称完整理解"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "不能凭语气推断真实人群和购买意图",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "差异有时间位置，翻译范围明确",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "video_analysis",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "基准字幕00:02“不含赠品”，英文版00:02“includes gift”；产品事实无赠品，评论一条“以为送勺”。做版本误解检查。",
+      "sample_file_sections": [
+        "版本差异与复核项",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "英文版本缺时间码，只能逐句比。",
+      "correction_case": "英文版更新为“no gift included”，位置仍00:02。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "02-W1",
+    "role_id": "02",
+    "runtime_role_id": "director_script",
+    "title": "短视频拍摄包",
+    "inputs": [
+      "产品事实",
+      "Brief",
+      "获准样例"
+    ],
+    "steps": [
+      "核实主张",
+      "形成脚本与受控变体",
+      "对齐镜头道具字幕"
+    ],
+    "exceptions": "缺事实保留占位，保留创作者修改",
+    "output": "脚本镜头拍摄清单",
+    "acceptance": "制作人员可使用，主张有依据",
+    "execution_status": "not_run",
+    "trigger": "帮我短视频拍摄包",
+    "decision_checks": [
+      "将受众/目的/渠道及可证主张落到镜头、口播、字幕、道具和所需素材",
+      "逐条链接商品事实；缺功效/价格证据时只暂停相关主张，保留人改",
+      "交付可拍摄包和待核项，制作完成与公开上线分开"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "缺事实保留占位，保留创作者修改",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "制作人员可使用，主张有依据",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "director_script",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "商品仅证实250g辣椒面，面向首次购买者，做3镜头拍摄包，禁止健康功效主张。",
+      "sample_file_sections": [
+        "脚本镜头拍摄清单",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "无净重依据页，不可确认250g，其余仍可拍。",
+      "correction_case": "净重更正为200g，仅改受影响镜头和字幕。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "02-W2",
+    "role_id": "02",
+    "runtime_role_id": "director_script",
+    "title": "直播台本与场中变化",
+    "inputs": [
+      "场次",
+      "商品版本",
+      "活动规则"
+    ],
+    "steps": [
+      "整理讲品顺序",
+      "标明切换条件",
+      "新信息只更新受影响段落"
+    ],
+    "exceptions": "未知库存价格不可播报为事实",
+    "output": "台本与变化记录",
+    "acceptance": "现场提示与活动版本一致",
+    "execution_status": "not_run",
+    "trigger": "帮我直播台本与场中变化",
+    "decision_checks": [
+      "台本绑定场次、商品和活动版本；讲品顺序、切换条件与临场提示对应",
+      "库存/价格未知不播事实，场中新信息只更新影响段落并留旧版",
+      "交付可读台本及变更表，重印台本不是活动上线"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "未知库存价格不可播报为事实",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "现场提示与活动版本一致",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "director_script",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "场次2025-06-01，商品A定价20，优惠仅20:00–21:00；商品B价格未确认。做开播台本。",
+      "sample_file_sections": [
+        "台本与变化记录",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "A活动生效审批缺失，20元仍为商品标价。",
+      "correction_case": "A优惠时段改为20:30–21:00，商品标价不变。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "02-W3",
+    "role_id": "02",
+    "runtime_role_id": "director_script",
+    "title": "达人和多载体修订",
+    "inputs": [
+      "合作范围",
+      "基准稿",
+      "审核意见"
+    ],
+    "steps": [
+      "区分授权载体",
+      "映射产品事实",
+      "输出差异和修改原因"
+    ],
+    "exceptions": "审稿提交可能通知，需核实际副作用",
+    "output": "合作Brief与多语修订包",
+    "acceptance": "旧主张不复用，人改不覆盖",
+    "execution_status": "not_run",
+    "trigger": "帮我达人和多载体修订",
+    "decision_checks": [
+      "合作身份与各载体/语言的授权范围、期限分列，不从一种载体推另种许可",
+      "修订逐条对应已证商品主张与创作者人改，记录事实变更原因",
+      "交付合作Brief、多载体差异及复核项；无许可版本只草稿"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "审稿提交可能通知，需核实际副作用",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "旧主张不复用，人改不覆盖",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "director_script",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "达人同意抖音中文发布，不含英文站转载；基准稿“250g”，作者备注“保留开场问句”。做合作和多语修订。",
+      "sample_file_sections": [
+        "合作Brief与多语修订包",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "达人授权仅口头转述，无签署或确认记录。",
+      "correction_case": "净重证据改为200g；保持开场问句和原载体限制。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "03-W1",
+    "role_id": "03",
+    "runtime_role_id": "ecommerce_operations",
+    "title": "多源日报与异常",
+    "inputs": [
+      "订单",
+      "退款",
+      "商品和期间"
+    ],
+    "steps": [
+      "核粒度去重",
+      "分别计算可确认指标",
+      "列异常证据及剩余待办"
+    ],
+    "exceptions": "无成本不报利润，无退款额不推净收入",
+    "output": "复盘与商品待查表",
+    "acceptance": "金额能复算，迟到数据有更正版本",
+    "execution_status": "not_run",
+    "trigger": "帮我多源日报与异常",
+    "decision_checks": [
+      "全明细与筛选可见范围分列；订单/支付/退款/广告按各自粒度和期间核控制总数",
+      "共同键与多对多先独立聚合，广告归因不另加收入；无件数/成本不报袋数/利润",
+      "交付日报、异常原行与迟到更正版本；时间和币种未知保留"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "无成本不报利润，无退款额不推净收入",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "金额能复算，迟到数据有更正版本",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "ecommerce_operations",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "五月订单O1应付30，支付30，退款5发生六月；两条广告归因20和15无法关联订单。购买件数和成本缺。做五月日报。",
+      "sample_file_sections": [
+        "复盘与商品待查表",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "支付流水缺失，其余同正常资料。",
+      "correction_case": "六月退款更正为7；五月订单原件不变。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "03-W2",
+    "role_id": "03",
+    "runtime_role_id": "ecommerce_operations",
+    "title": "新品大促就绪",
+    "inputs": [
+      "商品主档",
+      "价格",
+      "素材",
+      "渠道条件"
+    ],
+    "steps": [
+      "逐项核版本",
+      "区分商品与渠道就绪",
+      "形成逐对象动作草稿"
+    ],
+    "exceptions": "有依赖未通过不报可售，写入另授权",
+    "output": "上新就绪和阻塞清单",
+    "acceptance": "每个渠道可查实际状态",
+    "execution_status": "not_run",
+    "trigger": "帮我新品大促就绪",
+    "decision_checks": [
+      "按SKU/渠道核商品主档、价格、素材、活动审批与生效版本",
+      "区分材料齐备、后台配置、实际可售；描述编码冲突隔离不自选",
+      "交付逐渠道就绪/阻塞和动作草稿，不把建议当实际上架/调价"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "有依赖未通过不报可售，写入另授权",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "每个渠道可查实际状态",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "ecommerce_operations",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "商品A规格v2、价格20已批，素材仍v1写18；抖音已回读在售，另一渠道无回读。做大促就绪检查。",
+      "sample_file_sections": [
+        "上新就绪和阻塞清单",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "价格审批页缺失。",
+      "correction_case": "素材更新v2写20，另一渠道仍无回读。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "03-W3",
+    "role_id": "03",
+    "runtime_role_id": "ecommerce_operations",
+    "title": "拆单换货与反馈",
+    "inputs": [
+      "订单",
+      "包裹",
+      "退换事件",
+      "客户原话"
+    ],
+    "steps": [
+      "关联稳定ID",
+      "分别核实物流和金额义务",
+      "整理反馈候选"
+    ],
+    "exceptions": "一个包裹到货不完成整单",
+    "output": "剩余义务与改进候选",
+    "acceptance": "无重复退款或失踪义务",
+    "execution_status": "not_run",
+    "trigger": "帮我拆单换货与反馈",
+    "decision_checks": [
+      "订单行/包裹/退换事件用稳定ID关联，部分拆单逐件保留剩余义务",
+      "物流签收、退回质检、退款请求/到账分别核，不用消息条数代替商品量",
+      "交付未完成金额/物流义务和有原话的反馈；未知先查不重放退款"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "一个包裹到货不完成整单",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "无重复退款或失踪义务",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "ecommerce_operations",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "订单O1购买3件，包裹P1发2件已签收，P2发1件运输中；一件申请换货，退款请求R1超时未知。做剩余义务表。",
+      "sample_file_sections": [
+        "剩余义务与改进候选",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "P1签收证据缺失，只有发出记录。",
+      "correction_case": "P2已签收；R1查证已退5，换货新包裹尚无记录。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "04-W1",
+    "role_id": "04",
+    "runtime_role_id": "advertising_operations",
+    "title": "测量核查与诊断",
+    "inputs": [
+      "账户报表",
+      "归因设置",
+      "经营窗口"
+    ],
+    "steps": [
+      "核事件和覆盖",
+      "比较同口径表现",
+      "区分归因与企业订单"
+    ],
+    "exceptions": "测量故障降低结论强度",
+    "output": "可信度说明与实验候选",
+    "acceptance": "不重复计多平台归因订单",
+    "execution_status": "not_run",
+    "trigger": "帮我测量核查与诊断",
+    "decision_checks": [
+      "核事件定义、渠道窗口、成熟期、漏斗分母和覆盖；比较同口径而非直接合并归因",
+      "订单侧与渠道归因分列，平台ROAS不当利润；缺原片不解释创意原因",
+      "交付可信度与待补证的实验候选，增长率和占比按定义判断"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "测量故障降低结论强度",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "不重复计多平台归因订单",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "advertising_operations",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "同窗口消耗100，归因支付150，点击20购买2；两个平台都归因订单O1，店铺仅O1应付100；无成本。做测量诊断。",
+      "sample_file_sections": [
+        "可信度说明与实验候选",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "归因窗口与成熟期缺失。",
+      "correction_case": "一笔归因支付50撤回，其余不变。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "04-W2",
+    "role_id": "04",
+    "runtime_role_id": "advertising_operations",
+    "title": "创意测试与变更单",
+    "inputs": [
+      "基准素材",
+      "预算约束",
+      "试验设计"
+    ],
+    "steps": [
+      "定义比较条件",
+      "限制变量",
+      "形成对象和原状态明确的提案"
+    ],
+    "exceptions": "旧批准不适用新预算或新对象",
+    "output": "测试计划与变更草稿",
+    "acceptance": "逐对象核验，统计波动不直接停投",
+    "execution_status": "not_run",
+    "trigger": "帮我创意测试与变更单",
+    "decision_checks": [
+      "预先固定单一主要变量、对照/观察窗口、预算总量与可承受损失",
+      "变更单绑定账户/对象/当前版本/原值/新值；小样本只列不确定性",
+      "交付测试及受控变更草稿，实际操作需当前授权与逐对象回读"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "旧批准不适用新预算或新对象",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "逐对象核验，统计波动不直接停投",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "advertising_operations",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "素材A点击20成交2，B点击10成交2；预算总额300，仅测试开头一句，其余价格受众一致。做实验方案与变更单。",
+      "sample_file_sections": [
+        "测试计划与变更草稿",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "B观察期间不详，不可直接比较。",
+      "correction_case": "B纠正为点击10成交1，预算仍300。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "04-W3",
+    "role_id": "04",
+    "runtime_role_id": "advertising_operations",
+    "title": "达人授权和拒登",
+    "inputs": [
+      "原帖",
+      "许可",
+      "平台原因"
+    ],
+    "steps": [
+      "核可用载体期限",
+      "区分事实主张与平台判断",
+      "整理补证"
+    ],
+    "exceptions": "原帖可见不等于可投放",
+    "output": "授权到期与申诉证据包",
+    "acceptance": "不凭模板做未经授权发布",
+    "execution_status": "not_run",
+    "trigger": "帮我达人授权和拒登",
+    "decision_checks": [
+      "逐原帖核达人身份、商业使用载体、可编辑范围与授权有效期",
+      "平台拒登原因与商品事实/公司立场分开，申诉逐条补真实证据",
+      "交付许可到期和申诉证据包，无许可或无依据的主张停止发布"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "原帖可见不等于可投放",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "不凭模板做未经授权发布",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "advertising_operations",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "达人原帖仅准抖音至2025-05-31，拟6月1日复用；拒登原因“含无证功效”，产品只证实食品规格。做授权及申诉包。",
+      "sample_file_sections": [
+        "授权到期与申诉证据包",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "原帖授权页缺失，只有同事说可以用。",
+      "correction_case": "收到延期到6月30日确认；功效证据仍缺。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "05-W1",
+    "role_id": "05",
+    "runtime_role_id": "finance_reconciliation",
+    "title": "银行与账簿差异",
+    "inputs": [
+      "两份流水",
+      "币种",
+      "期间",
+      "匹配规则"
+    ],
+    "steps": [
+      "核控制总数",
+      "定点金额精确匹配",
+      "列未达争议"
+    ],
+    "exceptions": "同额不同单不猜匹配",
+    "output": "可复算差异表",
+    "acceptance": "同批再导不增加金额",
+    "execution_status": "not_run",
+    "trigger": "帮我银行与账簿差异",
+    "decision_checks": [
+      "银行/账簿按业务键、币种、期间和控制总数核；相同快照去重不重复累计",
+      "时间差、需调整、待调查与部分分配分列；不按相似金额猜关系",
+      "交付可重算差异、账龄/负责人待核及凭证，不自动核销付款"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "同额不同单不猜匹配",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "同批再导不增加金额",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "finance_reconciliation",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "银行CNY流水B1=100，B2=50；账簿业务键B1=100、B2=40；另有USD5独立记录。做银行差异表。",
+      "sample_file_sections": [
+        "可复算差异表",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "B2账簿记录缺失，不填0。",
+      "correction_case": "B2账簿更正为50；USD仍单列。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "05-W2",
+    "role_id": "05",
+    "runtime_role_id": "finance_reconciliation",
+    "title": "平台结算到银行到账",
+    "inputs": [
+      "平台余额活动",
+      "打款",
+      "银行记录"
+    ],
+    "steps": [
+      "分别核活动期与到账期",
+      "构建余额桥接",
+      "列缺凭证"
+    ],
+    "exceptions": "手动打款无归属证据不拆给订单",
+    "output": "结算桥接与未决项",
+    "acceptance": "分币种守恒，打款不冒充全部结清",
+    "execution_status": "not_run",
+    "trigger": "帮我平台结算到银行到账",
+    "decision_checks": [
+      "平台活动期间、结算期间和银行到账期间分开，逐币种桥接期初/活动/费用/退款/打款/期末",
+      "平台打款ID关联银行，时间差和缺凭证留未决，不能打款即全结清",
+      "交付余额守恒桥与未达款；不为对平造调整或跨币种净额"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "手动打款无归属证据不拆给订单",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "分币种守恒，打款不冒充全部结清",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "finance_reconciliation",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "平台期初100，销售200，费用20，退款10，打款150，期末120，均CNY；银行只收到打款100，剩余50日期未知。做桥接。",
+      "sample_file_sections": [
+        "结算桥接与未决项",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "缺平台期初余额，不反推成确认事实。",
+      "correction_case": "银行又收到同一打款50，平台期末不变。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "05-W3",
+    "role_id": "05",
+    "runtime_role_id": "finance_reconciliation",
+    "title": "部分分配与变更",
+    "inputs": [
+      "多对多单据",
+      "分配依据",
+      "修订"
+    ],
+    "steps": [
+      "保留原关系",
+      "精确计算剩余",
+      "新口径只重算影响范围"
+    ],
+    "exceptions": "分配争议由财务确认",
+    "output": "分配明细与余额",
+    "acceptance": "不自动核销或付款",
+    "execution_status": "not_run",
+    "trigger": "帮我部分分配与变更",
+    "decision_checks": [
+      "保留发票/收款/贷项各自ID与有证据的分配关系，部分分配算剩余并守恒",
+      "一笔多单、多笔一单分配明确；修订只改受影响关系，不把相等金额当匹配",
+      "交付分配表、原币余额及修订记录，调整/核销/付款分开授权"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "分配争议由财务确认",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "不自动核销或付款",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "finance_reconciliation",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "发票I1=100、I2=80 CNY；收款P1=120，明确分给I1=100、I2=20。做分配和余额。",
+      "sample_file_sections": [
+        "分配明细与余额",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "分配依据缺失，不允许按金额猜配。",
+      "correction_case": "P1更正为110，I1仍100，I2分配改10。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "06-W1",
+    "role_id": "06",
+    "runtime_role_id": "administration",
+    "title": "合同包版本和义务",
+    "inputs": [
+      "原件",
+      "附件清单",
+      "签署证据"
+    ],
+    "steps": [
+      "核实际附件",
+      "对比有效版依据",
+      "提取有出处义务"
+    ],
+    "exceptions": "最新草稿不覆盖已签版",
+    "output": "登记表和义务候选",
+    "acceptance": "缺附件明确，日期不凭今天补齐",
+    "execution_status": "not_run",
+    "trigger": "帮我合同包版本和义务",
+    "decision_checks": [
+      "合同主体、原件、附件、签署/生效版本及条款义务逐项关联",
+      "日期由合同触发事实计算，未签署/交付不明不从今天补；公司立场缺失只候选",
+      "交付附件登记和义务来源，不把收到文件当生效或签名认证"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "最新草稿不覆盖已签版",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "缺附件明确，日期不凭今天补齐",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "administration",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "合同C1及附件A已给，签署页缺失，条款“交付后30天付款”；交付日未知。做合同包登记。",
+      "sample_file_sections": [
+        "登记表和义务候选",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "附件A缺失，仅正文引用。",
+      "correction_case": "补到签署页，交付日仍未知。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "06-W2",
+    "role_id": "06",
+    "runtime_role_id": "administration",
+    "title": "调动离职资产交接",
+    "inputs": [
+      "已批事项",
+      "资产",
+      "交接清单"
+    ],
+    "steps": [
+      "稳定人员ID关联",
+      "逐件核签收",
+      "列未决责任"
+    ],
+    "exceptions": "台账更新不证明实物签收",
+    "output": "交接材料包",
+    "acceptance": "各负责方回执独立",
+    "execution_status": "not_run",
+    "trigger": "帮我调动离职资产交接",
+    "decision_checks": [
+      "以稳定人员ID和已批准生效日列逐资产/资料交接及接收方责任",
+      "实物签收、系统登记、资料移交分证据；部分接收不关闭全部",
+      "交付资产清单、回执和未决责任，不代替HR决定或自动撤权"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "台账更新不证明实物签收",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "各负责方回执独立",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "administration",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "已批员工E1于6月1日调动，电脑A1收件人已签，门卡A2无回执；资料库已发链接未接受。做交接包。",
+      "sample_file_sections": [
+        "交接材料包",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "调动审批页缺失，只保留交接候选。",
+      "correction_case": "门卡A2收到签收，资料接收仍未接受。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "06-W3",
+    "role_id": "06",
+    "runtime_role_id": "administration",
+    "title": "费用预审交接",
+    "inputs": [
+      "费用政策",
+      "票据",
+      "批准范围"
+    ],
+    "steps": [
+      "核材料和政策期",
+      "列缺证与争议",
+      "生成财务交接"
+    ],
+    "exceptions": "预审不等于提交记账付款",
+    "output": "预审清单",
+    "acceptance": "财务可接手，不多发敏感资料",
+    "execution_status": "not_run",
+    "trigger": "帮我费用预审交接",
+    "decision_checks": [
+      "按费用政策适用人/期间/币种、票据号与批准范围预审",
+      "重复票据靠凭证身份识别；缺证/争议不补0，敏感字段仅传必要项",
+      "交付财务可接手的预审和原件定位，不把预审当批准付款"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "预审不等于提交记账付款",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "财务可接手，不多发敏感资料",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "administration",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "政策6月交通费限200 CNY；票据T1=120导入两次、T2=100，人员证件在原件。做费用预审。",
+      "sample_file_sections": [
+        "预审清单",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "公司政策缺失，不套通用限额。",
+      "correction_case": "T2更正为70，T1仍重复两份。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "07-W1",
+    "role_id": "07",
+    "runtime_role_id": "customer_service",
+    "title": "一条咨询多个诉求",
+    "inputs": [
+      "客户原话",
+      "订单",
+      "适用政策"
+    ],
+    "steps": [
+      "逐项拆诉求",
+      "定位当时政策",
+      "逐问生成草稿"
+    ],
+    "exceptions": "缺条件先答可确认项",
+    "output": "回答草稿与剩余问题",
+    "acceptance": "不漏问，政策适用于该订单",
+    "execution_status": "not_run",
+    "trigger": "帮我一条咨询多个诉求",
+    "decision_checks": [
+      "把物流/退款/隐私等全部原话诉求拆分，用订单时点查适用政策",
+      "相似工单仅候选而非同根因，不新增承诺或泄露无关身份",
+      "逐项回复草稿、出处和升级事项，回复不等于解决"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "缺条件先答可确认项",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "不漏问，政策适用于该订单",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "customer_service",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "客户问物流、退款和删除个人资料；五月订单适用v1，v2六月生效；相似工单曾补发。做答复草稿。",
+      "sample_file_sections": [
+        "回答草稿与剩余问题",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "v1政策正文缺失，不套v2。",
+      "correction_case": "退款查询超时未知，其余诉求保留。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "07-W2",
+    "role_id": "07",
+    "runtime_role_id": "customer_service",
+    "title": "部分退款补发",
+    "inputs": [
+      "售后申请",
+      "包裹",
+      "历史动作"
+    ],
+    "steps": [
+      "查已发生动作",
+      "分别核金额物流",
+      "整理获准范围"
+    ],
+    "exceptions": "超时先查，不重复提交退款",
+    "output": "售后处理和核验记录",
+    "acceptance": "已回复已受理已解决分开",
+    "execution_status": "not_run",
+    "trigger": "帮我部分退款补发",
+    "decision_checks": [
+      "核订单商品、部分退款/补发批准范围及既有动作ID",
+      "退款受理/到账和补发发出/签收逐项留证，超时先查避免重发",
+      "交付金额与物流剩余义务，退回未质检不加可售库存"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "超时先查，不重复提交退款",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "已回复已受理已解决分开",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "customer_service",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "订单2件，已批退1件10 CNY并补发1件；退款R1已到账10，补发S1已发未签。做售后核验。",
+      "sample_file_sections": [
+        "售后处理和核验记录",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "退款R1结果未知。",
+      "correction_case": "补发S1已签收，退款仍按各分支现有记录。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "07-W3",
+    "role_id": "07",
+    "runtime_role_id": "customer_service",
+    "title": "中断投诉与争议",
+    "inputs": [
+      "会话",
+      "服务事件",
+      "证据"
+    ],
+    "steps": [
+      "固定时间线",
+      "保护矛盾证据",
+      "生成升级交接"
+    ],
+    "exceptions": "责任和赔付不自动裁决",
+    "output": "争议材料包",
+    "acceptance": "下游能接手，剩余义务可追",
+    "execution_status": "not_run",
+    "trigger": "帮我中断投诉与争议",
+    "decision_checks": [
+      "保留客户原话、服务事件和矛盾证据，区分事实/争议/影响/紧急程度",
+      "按时间线记录已试与实际结果及未决义务，缺责任人只候选",
+      "交付最小升级包和适用案例候选，赔付/责任不自动裁决"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "责任和赔付不自动裁决",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "下游能接手，剩余义务可追",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "customer_service",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "09:00客户称未收到，09:05物流写已签，09:10客服答复，未获客户认可；无赔付授权。做争议升级包。",
+      "sample_file_sections": [
+        "争议材料包",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "物流签收原凭证缺失。",
+      "correction_case": "物流更正为误扫，包裹仍运输中。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "08-W1",
+    "role_id": "08",
+    "runtime_role_id": "sales_crm",
+    "title": "商机到报价交付",
+    "inputs": [
+      "会谈",
+      "产品能力",
+      "报价规则"
+    ],
+    "steps": [
+      "提取有出处承诺",
+      "核PoC接受条件",
+      "整理报价缺项"
+    ],
+    "exceptions": "不能编购买意图或交期",
+    "output": "机会和交付材料包",
+    "acceptance": "每个承诺有来源与负责人",
+    "execution_status": "not_run",
+    "trigger": "帮我商机到报价交付",
+    "decision_checks": [
+      "会谈原话、明确承诺及负责人/期限分开；核PoC接受条件与证据",
+      "商机阶段、报价规格/币种/税运/有效期和交付能力核当前版本",
+      "交付机会与报价/交付缺项，意向不当收入，CRM修改/外发另核授权"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "不能编购买意图或交期",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "每个承诺有来源与负责人",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "sales_crm",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "客户说价格合适再考虑，销售填80%，CRM已成交；无合同，报价Q1缺税运。做商机到报价交付包。",
+      "sample_file_sections": [
+        "机会和交付材料包",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "客户原话无记录，只有销售转述。",
+      "correction_case": "客户书面接受Q1商品价，但税运与实施时间仍待定。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "08-W2",
+    "role_id": "08",
+    "runtime_role_id": "sales_crm",
+    "title": "达人合作履约",
+    "inputs": [
+      "寄样",
+      "Brief",
+      "发布权利",
+      "结算条件"
+    ],
+    "steps": [
+      "核合作身份",
+      "对齐交付和使用范围",
+      "区分发布与验收"
+    ],
+    "exceptions": "转发权不等于广告改编权",
+    "output": "履约和结算待办",
+    "acceptance": "授权与实际交付可核",
+    "execution_status": "not_run",
+    "trigger": "帮我达人合作履约",
+    "decision_checks": [
+      "达人身份、寄样、Brief交付件、发布权利和结算触发条件逐一对应",
+      "发布/验收/有效授权分别证实，不从CRM报价流程替代履约",
+      "交付履约和结算待办，未验收不称应付已批准，不擅自寄样/付款"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "转发权不等于广告改编权",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "授权与实际交付可核",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "sales_crm",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "达人D1收到样品，Brief要视频2条，已发布1条未验收；授权仅抖音；约定验收后付款。做合作履约表。",
+      "sample_file_sections": [
+        "履约和结算待办",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "Brief签收记录缺失，只能列候选要求。",
+      "correction_case": "第二条发布，仍只有第一条通过验收。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "08-W3",
+    "role_id": "08",
+    "runtime_role_id": "sales_crm",
+    "title": "续约与渠道冲突",
+    "inputs": [
+      "合同期",
+      "归属证据",
+      "沟通记录"
+    ],
+    "steps": [
+      "整理到期义务",
+      "区分承诺和推测",
+      "保留归属分歧"
+    ],
+    "exceptions": "争议负责人裁决，外联另授权",
+    "output": "续约清单与差异",
+    "acceptance": "不重复联系，旧条款失效",
+    "execution_status": "not_run",
+    "trigger": "帮我续约与渠道冲突",
+    "decision_checks": [
+      "合约到期和续约义务与客户原话区分，保留渠道归属证据和冲突",
+      "同一对象去重跟进，旧/新条款生效分开，未接受意向保持等待",
+      "交付续约候选与归属差异，不重复外联或把预测当承诺"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "争议负责人裁决，外联另授权",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "不重复联系，旧条款失效",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "sales_crm",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "合同6月30日到期，客户说再讨论；渠道A和B都称负责同一客户，无正式归属裁定。做续约清单。",
+      "sample_file_sections": [
+        "续约清单与差异",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "到期合同原件缺失，日期仅口头。",
+      "correction_case": "客户接受7月1日续约沟通时间，未接受续约价格。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "09-W1",
+    "role_id": "09",
+    "runtime_role_id": "human_resources",
+    "title": "已批准入职交接",
+    "inputs": [
+      "批准",
+      "人员ID",
+      "生效日",
+      "清单"
+    ],
+    "steps": [
+      "核身份日期",
+      "分部门任务",
+      "收实际回执"
+    ],
+    "exceptions": "取消或改期停止旧步骤",
+    "output": "入职材料与分工清单",
+    "acceptance": "不自动录用，账号状态有回证",
+    "execution_status": "not_run",
+    "trigger": "帮我已批准入职交接",
+    "decision_checks": [
+      "以批准人员ID/岗位/生效日为入职前提，逐部门列资料、权限和责任依赖",
+      "证件与交接摘要分开，最少字段；清单完成不等于账号实际开通",
+      "交付已批入职分工与逐系统回证，不能自动录用定薪或推断属性"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "取消或改期停止旧步骤",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "不自动录用，账号状态有回证",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "human_resources",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "已批E1于6月1日入职，行政工位就绪，IT邮件提交开通未回读；原件有证件号码。做入职交接。",
+      "sample_file_sections": [
+        "入职材料与分工清单",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "入职批准页缺失，不能确认已录用。",
+      "correction_case": "邮件账号回读已启用，业务系统账号仍未知。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "09-W2",
+    "role_id": "09",
+    "runtime_role_id": "human_resources",
+    "title": "考勤到薪酬输入",
+    "inputs": [
+      "班表",
+      "考勤",
+      "已批申请",
+      "补正"
+    ],
+    "steps": [
+      "按人员周期核差异",
+      "纳入请假出差",
+      "输出待复核"
+    ],
+    "exceptions": "缺卡不直接判旷工",
+    "output": "中性差异与薪酬输入候选",
+    "acceptance": "未经批准不进正式薪酬",
+    "execution_status": "not_run",
+    "trigger": "帮我考勤到薪酬输入",
+    "decision_checks": [
+      "按人员ID/班表/周期对齐考勤、请假出差与已批补正",
+      "原始缺卡和合法请假分列，薪资输入候选需要当前政策及批准",
+      "交付中性差异及补正来源，不自动处罚扣薪或把缺失补0"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "缺卡不直接判旷工",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "未经批准不进正式薪酬",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "human_resources",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "E1六月班表8小时，考勤6小时，已批请假2小时；E2缺打卡，无请假证据。做考勤输入候选。",
+      "sample_file_sections": [
+        "中性差异与薪酬输入候选",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "请假批准页缺失，不能认定已批。",
+      "correction_case": "E2补到打卡8小时，其余不变。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "09-W3",
+    "role_id": "09",
+    "runtime_role_id": "human_resources",
+    "title": "调动离职与保留",
+    "inputs": [
+      "已批变更",
+      "身份",
+      "资产权限"
+    ],
+    "steps": [
+      "区分原合法权限和变更",
+      "核保留范围",
+      "分系统交接"
+    ],
+    "exceptions": "个人勾选不代表组织实态",
+    "output": "交接和未决清单",
+    "acceptance": "不自动解雇定薪，权限由相应系统核实",
+    "execution_status": "not_run",
+    "trigger": "帮我调动离职与保留",
+    "decision_checks": [
+      "已批调动/离职、生效日、原合法权限与目标权限逐系统核",
+      "记录资产交接、数据保留依据和未决权限，个人敏感资料最小化",
+      "交付交接/保留/回证，不自动解雇、定薪、删档或撤账号"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "个人勾选不代表组织实态",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "不自动解雇定薪，权限由相应系统核实",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "human_resources",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "已批E1于6月1日离职；电脑已签收，CRM仍启用，邮件已停用；公司档案保留期限未知。做离职交接。",
+      "sample_file_sections": [
+        "交接和未决清单",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "离职批准缺失，只能做候选事项。",
+      "correction_case": "CRM回读已禁用，保留期限仍待公司政策。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "10-W1",
+    "role_id": "10",
+    "runtime_role_id": "procurement",
+    "title": "可批准采购方案",
+    "inputs": [
+      "需求",
+      "可比报价",
+      "规格条件"
+    ],
+    "steps": [
+      "统一单位条款",
+      "比较独立约束",
+      "列取舍依据"
+    ],
+    "exceptions": "不同规格不直接比总价",
+    "output": "采购方案草稿",
+    "acceptance": "审批者能核原报价，不直接下单",
+    "execution_status": "not_run",
+    "trigger": "帮我可批准采购方案",
+    "decision_checks": [
+      "需求规格数量/单位、税运/币种/账期和可比总成本统一",
+      "供应风险、交期、效期、预算约束分列，未知不猜，不仅按单价选商",
+      "交付采购取舍和证据草稿；选商/下单/付款各自授权"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "不同规格不直接比总价",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "审批者能核原报价，不直接下单",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "procurement",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "48件需求，A每件10含税运30天账期；B每件9但税运未知需预付。做可批准采购方案。",
+      "sample_file_sections": [
+        "采购方案草稿",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "需求规格版本缺失，不直接认定可比。",
+      "correction_case": "B补税运共60，其他不变。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "10-W2",
+    "role_id": "10",
+    "runtime_role_id": "procurement",
+    "title": "收货验收到发票差异",
+    "inputs": [
+      "订单行",
+      "收退货",
+      "质检",
+      "发票"
+    ],
+    "steps": [
+      "按事件算净收",
+      "区分可计费量",
+      "列差异和负责人"
+    ],
+    "exceptions": "质检撤销重开影响项",
+    "output": "履约差异",
+    "acceptance": "重复导入不放大，付款另授权",
+    "execution_status": "not_run",
+    "trigger": "帮我收货验收到发票差异",
+    "decision_checks": [
+      "采购行/收退货/质检/发票分别用稳定ID关联，重复事件不放大量",
+      "净收、合格可计费和待检数量区分；部分分配与撤销保留余额",
+      "交付履约差异和责任待核，数量对齐不等于已付款或已核销"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "质检撤销重开影响项",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "重复导入不放大，付款另授权",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "procurement",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "采购10，收8其中合格6待检2；发票7件单价10 CNY，已付40。做三单差异。",
+      "sample_file_sections": [
+        "履约差异",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "质检放行记录缺失，不能称收货8都可计费。",
+      "correction_case": "待检2中放行1，其余待检；付款不变。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "10-W3",
+    "role_id": "10",
+    "runtime_role_id": "procurement",
+    "title": "框架调用与中断",
+    "inputs": [
+      "协议版本",
+      "余额",
+      "供应承诺"
+    ],
+    "steps": [
+      "核调用限额",
+      "分别保留计划和承诺期",
+      "列替代方案"
+    ],
+    "exceptions": "替代规格或超额交有权人",
+    "output": "供应风险和行动草稿",
+    "acceptance": "取消未获接受不释放承诺",
+    "execution_status": "not_run",
+    "trigger": "帮我框架调用与中断",
+    "decision_checks": [
+      "按协议版本/期间/数量币种核框架额度、调用与未取消承诺",
+      "供应中断的替代规格、预付和取消责任保留，不在取消被接受前释放额度",
+      "交付风险/替代草稿，超额或变规格升级有权者，付款另授权"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "替代规格或超额交有权人",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "取消未获接受不释放承诺",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "procurement",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "框架上限100件，已承诺60；新增计划50；已申请取消20但供应商未接受。做调用和中断方案。",
+      "sample_file_sections": [
+        "供应风险和行动草稿",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "框架上限原件缺失。",
+      "correction_case": "供应商接受取消20；新增50仍待批准。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "11-W1",
+    "role_id": "11",
+    "runtime_role_id": "warehouse_logistics",
+    "title": "到货到放行上架",
+    "inputs": [
+      "收货",
+      "批次",
+      "检验",
+      "库位"
+    ],
+    "steps": [
+      "核实收",
+      "隔离待检",
+      "区分放行和系统上架"
+    ],
+    "exceptions": "系统数量不证明实物",
+    "output": "到货与放行差异",
+    "acceptance": "无质量证据不自动放行",
+    "execution_status": "not_run",
+    "trigger": "帮我到货到放行上架",
+    "decision_checks": [
+      "以采购/收货/批次/库位核实物收到，待检/合格/隔离分开",
+      "放行依据、系统上架和可售时点分别回证，批次剩余期不同于包装总期",
+      "交付收货到上架差异，无质量证据不自动放行或加库存"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "系统数量不证明实物",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "无质量证据不自动放行",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "warehouse_logistics",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "批次B1实收20，合格12待检8，系统上架10；效期2025-06-30。做放行上架差异。",
+      "sample_file_sections": [
+        "到货与放行差异",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "质量合格证明缺失，不能认定合格12。",
+      "correction_case": "另6件获放行，系统仍上架10。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "11-W2",
+    "role_id": "11",
+    "runtime_role_id": "warehouse_logistics",
+    "title": "拣货到签收",
+    "inputs": [
+      "订单",
+      "预留",
+      "包裹",
+      "签收事件"
+    ],
+    "steps": [
+      "核同一时点可用量",
+      "关联部分包裹",
+      "追踪剩余"
+    ],
+    "exceptions": "部分签收不完成整单",
+    "output": "履约异常",
+    "acceptance": "重复通知不二次扣货",
+    "execution_status": "not_run",
+    "trigger": "帮我拣货到签收",
+    "decision_checks": [
+      "用订单行实际数量、同一时点可用/预留与拣货事件ID核拣货，不重复扣减",
+      "部分发运按包裹及商品行关联到签收、拒收、丢失；乱序/重复通知不二次扣货",
+      "交付已拣/已发/已签与剩余义务；不以补货MOQ或采购预算替代履约核验"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "部分签收不完成整单",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "重复通知不二次扣货",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "warehouse_logistics",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "订单O1需10件，预留10，已拣8；包裹P1发5已签，P2发3运输中，P1签收消息重复两次。做履约异常表。",
+      "sample_file_sections": [
+        "履约异常",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "P1签收原凭证缺失，只有发出记录。",
+      "correction_case": "P2签收3，剩余2未拣发，重复P1不增加签收。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "11-W3",
+    "role_id": "11",
+    "runtime_role_id": "warehouse_logistics",
+    "title": "调拨盘点和追溯",
+    "inputs": [
+      "库间事件",
+      "快照",
+      "盘点",
+      "批次"
+    ],
+    "steps": [
+      "对齐单位时间",
+      "桥接在途",
+      "追溯批次证据"
+    ],
+    "exceptions": "时点不齐暂不可比，不调平缺口",
+    "output": "影子库存对账",
+    "acceptance": "补算不产生写入，不虚构实物",
+    "execution_status": "not_run",
+    "trigger": "帮我调拨盘点和追溯",
+    "decision_checks": [
+      "按基础单位/批次/库位/同一时点核调拨发出、在途和目的库实收",
+      "实物盘点与系统影子余额桥接，重复扫描、撤销及损耗证据单列",
+      "交付批次追溯与差异，不靠补算造实物或直接改库存"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "时点不齐暂不可比，不调平缺口",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "补算不产生写入，不虚构实物",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "warehouse_logistics",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "A库期初50，调拨单T1发20到B，B实收15，5在途；A盘点28，系统30。做影子库存与批次追溯。",
+      "sample_file_sections": [
+        "影子库存对账",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "B收货凭证缺失，只有调拨发出20。",
+      "correction_case": "B补收5，A盘点28和系统30仍有差2。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "12-W1",
+    "role_id": "12",
+    "runtime_role_id": "project_delivery",
+    "title": "计划基线和容量",
+    "inputs": [
+      "已批需求",
+      "任务依赖",
+      "资源"
+    ],
+    "steps": [
+      "区分要求和建议",
+      "核容量约束",
+      "形成基线候选"
+    ],
+    "exceptions": "承诺日期由负责人确认",
+    "output": "计划与待决项",
+    "acceptance": "无依据不报完成百分比",
+    "execution_status": "not_run",
+    "trigger": "帮我计划基线和容量",
+    "decision_checks": [
+      "已批需求与建议范围分开，成果/任务依赖和资源容量对应",
+      "容量按可用工时与约束核，不从任务条数编完成百分比",
+      "交付基线候选、过载和待决取舍，范围/日期承诺由有权者决定"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "承诺日期由负责人确认",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "无依据不报完成百分比",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "project_delivery",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "项目A需6小时，B需5小时且依赖A；本周容量8小时，两项均已批。做计划基线。",
+      "sample_file_sections": [
+        "计划与待决项",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "B估时未知，不假填0。",
+      "correction_case": "容量更正为12小时，依赖不变。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "12-W2",
+    "role_id": "12",
+    "runtime_role_id": "project_delivery",
+    "title": "周报变更与行动",
+    "inputs": [
+      "任务版本",
+      "会议",
+      "交付证据"
+    ],
+    "steps": [
+      "提取真正变化",
+      "合并同一行动项",
+      "定位过期依据"
+    ],
+    "exceptions": "保留人工修改，责任不猜",
+    "output": "证据周报和决定记录",
+    "acceptance": "无新事实不重复建单催办",
+    "execution_status": "not_run",
+    "trigger": "帮我周报变更与行动",
+    "decision_checks": [
+      "任务版本、会议承诺和交付证据对齐，区分真正变化与重复通知",
+      "同一对象行动项去重，决定原因与新/旧依据、影响和责任记录",
+      "交付证据周报和待办，不因无新事实重复建单或自动催办"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "保留人工修改，责任不猜",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "无新事实不重复建单催办",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "project_delivery",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "任务T1负责人E1，会议两次都说周五交付；周四证据仍未完成，另一个通知重复。做周报和行动。",
+      "sample_file_sections": [
+        "证据周报和决定记录",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "负责人确认记录缺失，仅候选E1。",
+      "correction_case": "周五收到产物，但接收人未验收。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "12-W3",
+    "role_id": "12",
+    "runtime_role_id": "project_delivery",
+    "title": "验收切换和回退",
+    "inputs": [
+      "接受条件",
+      "测试",
+      "切换计划"
+    ],
+    "steps": [
+      "逐项对照证据",
+      "核回退前提",
+      "最小交接"
+    ],
+    "exceptions": "文件提交不等于客户验收",
+    "output": "验收差异与移交",
+    "acceptance": "真实接受与发布另有授权",
+    "execution_status": "not_run",
+    "trigger": "帮我验收切换和回退",
+    "decision_checks": [
+      "接受条件逐项对应测试/用户回证，文档收到不当验收",
+      "切换前置、数据/权限、回退点和停止条件核实，逐接收方最小交接",
+      "交付验收差异/切换回退草稿，真实接受、生产切换与发布另有证据及授权"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "文件提交不等于客户验收",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "真实接受与发布另有授权",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "project_delivery",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "三个交付件A/B已被接受，C仅收到；切换依赖权限开通未完成，回退备份未验证。做验收切换包。",
+      "sample_file_sections": [
+        "验收差异与移交",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "A接受回执缺失，不能保持已接受。",
+      "correction_case": "C接受文档，权限和回退验证仍未完成。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "13-W1",
+    "role_id": "13",
+    "runtime_role_id": "business_analytics",
+    "title": "支付退款周报",
+    "inputs": [
+      "冻结事件",
+      "映射",
+      "控制总数"
+    ],
+    "steps": [
+      "核粒度和完整区间",
+      "分币种聚合",
+      "核对后产新版"
+    ],
+    "exceptions": "最新记录不代表前面无缺失",
+    "output": "可更正报表",
+    "acceptance": "迟到事件归正确期间，旧结果可追",
+    "execution_status": "not_run",
+    "trigger": "帮我支付退款周报",
+    "decision_checks": [
+      "冻结支付/退款事件ID、期间/时区/币种与完整覆盖，重复快照不重复累计",
+      "按明确归属处理迟到事件，独立控制总数和可比窗口核后产新版",
+      "交付分币种可更正报表、原事件与旧版本，不将缺失填0或回补重复收入"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "最新记录不代表前面无缺失",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "迟到事件归正确期间，旧结果可追",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "business_analytics",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "五月P1=100 CNY，P2=50 CNY；P1重复快照；六月退款R1=20属于P1；另有USD5。按事件发生月做周报范围说明。",
+      "sample_file_sections": [
+        "可更正报表",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "R1发生日期缺失，不强归五月或六月。",
+      "correction_case": "R1更正为30 CNY，发生月仍六月。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "13-W2",
+    "role_id": "13",
+    "runtime_role_id": "business_analytics",
+    "title": "异常调查与比较",
+    "inputs": [
+      "指标定义",
+      "异常事实",
+      "假设"
+    ],
+    "steps": [
+      "列证据支持的解释",
+      "比较补证成本",
+      "情景条件分开"
+    ],
+    "exceptions": "无对照不作因果承诺",
+    "output": "调查与情景比较",
+    "acceptance": "预测有基线及时间外验证",
+    "execution_status": "not_run",
+    "trigger": "帮我异常调查与比较",
+    "decision_checks": [
+      "从异常事实/指标定义列可被推翻的解释，分清算术贡献与原因",
+      "比较补证成本、历史基线、可比窗口；缺货/大单/不完整月单列",
+      "交付调查与情景取舍，预测需时间外验证及误差，无证据不报因果或收益"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "无对照不作因果承诺",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "预测有基线及时间外验证",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "business_analytics",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "预算10000件×50，实际11000×48；同期促销、缺货两天，月末缺一天；无实验。做异常调查和情景比较。",
+      "sample_file_sections": [
+        "调查与情景比较",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "预算单价缺失，不造价格贡献。",
+      "correction_case": "实际价更正47，其他限制不变。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "13-W3",
+    "role_id": "13",
+    "runtime_role_id": "business_analytics",
+    "title": "指标改版与回补",
+    "inputs": [
+      "旧新口径",
+      "历史分区",
+      "受众"
+    ],
+    "steps": [
+      "定位影响",
+      "限定回看与补算",
+      "发布更正说明"
+    ],
+    "exceptions": "窗口外修订不能静默遗漏",
+    "output": "口径差异与版本报表",
+    "acceptance": "补算不重复累计或重放动作",
+    "execution_status": "not_run",
+    "trigger": "帮我指标改版与回补",
+    "decision_checks": [
+      "旧/新定义、分母/过滤/生效时点逐项对应，定位受影响历史分区和受众",
+      "按原事件ID重算受影响范围，旧报表/人改保留；不重复累计或重放业务动作",
+      "交付口径差异、回补版本和更正说明，未受影响项不重算"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "窗口外修订不能静默遗漏",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "补算不重复累计或重放动作",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "business_analytics",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "v1销量=订单数2；新v2销量=商品件数，O1=2件、O2=3件；六月生效，需解释五月可比重算；旧报告有人改备注。",
+      "sample_file_sections": [
+        "口径差异与版本报表",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "O2购买件数缺失，新口径五月总量未知。",
+      "correction_case": "O2件数更正4，保留原v1与人工备注。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "14-W1",
+    "role_id": "14",
+    "runtime_role_id": "it_service_desk",
+    "title": "无法登录排查",
+    "inputs": [
+      "报障",
+      "账号ID",
+      "适用手册"
+    ],
+    "steps": [
+      "逐步保留观察",
+      "区分假设和结果",
+      "核业务恢复"
+    ],
+    "exceptions": "未知故障不执行来源命令",
+    "output": "排查与接手记录",
+    "acceptance": "关闭和解决分开，知识仍是候选",
+    "execution_status": "not_run",
+    "trigger": "帮我无法登录排查",
+    "decision_checks": [
+      "按账号ID/适用手册逐步保留观察、假设与尝试结果，不索要密码",
+      "登录失败、接口可达和用户实际业务恢复分开，相似症状不当相同根因",
+      "交付排查与升级记录，重置/重启/权限动作依当前授权，解决与关闭另核"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "未知故障不执行来源命令",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "关闭和解决分开，知识仍是候选",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "it_service_desk",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "09:00账号E1不能登录，09:10接口200，09:20仍登录失败；手册只准只读检查。做排查接手记录。",
+      "sample_file_sections": [
+        "排查与接手记录",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "适用版本手册缺失，不猜重置步骤。",
+      "correction_case": "09:30 E1实际登录成功，但付款仍失败。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "14-W2",
+    "role_id": "14",
+    "runtime_role_id": "it_service_desk",
+    "title": "标准请求受控履行",
+    "inputs": [
+      "批准快照",
+      "人员ID",
+      "当前权限"
+    ],
+    "steps": [
+      "核生效日",
+      "逐系统比期望与实际",
+      "查结果"
+    ],
+    "exceptions": "同名冲突或权限不明停止",
+    "output": "请求与逐系统回执",
+    "acceptance": "外层200不替代子项，未知先查",
+    "execution_status": "not_run",
+    "trigger": "帮我标准请求受控履行",
+    "decision_checks": [
+      "已批准标准请求绑定人员ID、对象版本、期望权限/范围和生效时点",
+      "逐系统比较期望与真实回读，外层200不等于子项成功，未知先查询不重复履行",
+      "交付逐系统回执及剩余项，权限撤回/时间未到不执行，不把记录当真实变更"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "同名冲突或权限不明停止",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "外层200不替代子项，未知先查",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "it_service_desk",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "已批E1六月1日访问系统A/B；A回读已授权，B请求超时；外层返回200。做请求履行核验。",
+      "sample_file_sections": [
+        "请求与逐系统回执",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "批准快照缺失，只能做差异草稿。",
+      "correction_case": "B查询仍未知，A权限被撤回。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  },
+  {
+    "id": "14-W3",
+    "role_id": "14",
+    "runtime_role_id": "it_service_desk",
+    "title": "集中故障与SLA",
+    "inputs": [
+      "事件时间线",
+      "工作日历",
+      "恢复证据"
+    ],
+    "steps": [
+      "按适用条件计时",
+      "跨队列交接",
+      "核未解决积压"
+    ],
+    "exceptions": "无匹配SLA保持未知，关闭不作解决证据",
+    "output": "故障复盘和剩余项",
+    "acceptance": "已解决需业务核验，不猜标准时限",
+    "execution_status": "not_run",
+    "trigger": "帮我集中故障与SLA",
+    "decision_checks": [
+      "集中故障按实际影响、事件时间线、适用SLA工作日历计时",
+      "缓解/恢复/解决分开，跨队列接收和未解决积压保留；无标准不猜时限",
+      "交付故障复盘/剩余项/候选知识，HTTP200或已关闭不当业务验证"
+    ],
+    "evidence_reuse": [
+      "先核当前scope、源版本、已批准定义、上次报告和已知缺口",
+      "只复用仍有效且有出处的案例；候选经验不能自动当政策"
+    ],
+    "stop_conditions": [
+      "无匹配SLA保持未知，关闭不作解决证据",
+      "本流程必要证据或实际动作授权不足则停止受影响步骤；其余文件成果继续"
+    ],
+    "quality_checks": [
+      "已解决需业务核验，不猜标准时限",
+      "事实/判断/未知分开；控制总数或原话位置可复核；保护人工修改"
+    ],
+    "recipient": {
+      "role_id": "it_service_desk",
+      "acceptance": "任务提出者或实际指定接收人；未指定不虚构人名"
+    },
+    "output_example": {
+      "request": "三工单关联同故障，09:00开始，09:20接口恢复；一用户成功、两用户未验证；SLA政策缺，系统已关2单。做复盘与积压。",
+      "sample_file_sections": [
+        "故障复盘和剩余项",
+        "来源与范围",
+        "实际判断与未决项",
+        "修订/续接"
+      ],
+      "missing_case": "恢复测试证据缺失，只有接口200。",
+      "correction_case": "第二用户验证成功，第三仍待验证，SLA仍缺。",
+      "limitation": "Synthetic file workflow; media/system execution requires actual host evidence"
+    },
+    "recovery": {
+      "resume": "先读私有context、定义、依赖及用户修改，再继续受影响对象",
+      "correction": "定位来源/提取/指标/规则/回答/动作错误层，保留旧版并复测原题和未见题"
+    },
+    "completion_evidence": [
+      "实际产物位置与哈希",
+      "源版本及覆盖",
+      "实际复核和接收状态"
+    ],
+    "validation": {
+      "normal": "not_run",
+      "missing": "not_run",
+      "correction": "not_run",
+      "resume": "not_run",
+      "independent_model": "not_run",
+      "external": "not_run"
+    }
+  }
+]

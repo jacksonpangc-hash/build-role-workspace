@@ -1,0 +1,3065 @@
+[
+  {
+    "role_id": "01",
+    "role_name": "素材与视频拆解",
+    "runtime_role_id": "video_analysis",
+    "scenario_id": "V01",
+    "title": "明确拆解任务与比较范围",
+    "origin": "baseline",
+    "goal": "限定这次拆解用途和可比范围",
+    "source_urls": [
+      "https://www.scenedetect.com/docs/latest/cli.html",
+      "https://github.com/openai/whisper/blob/main/model-card.md",
+      "https://opentimelineio.readthedocs.io/en/latest/tutorials/time-ranges.html"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/video_analysis.md"
+  },
+  {
+    "role_id": "01",
+    "role_name": "素材与视频拆解",
+    "runtime_role_id": "video_analysis",
+    "scenario_id": "V02",
+    "title": "素材接收 去重与版本整理",
+    "origin": "baseline",
+    "goal": "保留原片、重复关系和改版血缘",
+    "source_urls": [
+      "https://www.scenedetect.com/docs/latest/cli.html",
+      "https://github.com/openai/whisper/blob/main/model-card.md",
+      "https://opentimelineio.readthedocs.io/en/latest/tutorials/time-ranges.html"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/video_analysis.md"
+  },
+  {
+    "role_id": "01",
+    "role_name": "素材与视频拆解",
+    "runtime_role_id": "video_analysis",
+    "scenario_id": "V03",
+    "title": "语音 文字与画面证据提取",
+    "origin": "baseline",
+    "goal": "形成音声、字幕和画面分离的证据",
+    "source_urls": [
+      "https://www.scenedetect.com/docs/latest/cli.html",
+      "https://github.com/openai/whisper/blob/main/model-card.md",
+      "https://opentimelineio.readthedocs.io/en/latest/tutorials/time-ranges.html"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/video_analysis.md"
+  },
+  {
+    "role_id": "01",
+    "role_name": "素材与视频拆解",
+    "runtime_role_id": "video_analysis",
+    "scenario_id": "V04",
+    "title": "镜头与语义片段划分",
+    "origin": "baseline",
+    "goal": "保留镜头边界与完整语义片段",
+    "source_urls": [
+      "https://www.scenedetect.com/docs/latest/cli.html",
+      "https://github.com/openai/whisper/blob/main/model-card.md",
+      "https://opentimelineio.readthedocs.io/en/latest/tutorials/time-ranges.html"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/video_analysis.md"
+  },
+  {
+    "role_id": "01",
+    "role_name": "素材与视频拆解",
+    "runtime_role_id": "video_analysis",
+    "scenario_id": "V05",
+    "title": "建立标签与质量标准",
+    "origin": "baseline",
+    "goal": "形成可复核而非口号式的标签标准",
+    "source_urls": [
+      "https://www.scenedetect.com/docs/latest/cli.html",
+      "https://github.com/openai/whisper/blob/main/model-card.md",
+      "https://opentimelineio.readthedocs.io/en/latest/tutorials/time-ranges.html"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/video_analysis.md"
+  },
+  {
+    "role_id": "01",
+    "role_name": "素材与视频拆解",
+    "runtime_role_id": "video_analysis",
+    "scenario_id": "V06",
+    "title": "自动预标与校准",
+    "origin": "baseline",
+    "goal": "验证候选标签在明确范围内是否可用",
+    "source_urls": [
+      "https://www.scenedetect.com/docs/latest/cli.html",
+      "https://github.com/openai/whisper/blob/main/model-card.md",
+      "https://opentimelineio.readthedocs.io/en/latest/tutorials/time-ranges.html"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/video_analysis.md"
+  },
+  {
+    "role_id": "01",
+    "role_name": "素材与视频拆解",
+    "runtime_role_id": "video_analysis",
+    "scenario_id": "V07",
+    "title": "审核 分歧处理与正式入库",
+    "origin": "baseline",
+    "goal": "把候选标注审成可追责记录",
+    "source_urls": [
+      "https://www.scenedetect.com/docs/latest/cli.html",
+      "https://github.com/openai/whisper/blob/main/model-card.md",
+      "https://opentimelineio.readthedocs.io/en/latest/tutorials/time-ranges.html"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/video_analysis.md"
+  },
+  {
+    "role_id": "01",
+    "role_name": "素材与视频拆解",
+    "runtime_role_id": "video_analysis",
+    "scenario_id": "V08",
+    "title": "按业务问题检索与生成拆解报告",
+    "origin": "baseline",
+    "goal": "按当前问题给能回看可采用的参考",
+    "source_urls": [
+      "https://www.scenedetect.com/docs/latest/cli.html",
+      "https://github.com/openai/whisper/blob/main/model-card.md",
+      "https://opentimelineio.readthedocs.io/en/latest/tutorials/time-ranges.html"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/video_analysis.md"
+  },
+  {
+    "role_id": "01",
+    "role_name": "素材与视频拆解",
+    "runtime_role_id": "video_analysis",
+    "scenario_id": "V09",
+    "title": "关联效果与复盘",
+    "origin": "baseline",
+    "goal": "把素材和可比业务结果谨慎关联",
+    "source_urls": [
+      "https://www.scenedetect.com/docs/latest/cli.html",
+      "https://github.com/openai/whisper/blob/main/model-card.md",
+      "https://opentimelineio.readthedocs.io/en/latest/tutorials/time-ranges.html"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/video_analysis.md"
+  },
+  {
+    "role_id": "01",
+    "role_name": "素材与视频拆解",
+    "runtime_role_id": "video_analysis",
+    "scenario_id": "V10",
+    "title": "版本更新与退回学习",
+    "origin": "baseline",
+    "goal": "变更规则后只重审受影响资料",
+    "source_urls": [
+      "https://www.scenedetect.com/docs/latest/cli.html",
+      "https://github.com/openai/whisper/blob/main/model-card.md",
+      "https://opentimelineio.readthedocs.io/en/latest/tutorials/time-ranges.html"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/video_analysis.md"
+  },
+  {
+    "role_id": "01",
+    "role_name": "素材与视频拆解",
+    "runtime_role_id": "video_analysis",
+    "scenario_id": "V11",
+    "title": "素材使用权与到期影响清点",
+    "origin": "added",
+    "goal": "在选用素材前回答这份原片/音乐/人物素材在此用途和期间是否有已确认许可，并找出过期影响；不是法律裁判。",
+    "source_urls": [
+      "https://ads.tiktok.com/resources/help/article/spark-ads-creation-guide?lang=en",
+      "https://support.tiktok.com/en/business-and-creator/creator-and-business-accounts/promoting-a-brand-product-or-service?invalid_lang=ms",
+      "https://kitsu.cg-wire.com/guides/review-publishing/publish/"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/video_analysis.md"
+  },
+  {
+    "role_id": "01",
+    "role_name": "素材与视频拆解",
+    "runtime_role_id": "video_analysis",
+    "scenario_id": "V12",
+    "title": "长直播事件重建与可剪片段候选",
+    "origin": "added",
+    "goal": "从长回放中还原讲品、换价、中断、演示等事件，交出保留语境的切片候选而不是直接自动发布。",
+    "source_urls": [
+      "https://www.scenedetect.com/docs/latest/cli.html",
+      "https://github.com/openai/whisper/blob/main/model-card.md",
+      "https://opentimelineio.readthedocs.io/en/latest/tutorials/time-ranges.html"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/video_analysis.md"
+  },
+  {
+    "role_id": "01",
+    "role_name": "素材与视频拆解",
+    "runtime_role_id": "video_analysis",
+    "scenario_id": "V13",
+    "title": "多模态商品主张与证明链核查",
+    "origin": "added",
+    "goal": "单独管理视频里说了什么、画面演示了什么、商品资料允许说什么，交出主张级差异证据。",
+    "source_urls": [
+      "https://github.com/openai/whisper/blob/main/model-card.md",
+      "https://www.scenedetect.com/docs/latest/cli.html",
+      "https://kitsu.cg-wire.com/guides/review-publishing/review/"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/video_analysis.md"
+  },
+  {
+    "role_id": "01",
+    "role_name": "素材与视频拆解",
+    "runtime_role_id": "video_analysis",
+    "scenario_id": "V14",
+    "title": "字幕与交付规格技术质检",
+    "origin": "added",
+    "goal": "在交片前区分可机械检查的技术缺陷与需要真人观看的可读性问题。",
+    "source_urls": [
+      "https://www.scenedetect.com/docs/latest/cli.html",
+      "https://opentimelineio.readthedocs.io/en/latest/tutorials/time-ranges.html",
+      "https://kitsu.cg-wire.com/guides/review-publishing/review/"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/video_analysis.md"
+  },
+  {
+    "role_id": "01",
+    "role_name": "素材与视频拆解",
+    "runtime_role_id": "video_analysis",
+    "scenario_id": "V15",
+    "title": "观众问题与内容证据对齐",
+    "origin": "added",
+    "goal": "把授权评论中的反复疑问变成内容缺口和拍摄需求，保留抽样限制，不把评论当总体消费者研究。",
+    "source_urls": [
+      "https://developers.google.com/youtube/data/reference/rest/v3/commentThreads/list",
+      "https://github.com/openai/whisper/blob/main/model-card.md"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/video_analysis.md"
+  },
+  {
+    "role_id": "01",
+    "role_name": "素材与视频拆解",
+    "runtime_role_id": "video_analysis",
+    "scenario_id": "V16",
+    "title": "多语种版本与本地化差异审查",
+    "origin": "added",
+    "goal": "核对原语/译文/配音/字幕的事实与范围一致性，并把本地化适配与逐字翻译分开。",
+    "source_urls": [
+      "https://github.com/openai/whisper/blob/main/model-card.md",
+      "https://opentimelineio.readthedocs.io/en/latest/tutorials/time-ranges.html",
+      "https://kitsu.cg-wire.com/guides/review-publishing/review/"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/video_analysis.md"
+  },
+  {
+    "role_id": "02",
+    "role_name": "编导与脚本",
+    "runtime_role_id": "director_script",
+    "scenario_id": "D01",
+    "title": "接收创作任务与输出约定",
+    "origin": "baseline",
+    "goal": "约定当前创作交付而非承诺爆款",
+    "source_urls": [
+      "https://kitsu.cg-wire.com/guides/review-publishing/review/",
+      "https://kitsu.cg-wire.com/guides/review-publishing/publish/"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/director_script.md"
+  },
+  {
+    "role_id": "02",
+    "role_name": "编导与脚本",
+    "runtime_role_id": "director_script",
+    "scenario_id": "D02",
+    "title": "整理商品 活动与品牌事实",
+    "origin": "baseline",
+    "goal": "只用当前有依据的商品活动事实",
+    "source_urls": [
+      "https://kitsu.cg-wire.com/guides/review-publishing/review/",
+      "https://kitsu.cg-wire.com/guides/review-publishing/publish/"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/director_script.md"
+  },
+  {
+    "role_id": "02",
+    "role_name": "编导与脚本",
+    "runtime_role_id": "director_script",
+    "scenario_id": "D03",
+    "title": "检索案例与选定创意角度",
+    "origin": "baseline",
+    "goal": "提供有区别且可制作的创意方向",
+    "source_urls": [
+      "https://kitsu.cg-wire.com/guides/review-publishing/review/",
+      "https://kitsu.cg-wire.com/guides/review-publishing/publish/"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/director_script.md"
+  },
+  {
+    "role_id": "02",
+    "role_name": "编导与脚本",
+    "runtime_role_id": "director_script",
+    "scenario_id": "D04",
+    "title": "写叙事结构与台词",
+    "origin": "baseline",
+    "goal": "生成逻辑闭合、有事实引用的台词",
+    "source_urls": [
+      "https://kitsu.cg-wire.com/guides/review-publishing/review/",
+      "https://kitsu.cg-wire.com/guides/review-publishing/publish/"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/director_script.md"
+  },
+  {
+    "role_id": "02",
+    "role_name": "编导与脚本",
+    "runtime_role_id": "director_script",
+    "scenario_id": "D05",
+    "title": "拆分镜头与画面任务",
+    "origin": "baseline",
+    "goal": "将脚本转成拍摄者看得懂的镜头任务",
+    "source_urls": [
+      "https://kitsu.cg-wire.com/guides/review-publishing/review/",
+      "https://kitsu.cg-wire.com/guides/review-publishing/publish/"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/director_script.md"
+  },
+  {
+    "role_id": "02",
+    "role_name": "编导与脚本",
+    "runtime_role_id": "director_script",
+    "scenario_id": "D06",
+    "title": "检查制作可行性与准备清单",
+    "origin": "baseline",
+    "goal": "暴露制作资源缺口和可替代拍法",
+    "source_urls": [
+      "https://kitsu.cg-wire.com/guides/review-publishing/review/",
+      "https://kitsu.cg-wire.com/guides/review-publishing/publish/"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/director_script.md"
+  },
+  {
+    "role_id": "02",
+    "role_name": "编导与脚本",
+    "runtime_role_id": "director_script",
+    "scenario_id": "D07",
+    "title": "审稿 处理分歧并批准版本",
+    "origin": "baseline",
+    "goal": "把审稿分歧定位并绑定批准版本",
+    "source_urls": [
+      "https://kitsu.cg-wire.com/guides/review-publishing/review/",
+      "https://kitsu.cg-wire.com/guides/review-publishing/publish/"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/director_script.md"
+  },
+  {
+    "role_id": "02",
+    "role_name": "编导与脚本",
+    "runtime_role_id": "director_script",
+    "scenario_id": "D08",
+    "title": "向拍摄与剪辑交接",
+    "origin": "baseline",
+    "goal": "交付能打开、能识别版本的制作包",
+    "source_urls": [
+      "https://kitsu.cg-wire.com/guides/review-publishing/review/",
+      "https://kitsu.cg-wire.com/guides/review-publishing/publish/"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/director_script.md"
+  },
+  {
+    "role_id": "02",
+    "role_name": "编导与脚本",
+    "runtime_role_id": "director_script",
+    "scenario_id": "D09",
+    "title": "管理改版与成片复核",
+    "origin": "baseline",
+    "goal": "管理改版并核成片是否仍符合批准",
+    "source_urls": [
+      "https://kitsu.cg-wire.com/guides/review-publishing/review/",
+      "https://kitsu.cg-wire.com/guides/review-publishing/publish/"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/director_script.md"
+  },
+  {
+    "role_id": "02",
+    "role_name": "编导与脚本",
+    "runtime_role_id": "director_script",
+    "scenario_id": "D10",
+    "title": "反馈学习与下一轮创作",
+    "origin": "baseline",
+    "goal": "把创作返工与投放效果分开学习",
+    "source_urls": [
+      "https://kitsu.cg-wire.com/guides/review-publishing/review/",
+      "https://kitsu.cg-wire.com/guides/review-publishing/publish/"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/director_script.md"
+  },
+  {
+    "role_id": "02",
+    "role_name": "编导与脚本",
+    "runtime_role_id": "director_script",
+    "scenario_id": "D11",
+    "title": "直播讲品脚本与提示卡",
+    "origin": "added",
+    "goal": "把商品、讲解顺序、互动和异常预案做成主播/中控可使用的版本化提示卡，不擅自实时控制直播。",
+    "source_urls": [
+      "https://kitsu.cg-wire.com/guides/review-publishing/review/",
+      "https://github.com/openai/whisper/blob/main/model-card.md",
+      "https://shopify.dev/docs/apps/build/inventory-management-apps/manage-quantities-states"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/director_script.md"
+  },
+  {
+    "role_id": "02",
+    "role_name": "编导与脚本",
+    "runtime_role_id": "director_script",
+    "scenario_id": "D12",
+    "title": "模块化创意矩阵与变量受控改写",
+    "origin": "added",
+    "goal": "在同商品事实下生成可比较且可制作的脚本变体，避免盲目笛卡尔积大量生成相似垃圾稿。",
+    "source_urls": [
+      "https://kitsu.cg-wire.com/guides/review-publishing/publish/",
+      "https://kitsu.cg-wire.com/guides/review-publishing/review/",
+      "https://developers.google.com/google-ads/api/docs/conversions/reporting"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/director_script.md"
+  },
+  {
+    "role_id": "02",
+    "role_name": "编导与脚本",
+    "runtime_role_id": "director_script",
+    "scenario_id": "D13",
+    "title": "跨语言跨渠道脚本适配",
+    "origin": "added",
+    "goal": "把同一内容任务适配到不同语言/版位，而不是仅压缩字幕或照搬平台公式。",
+    "source_urls": [
+      "https://github.com/openai/whisper/blob/main/model-card.md",
+      "https://kitsu.cg-wire.com/guides/review-publishing/review/",
+      "https://opentimelineio.readthedocs.io/en/latest/tutorials/time-ranges.html"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/director_script.md"
+  },
+  {
+    "role_id": "02",
+    "role_name": "编导与脚本",
+    "runtime_role_id": "director_script",
+    "scenario_id": "D14",
+    "title": "达人共创Brief与商业披露准备",
+    "origin": "added",
+    "goal": "给合作达人留创作空间，同时明确不可编造的主张、交付和平台披露检查点。",
+    "source_urls": [
+      "https://support.tiktok.com/en/business-and-creator/creator-and-business-accounts/promoting-a-brand-product-or-service?invalid_lang=ms",
+      "https://ads.tiktok.com/resources/help/article/spark-ads-creation-guide?lang=en",
+      "https://kitsu.cg-wire.com/guides/review-publishing/review/"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/director_script.md"
+  },
+  {
+    "role_id": "02",
+    "role_name": "编导与脚本",
+    "runtime_role_id": "director_script",
+    "scenario_id": "D15",
+    "title": "跨载体商品主张一致性编辑",
+    "origin": "added",
+    "goal": "让短视频、直播、详情页和广告文案围绕同一当前商品事实表达，找出冲突传播链。",
+    "source_urls": [
+      "https://kitsu.cg-wire.com/guides/review-publishing/review/",
+      "https://ads.tiktok.com/resources/help/article/list-of-catalog-product-issues-and-suggested-actions",
+      "https://docs.frappe.io/erpnext/sales-invoice"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/director_script.md"
+  },
+  {
+    "role_id": "02",
+    "role_name": "编导与脚本",
+    "runtime_role_id": "director_script",
+    "scenario_id": "D16",
+    "title": "特殊风险拍摄与替代方案准备",
+    "origin": "added",
+    "goal": "在方案阶段标出需要专业安全判断的动作或场景，准备低风险替代；不提供危险拍摄操作指导。",
+    "source_urls": [
+      "https://kitsu.cg-wire.com/guides/review-publishing/review/",
+      "https://kitsu.cg-wire.com/guides/review-publishing/publish/"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/director_script.md"
+  },
+  {
+    "role_id": "03",
+    "role_name": "电商运营",
+    "runtime_role_id": "ecommerce_operations",
+    "scenario_id": "E01",
+    "title": "报表接收与数据对账",
+    "origin": "baseline",
+    "goal": "拿到口径可解释的报表输入",
+    "source_urls": [
+      "https://docs.frappe.io/erpnext/sales-invoice",
+      "https://shopify.dev/docs/apps/build/inventory-management-apps/manage-quantities-states",
+      "https://shopify.dev/docs/apps/build/orders-fulfillment/returns-apps"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/ecommerce_operations.md"
+  },
+  {
+    "role_id": "03",
+    "role_name": "电商运营",
+    "runtime_role_id": "ecommerce_operations",
+    "scenario_id": "E02",
+    "title": "日报计算与经营解释",
+    "origin": "baseline",
+    "goal": "按批准口径计算而非编写漂亮数字",
+    "source_urls": [
+      "https://docs.frappe.io/erpnext/sales-invoice",
+      "https://shopify.dev/docs/apps/build/inventory-management-apps/manage-quantities-states",
+      "https://shopify.dev/docs/apps/build/orders-fulfillment/returns-apps"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/ecommerce_operations.md"
+  },
+  {
+    "role_id": "03",
+    "role_name": "电商运营",
+    "runtime_role_id": "ecommerce_operations",
+    "scenario_id": "E03",
+    "title": "退款 售后与原因分类",
+    "origin": "baseline",
+    "goal": "保留退款事件与核实原因",
+    "source_urls": [
+      "https://docs.frappe.io/erpnext/sales-invoice",
+      "https://shopify.dev/docs/apps/build/inventory-management-apps/manage-quantities-states",
+      "https://shopify.dev/docs/apps/build/orders-fulfillment/returns-apps"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/ecommerce_operations.md"
+  },
+  {
+    "role_id": "03",
+    "role_name": "电商运营",
+    "runtime_role_id": "ecommerce_operations",
+    "scenario_id": "E04",
+    "title": "库存 缺货与补货事项",
+    "origin": "baseline",
+    "goal": "报告真实可售库存和需补资料",
+    "source_urls": [
+      "https://docs.frappe.io/erpnext/sales-invoice",
+      "https://shopify.dev/docs/apps/build/inventory-management-apps/manage-quantities-states",
+      "https://shopify.dev/docs/apps/build/orders-fulfillment/returns-apps"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/ecommerce_operations.md"
+  },
+  {
+    "role_id": "03",
+    "role_name": "电商运营",
+    "runtime_role_id": "ecommerce_operations",
+    "scenario_id": "E05",
+    "title": "价格 优惠与活动核对",
+    "origin": "baseline",
+    "goal": "在同条件下核优惠价格",
+    "source_urls": [
+      "https://docs.frappe.io/erpnext/sales-invoice",
+      "https://shopify.dev/docs/apps/build/inventory-management-apps/manage-quantities-states",
+      "https://shopify.dev/docs/apps/build/orders-fulfillment/returns-apps"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/ecommerce_operations.md"
+  },
+  {
+    "role_id": "03",
+    "role_name": "电商运营",
+    "runtime_role_id": "ecommerce_operations",
+    "scenario_id": "E06",
+    "title": "流量 转化与异常排查",
+    "origin": "baseline",
+    "goal": "分清流量变化、链路损失与原因线索",
+    "source_urls": [
+      "https://docs.frappe.io/erpnext/sales-invoice",
+      "https://shopify.dev/docs/apps/build/inventory-management-apps/manage-quantities-states",
+      "https://shopify.dev/docs/apps/build/orders-fulfillment/returns-apps"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/ecommerce_operations.md"
+  },
+  {
+    "role_id": "03",
+    "role_name": "电商运营",
+    "runtime_role_id": "ecommerce_operations",
+    "scenario_id": "E07",
+    "title": "商品资料与 SKU 对应关系",
+    "origin": "baseline",
+    "goal": "维持可追溯的SKU主数据",
+    "source_urls": [
+      "https://docs.frappe.io/erpnext/sales-invoice",
+      "https://shopify.dev/docs/apps/build/inventory-management-apps/manage-quantities-states",
+      "https://shopify.dev/docs/apps/build/orders-fulfillment/returns-apps"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/ecommerce_operations.md"
+  },
+  {
+    "role_id": "03",
+    "role_name": "电商运营",
+    "runtime_role_id": "ecommerce_operations",
+    "scenario_id": "E08",
+    "title": "客服信息与对外答复草稿",
+    "origin": "baseline",
+    "goal": "把客户问题转成有依据答复草稿",
+    "source_urls": [
+      "https://docs.frappe.io/erpnext/sales-invoice",
+      "https://shopify.dev/docs/apps/build/inventory-management-apps/manage-quantities-states",
+      "https://shopify.dev/docs/apps/build/orders-fulfillment/returns-apps"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/ecommerce_operations.md"
+  },
+  {
+    "role_id": "03",
+    "role_name": "电商运营",
+    "runtime_role_id": "ecommerce_operations",
+    "scenario_id": "E09",
+    "title": "周期复盘与经营测试",
+    "origin": "baseline",
+    "goal": "复盘真实动作与变化，提出可测假设",
+    "source_urls": [
+      "https://docs.frappe.io/erpnext/sales-invoice",
+      "https://shopify.dev/docs/apps/build/inventory-management-apps/manage-quantities-states",
+      "https://shopify.dev/docs/apps/build/orders-fulfillment/returns-apps"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/ecommerce_operations.md"
+  },
+  {
+    "role_id": "03",
+    "role_name": "电商运营",
+    "runtime_role_id": "ecommerce_operations",
+    "scenario_id": "E10",
+    "title": "交接 关闭与工作模式验收",
+    "origin": "baseline",
+    "goal": "跨岗事项有人接、有证据关闭",
+    "source_urls": [
+      "https://docs.frappe.io/erpnext/sales-invoice",
+      "https://shopify.dev/docs/apps/build/inventory-management-apps/manage-quantities-states",
+      "https://shopify.dev/docs/apps/build/orders-fulfillment/returns-apps"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/ecommerce_operations.md"
+  },
+  {
+    "role_id": "03",
+    "role_name": "电商运营",
+    "runtime_role_id": "ecommerce_operations",
+    "scenario_id": "E11",
+    "title": "新品上架联审与发布后核对",
+    "origin": "added",
+    "goal": "将商品主档变成可审的渠道上架包，检查商品、价格、库存、内容和售后条件一致，发布后再核实。",
+    "source_urls": [
+      "https://shopify.dev/docs/apps/build/inventory-management-apps/manage-quantities-states",
+      "https://shopify.dev/docs/apps/build/webhooks",
+      "https://ads.tiktok.com/resources/help/article/list-of-catalog-product-issues-and-suggested-actions"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/ecommerce_operations.md"
+  },
+  {
+    "role_id": "03",
+    "role_name": "电商运营",
+    "runtime_role_id": "ecommerce_operations",
+    "scenario_id": "E12",
+    "title": "大促联动排期与异常预案",
+    "origin": "added",
+    "goal": "在活动前明确商品、优惠、库存、内容、客服、履约和投放的依赖，活动中按事实触发预案而非各自改参数。",
+    "source_urls": [
+      "https://shopify.dev/docs/apps/build/inventory-management-apps/manage-quantities-states",
+      "https://docs.frappe.io/erpnext/quotation",
+      "https://developers.google.com/google-ads/api/docs/conversions/reporting"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/ecommerce_operations.md"
+  },
+  {
+    "role_id": "03",
+    "role_name": "电商运营",
+    "runtime_role_id": "ecommerce_operations",
+    "scenario_id": "E13",
+    "title": "组合装赠品与订单变更影响核对",
+    "origin": "added",
+    "goal": "把营销套餐映射到实际商品与履约，避免套装、赠品、换规格和拆退导致数量或金额失真。",
+    "source_urls": [
+      "https://shopify.dev/docs/apps/build/inventory-management-apps/manage-quantities-states",
+      "https://docs.frappe.io/erpnext/sales-invoice",
+      "https://shopify.dev/docs/apps/build/orders-fulfillment/returns-apps"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/ecommerce_operations.md"
+  },
+  {
+    "role_id": "03",
+    "role_name": "电商运营",
+    "runtime_role_id": "ecommerce_operations",
+    "scenario_id": "E14",
+    "title": "多仓拆单与履约异常协同",
+    "origin": "added",
+    "goal": "把客户订单和仓库实际履约拆开跟踪，发现未分配、部分出库、延迟与追踪不明而不伪造签收。",
+    "source_urls": [
+      "https://docs.frappe.io/erpnext/pick-list",
+      "https://docs.frappe.io/erpnext/delivery-note",
+      "https://shopify.dev/docs/apps/build/webhooks",
+      "https://shopify.dev/docs/apps/build/webhooks/verify-deliveries"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/ecommerce_operations.md"
+  },
+  {
+    "role_id": "03",
+    "role_name": "电商运营",
+    "runtime_role_id": "ecommerce_operations",
+    "scenario_id": "E15",
+    "title": "换货与逆向履约闭环",
+    "origin": "added",
+    "goal": "在退款以外单独处理退回、质检、换发、差价与库存去向，避免把换货误计新增销售或重复补库存。",
+    "source_urls": [
+      "https://shopify.dev/docs/api/admin-graphql/latest/objects/return",
+      "https://shopify.dev/docs/apps/build/orders-fulfillment/returns-apps",
+      "https://docs.frappe.io/erpnext/sales-return",
+      "https://shopify.dev/docs/apps/build/inventory-management-apps/manage-quantities-states"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/ecommerce_operations.md"
+  },
+  {
+    "role_id": "03",
+    "role_name": "电商运营",
+    "runtime_role_id": "ecommerce_operations",
+    "scenario_id": "E16",
+    "title": "复购会员分层与触达频控方案",
+    "origin": "added",
+    "goal": "根据已授权交易事实形成生命周期候选分组和触达计划，同时尊重退订、数据最小化及业务频控。",
+    "source_urls": [
+      "https://shopify.dev/docs/apps/launch/protected-customer-data",
+      "https://shopify.dev/docs/api/customer-privacy",
+      "https://docs.frappe.io/crm/deal"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/ecommerce_operations.md"
+  },
+  {
+    "role_id": "03",
+    "role_name": "电商运营",
+    "runtime_role_id": "ecommerce_operations",
+    "scenario_id": "E17",
+    "title": "商品详情页组件与内容实验准备",
+    "origin": "added",
+    "goal": "将商品证据转成可审的详情页模块，覆盖信息层级、图片需求、疑问解答和版本测试，而非只生成好看图片。",
+    "source_urls": [
+      "https://ads.tiktok.com/resources/help/article/list-of-catalog-product-issues-and-suggested-actions",
+      "https://kitsu.cg-wire.com/guides/review-publishing/review/",
+      "https://developers.google.com/youtube/data/reference/rest/v3/commentThreads/list"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/ecommerce_operations.md"
+  },
+  {
+    "role_id": "03",
+    "role_name": "电商运营",
+    "runtime_role_id": "ecommerce_operations",
+    "scenario_id": "E18",
+    "title": "消费者调研与需求假设证据管理",
+    "origin": "added",
+    "goal": "用真实已授权访谈/评论/售后资料整理需求，并让AI模拟仅服务于研究设计而非冒充真人结论。",
+    "source_urls": [
+      "https://developers.google.com/youtube/data/reference/rest/v3/commentThreads/list",
+      "https://shopify.dev/docs/apps/launch/protected-customer-data"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/ecommerce_operations.md"
+  },
+  {
+    "role_id": "03",
+    "role_name": "电商运营",
+    "runtime_role_id": "ecommerce_operations",
+    "scenario_id": "E19",
+    "title": "多渠道商品变更与下架影响清点",
+    "origin": "added",
+    "goal": "在商品资料失效、停销或改版时找齐各渠道引用和剩余义务，准备一致变更而非不加区分地全量覆盖。",
+    "source_urls": [
+      "https://shopify.dev/docs/apps/build/webhooks",
+      "https://shopify.dev/docs/apps/build/webhooks/verify-deliveries",
+      "https://shopify.dev/docs/apps/build/inventory-management-apps/manage-quantities-states",
+      "https://ads.tiktok.com/resources/help/article/how-to-troubleshoot-catalog-with-diagnostics-dashboard"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/ecommerce_operations.md"
+  },
+  {
+    "role_id": "04",
+    "role_name": "广告投放",
+    "runtime_role_id": "advertising_operations",
+    "scenario_id": "A01",
+    "title": "投放任务与成功标准",
+    "origin": "baseline",
+    "goal": "限定目标与观察标准",
+    "source_urls": [
+      "https://developers.google.com/google-ads/api/docs/conversions/reporting",
+      "https://developers.google.com/google-ads/api/docs/reporting/segmentation",
+      "https://open.oceanengine.com/labels/7/docs/1803016515293203"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/advertising_operations.md"
+  },
+  {
+    "role_id": "04",
+    "role_name": "广告投放",
+    "runtime_role_id": "advertising_operations",
+    "scenario_id": "A02",
+    "title": "账户 广告与素材版本关联",
+    "origin": "baseline",
+    "goal": "可靠关联账号广告素材版本",
+    "source_urls": [
+      "https://developers.google.com/google-ads/api/docs/conversions/reporting",
+      "https://developers.google.com/google-ads/api/docs/reporting/segmentation",
+      "https://open.oceanengine.com/labels/7/docs/1803016515293203"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/advertising_operations.md"
+  },
+  {
+    "role_id": "04",
+    "role_name": "广告投放",
+    "runtime_role_id": "advertising_operations",
+    "scenario_id": "A03",
+    "title": "报表口径 时间与迟到修订",
+    "origin": "baseline",
+    "goal": "保存真实报表口径与修订",
+    "source_urls": [
+      "https://developers.google.com/google-ads/api/docs/conversions/reporting",
+      "https://developers.google.com/google-ads/api/docs/reporting/segmentation",
+      "https://open.oceanengine.com/labels/7/docs/1803016515293203"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/advertising_operations.md"
+  },
+  {
+    "role_id": "04",
+    "role_name": "广告投放",
+    "runtime_role_id": "advertising_operations",
+    "scenario_id": "A04",
+    "title": "表现计算与比较群体",
+    "origin": "baseline",
+    "goal": "在可比群体上算可复核指标",
+    "source_urls": [
+      "https://developers.google.com/google-ads/api/docs/conversions/reporting",
+      "https://developers.google.com/google-ads/api/docs/reporting/segmentation",
+      "https://open.oceanengine.com/labels/7/docs/1803016515293203"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/advertising_operations.md"
+  },
+  {
+    "role_id": "04",
+    "role_name": "广告投放",
+    "runtime_role_id": "advertising_operations",
+    "scenario_id": "A05",
+    "title": "异常发现与证据分级",
+    "origin": "baseline",
+    "goal": "从数据问题开始排查异常",
+    "source_urls": [
+      "https://developers.google.com/google-ads/api/docs/conversions/reporting",
+      "https://developers.google.com/google-ads/api/docs/reporting/segmentation",
+      "https://open.oceanengine.com/labels/7/docs/1803016515293203"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/advertising_operations.md"
+  },
+  {
+    "role_id": "04",
+    "role_name": "广告投放",
+    "runtime_role_id": "advertising_operations",
+    "scenario_id": "A06",
+    "title": "素材表现与疲劳观察",
+    "origin": "baseline",
+    "goal": "将素材疲劳作为有条件观察",
+    "source_urls": [
+      "https://developers.google.com/google-ads/api/docs/conversions/reporting",
+      "https://developers.google.com/google-ads/api/docs/reporting/segmentation",
+      "https://open.oceanengine.com/labels/7/docs/1803016515293203"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/advertising_operations.md"
+  },
+  {
+    "role_id": "04",
+    "role_name": "广告投放",
+    "runtime_role_id": "advertising_operations",
+    "scenario_id": "A07",
+    "title": "花费节奏与预算建议",
+    "origin": "baseline",
+    "goal": "遵守总量约束的节奏建议",
+    "source_urls": [
+      "https://developers.google.com/google-ads/api/docs/conversions/reporting",
+      "https://developers.google.com/google-ads/api/docs/reporting/segmentation",
+      "https://open.oceanengine.com/labels/7/docs/1803016515293203"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/advertising_operations.md"
+  },
+  {
+    "role_id": "04",
+    "role_name": "广告投放",
+    "runtime_role_id": "advertising_operations",
+    "scenario_id": "A08",
+    "title": "创意测试与实验复盘",
+    "origin": "baseline",
+    "goal": "以事前方案解释创意测试",
+    "source_urls": [
+      "https://developers.google.com/google-ads/api/docs/conversions/reporting",
+      "https://developers.google.com/google-ads/api/docs/reporting/segmentation",
+      "https://open.oceanengine.com/labels/7/docs/1803016515293203"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/advertising_operations.md"
+  },
+  {
+    "role_id": "04",
+    "role_name": "广告投放",
+    "runtime_role_id": "advertising_operations",
+    "scenario_id": "A09",
+    "title": "动作准备 执行与结果核验",
+    "origin": "baseline",
+    "goal": "核实具体动作而非只记提交成功",
+    "source_urls": [
+      "https://developers.google.com/google-ads/api/docs/conversions/reporting",
+      "https://developers.google.com/google-ads/api/docs/reporting/segmentation",
+      "https://open.oceanengine.com/labels/7/docs/1803016515293203"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/advertising_operations.md"
+  },
+  {
+    "role_id": "04",
+    "role_name": "广告投放",
+    "runtime_role_id": "advertising_operations",
+    "scenario_id": "A10",
+    "title": "周报 经验沉淀与交接",
+    "origin": "baseline",
+    "goal": "保留当时证据的周报与经验交接",
+    "source_urls": [
+      "https://developers.google.com/google-ads/api/docs/conversions/reporting",
+      "https://developers.google.com/google-ads/api/docs/reporting/segmentation",
+      "https://open.oceanengine.com/labels/7/docs/1803016515293203"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/advertising_operations.md"
+  },
+  {
+    "role_id": "04",
+    "role_name": "广告投放",
+    "runtime_role_id": "advertising_operations",
+    "scenario_id": "A11",
+    "title": "直播场次 直播切片与承接变化",
+    "origin": "baseline",
+    "goal": "对齐直播内容与可得流量结果",
+    "source_urls": [
+      "https://developers.google.com/google-ads/api/docs/conversions/reporting",
+      "https://developers.google.com/google-ads/api/docs/reporting/segmentation",
+      "https://open.oceanengine.com/labels/7/docs/1803016515293203"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/advertising_operations.md"
+  },
+  {
+    "role_id": "04",
+    "role_name": "广告投放",
+    "runtime_role_id": "advertising_operations",
+    "scenario_id": "A12",
+    "title": "落地页与逐环节转化检查",
+    "origin": "baseline",
+    "goal": "检查广告到落地页逐环节一致性",
+    "source_urls": [
+      "https://developers.google.com/google-ads/api/docs/conversions/reporting",
+      "https://developers.google.com/google-ads/api/docs/reporting/segmentation",
+      "https://open.oceanengine.com/labels/7/docs/1803016515293203"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/advertising_operations.md"
+  },
+  {
+    "role_id": "04",
+    "role_name": "广告投放",
+    "runtime_role_id": "advertising_operations",
+    "scenario_id": "A13",
+    "title": "人群 版位与流量结构",
+    "origin": "baseline",
+    "goal": "分清目标设置与实际流量构成",
+    "source_urls": [
+      "https://developers.google.com/google-ads/api/docs/conversions/reporting",
+      "https://developers.google.com/google-ads/api/docs/reporting/segmentation",
+      "https://open.oceanengine.com/labels/7/docs/1803016515293203"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/advertising_operations.md"
+  },
+  {
+    "role_id": "04",
+    "role_name": "广告投放",
+    "runtime_role_id": "advertising_operations",
+    "scenario_id": "A14",
+    "title": "竞价 排期及账户运行条件",
+    "origin": "baseline",
+    "goal": "核运行配置而非猜平台算法",
+    "source_urls": [
+      "https://developers.google.com/google-ads/api/docs/conversions/reporting",
+      "https://developers.google.com/google-ads/api/docs/reporting/segmentation",
+      "https://open.oceanengine.com/labels/7/docs/1803016515293203"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/advertising_operations.md"
+  },
+  {
+    "role_id": "04",
+    "role_name": "广告投放",
+    "runtime_role_id": "advertising_operations",
+    "scenario_id": "A15",
+    "title": "有效线索 回传与销售跟进",
+    "origin": "baseline",
+    "goal": "分开线索质量、销售执行与成交",
+    "source_urls": [
+      "https://developers.google.com/google-ads/api/docs/conversions/reporting",
+      "https://developers.google.com/google-ads/api/docs/reporting/segmentation",
+      "https://open.oceanengine.com/labels/7/docs/1803016515293203"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/advertising_operations.md"
+  },
+  {
+    "role_id": "04",
+    "role_name": "广告投放",
+    "runtime_role_id": "advertising_operations",
+    "scenario_id": "A16",
+    "title": "退款 净回款与经营结果复盘",
+    "origin": "baseline",
+    "goal": "区分平台归因与经营结果",
+    "source_urls": [
+      "https://developers.google.com/google-ads/api/docs/conversions/reporting",
+      "https://developers.google.com/google-ads/api/docs/reporting/segmentation",
+      "https://open.oceanengine.com/labels/7/docs/1803016515293203"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/advertising_operations.md"
+  },
+  {
+    "role_id": "04",
+    "role_name": "广告投放",
+    "runtime_role_id": "advertising_operations",
+    "scenario_id": "A17",
+    "title": "转化事件去重与数据回传诊断",
+    "origin": "added",
+    "goal": "把埋点配置、源交易和平台收到事件对齐，识别重复/缺失/字段错误，先解决测量可信度。",
+    "source_urls": [
+      "https://ads.tiktok.com/help/article/event-deduplication?lang=en",
+      "https://shopify.dev/docs/apps/launch/protected-customer-data",
+      "https://shopify.dev/docs/api/customer-privacy"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/advertising_operations.md"
+  },
+  {
+    "role_id": "04",
+    "role_name": "广告投放",
+    "runtime_role_id": "advertising_operations",
+    "scenario_id": "A18",
+    "title": "商品目录Feed健康与广告可投核对",
+    "origin": "added",
+    "goal": "检查动态商品广告的商品数据、事件ID、页面与可售状态是否对应，不把Feed上传成功当可投。",
+    "source_urls": [
+      "https://ads.tiktok.com/resources/help/article/how-to-troubleshoot-catalog-with-diagnostics-dashboard",
+      "https://ads.tiktok.com/resources/help/article/list-of-catalog-product-issues-and-suggested-actions",
+      "https://shopify.dev/docs/apps/build/inventory-management-apps/manage-quantities-states"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/advertising_operations.md"
+  },
+  {
+    "role_id": "04",
+    "role_name": "广告投放",
+    "runtime_role_id": "advertising_operations",
+    "scenario_id": "A19",
+    "title": "创作者广告授权与到期接续",
+    "origin": "added",
+    "goal": "在使用达人原帖投广告前核平台授权、商务许可和排期，并为到期提供处理清单。",
+    "source_urls": [
+      "https://ads.tiktok.com/resources/help/article/spark-ads-creation-guide?lang=en",
+      "https://support.tiktok.com/en/business-and-creator/creator-and-business-accounts/promoting-a-brand-product-or-service?invalid_lang=ms",
+      "https://open.oceanengine.com/labels/7/docs/1803016515293203"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/advertising_operations.md"
+  },
+  {
+    "role_id": "04",
+    "role_name": "广告投放",
+    "runtime_role_id": "advertising_operations",
+    "scenario_id": "A20",
+    "title": "拒登与账户限制证据包",
+    "origin": "added",
+    "goal": "从实际平台原因准备修订或申诉材料，并跟踪正式状态，不能教规避审核。",
+    "source_urls": [
+      "https://ads.tiktok.com/help/article/one-click-appeal-for-other-ad-types?lang=en",
+      "https://ads.tiktok.com/help/article/how-to-submit-an-account-appeal-in-tiktok-ads-manager"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/advertising_operations.md"
+  },
+  {
+    "role_id": "04",
+    "role_name": "广告投放",
+    "runtime_role_id": "advertising_operations",
+    "scenario_id": "A21",
+    "title": "搜索词与否词候选治理",
+    "origin": "added",
+    "goal": "针对搜索广告区分用户查询、关键词与匹配方式，生成可解释的否词候选而不是仅按低转化自动拉黑。",
+    "source_urls": [
+      "https://developers.google.com/google-ads/api/fields/v26/search_term_view",
+      "https://developers.google.com/google-ads/api/docs/reporting/criteria-metrics"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/advertising_operations.md"
+  },
+  {
+    "role_id": "04",
+    "role_name": "广告投放",
+    "runtime_role_id": "advertising_operations",
+    "scenario_id": "A22",
+    "title": "无效流量线索与账单差异调查",
+    "origin": "added",
+    "goal": "把流量可疑线索、平台已过滤记录与实际计费调整分开，准备调查材料而非指控他人作弊。",
+    "source_urls": [
+      "https://support.google.com/google-ads/answer/11182074?hl=en",
+      "https://developers.google.com/google-ads/api/docs/conversions/reporting",
+      "https://docs.frappe.io/crm/deal"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/advertising_operations.md"
+  },
+  {
+    "role_id": "05",
+    "role_name": "财务对账",
+    "runtime_role_id": "finance_reconciliation",
+    "scenario_id": "FIN-01",
+    "title": "明确核对目标与任务截点",
+    "origin": "baseline",
+    "goal": "先定义核对关系与截点，避免把到账、应收核销和收入确认混成一个结果。",
+    "source_urls": [
+      "https://docs.frappe.io/erpnext/bank-reconciliation",
+      "https://docs.frappe.io/erpnext/payment-reconciliation"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/finance_reconciliation.md"
+  },
+  {
+    "role_id": "05",
+    "role_name": "财务对账",
+    "runtime_role_id": "finance_reconciliation",
+    "scenario_id": "FIN-02",
+    "title": "原始报表导入与完整性核对",
+    "origin": "baseline",
+    "goal": "证明输入完整、可重现且不会重复计数。",
+    "source_urls": [
+      "https://docs.frappe.io/erpnext/bank-reconciliation",
+      "https://docs.stripe.com/reports/balance"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/finance_reconciliation.md"
+  },
+  {
+    "role_id": "05",
+    "role_name": "财务对账",
+    "runtime_role_id": "finance_reconciliation",
+    "scenario_id": "FIN-03",
+    "title": "票据与扫描资料识别",
+    "origin": "baseline",
+    "goal": "将票据字段提取与真实性、可报销性判断分离。",
+    "source_urls": [
+      "https://docs.frappe.io/erpnext/bank-reconciliation",
+      "https://github.com/paperless-ngx/paperless-ngx/blob/a74256cd2aaad34eefc386e95bd1129b95ddd5a4/docs/usage.md"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/finance_reconciliation.md"
+  },
+  {
+    "role_id": "05",
+    "role_name": "财务对账",
+    "runtime_role_id": "finance_reconciliation",
+    "scenario_id": "FIN-04",
+    "title": "一对一匹配",
+    "origin": "baseline",
+    "goal": "在有限范围内产生可解释的一对一候选。",
+    "source_urls": [
+      "https://github.com/frappe/erpnext/blob/eb3f73e313e1a1e6d2291e29329ec3dd95672d4f/erpnext/accounts/doctype/bank_reconciliation_tool/bank_reconciliation_tool.py",
+      "https://github.com/frappe/erpnext/blob/eb3f73e313e1a1e6d2291e29329ec3dd95672d4f/erpnext/accounts/doctype/payment_reconciliation/payment_reconciliation.py"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/finance_reconciliation.md"
+  },
+  {
+    "role_id": "05",
+    "role_name": "财务对账",
+    "runtime_role_id": "finance_reconciliation",
+    "scenario_id": "FIN-05",
+    "title": "合并收付与部分分配",
+    "origin": "baseline",
+    "goal": "有依据地处理一对多、多对一和部分分配并守住余额。",
+    "source_urls": [
+      "https://docs.frappe.io/erpnext/payment-reconciliation",
+      "https://github.com/frappe/erpnext/blob/eb3f73e313e1a1e6d2291e29329ec3dd95672d4f/erpnext/accounts/doctype/payment_reconciliation/payment_reconciliation.py"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/finance_reconciliation.md"
+  },
+  {
+    "role_id": "05",
+    "role_name": "财务对账",
+    "runtime_role_id": "finance_reconciliation",
+    "scenario_id": "FIN-06",
+    "title": "手续费 舍入及金额差异",
+    "origin": "baseline",
+    "goal": "解释差额但不通过容差隐藏未知事实。",
+    "source_urls": [
+      "https://docs.stripe.com/reports/balance",
+      "https://docs.frappe.io/erpnext/payment-reconciliation"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/finance_reconciliation.md"
+  },
+  {
+    "role_id": "05",
+    "role_name": "财务对账",
+    "runtime_role_id": "finance_reconciliation",
+    "scenario_id": "FIN-07",
+    "title": "退款 冲正与重复业务",
+    "origin": "baseline",
+    "goal": "保留原交易与退款、冲正的独立事件链。",
+    "source_urls": [
+      "https://docs.stripe.com/reports/balance",
+      "https://docs.stripe.com/disputes/responding"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/finance_reconciliation.md"
+  },
+  {
+    "role_id": "05",
+    "role_name": "财务对账",
+    "runtime_role_id": "finance_reconciliation",
+    "scenario_id": "FIN-08",
+    "title": "币种 日期及制度口径",
+    "origin": "baseline",
+    "goal": "把币种、日期、汇率及制度适用范围做成可重现口径。",
+    "source_urls": [
+      "https://docs.frappe.io/erpnext/bank-reconciliation",
+      "https://docs.stripe.com/reports/balance"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/finance_reconciliation.md"
+  },
+  {
+    "role_id": "05",
+    "role_name": "财务对账",
+    "runtime_role_id": "finance_reconciliation",
+    "scenario_id": "FIN-09",
+    "title": "差异分流与专业复核",
+    "origin": "baseline",
+    "goal": "形成有负责人、有证据、有下一步的差异闭环。",
+    "source_urls": [
+      "https://docs.frappe.io/erpnext/bank-reconciliation",
+      "https://www.gao.gov/assets/890/882014.pdf"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/finance_reconciliation.md"
+  },
+  {
+    "role_id": "05",
+    "role_name": "财务对账",
+    "runtime_role_id": "finance_reconciliation",
+    "scenario_id": "FIN-10",
+    "title": "输出 交接与写回边界",
+    "origin": "baseline",
+    "goal": "交出可审核结果并严守报告与写回边界。",
+    "source_urls": [
+      "https://github.com/frappe/erpnext/blob/eb3f73e313e1a1e6d2291e29329ec3dd95672d4f/erpnext/accounts/doctype/bank_reconciliation_tool/bank_reconciliation_tool.py",
+      "https://github.com/frappe/erpnext/blob/eb3f73e313e1a1e6d2291e29329ec3dd95672d4f/erpnext/accounts/doctype/payment_reconciliation/payment_reconciliation.py"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/finance_reconciliation.md"
+  },
+  {
+    "role_id": "05",
+    "role_name": "财务对账",
+    "runtime_role_id": "finance_reconciliation",
+    "scenario_id": "FIN-11",
+    "title": "平台结算余额桥接与未达项核验",
+    "origin": "added",
+    "goal": "核清平台余额、打款批次和银行到账三者，补足仅对订单金额的盲点。",
+    "source_urls": [
+      "https://docs.stripe.com/reports/payout-reconciliation",
+      "https://docs.stripe.com/reports/balance"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/finance_reconciliation.md"
+  },
+  {
+    "role_id": "05",
+    "role_name": "财务对账",
+    "runtime_role_id": "finance_reconciliation",
+    "scenario_id": "FIN-12",
+    "title": "保留款 冻结款与拒付证据链",
+    "origin": "added",
+    "goal": "把不立即到账的余额与争议事件纳入追踪，不越权处置资金。",
+    "source_urls": [
+      "https://support.stripe.com/questions/view-reserve-status-and-details-in-dashboard",
+      "https://docs.stripe.com/disputes/responding"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/finance_reconciliation.md"
+  },
+  {
+    "role_id": "05",
+    "role_name": "财务对账",
+    "runtime_role_id": "finance_reconciliation",
+    "scenario_id": "FIN-13",
+    "title": "长账龄差异治理与结案证据检查",
+    "origin": "added",
+    "goal": "防止小额、老旧或跨团队差异永远挂账而无人接管。",
+    "source_urls": [
+      "https://www.gao.gov/assets/890/882014.pdf",
+      "https://docs.frappe.io/erpnext/bank-reconciliation"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/finance_reconciliation.md"
+  },
+  {
+    "role_id": "05",
+    "role_name": "财务对账",
+    "runtime_role_id": "finance_reconciliation",
+    "scenario_id": "FIN-14",
+    "title": "月末证据包与源数据改版影响回放",
+    "origin": "added",
+    "goal": "使复核包能被独立重现，并捕获审批后源数据变更。",
+    "source_urls": [
+      "https://www.gao.gov/assets/890/882014.pdf",
+      "https://github.com/frappe/erpnext/blob/eb3f73e313e1a1e6d2291e29329ec3dd95672d4f/erpnext/accounts/doctype/payment_reconciliation/payment_reconciliation.py"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/finance_reconciliation.md"
+  },
+  {
+    "role_id": "05",
+    "role_name": "财务对账",
+    "runtime_role_id": "finance_reconciliation",
+    "scenario_id": "FIN-15",
+    "title": "核销规则变更的影子对照与误配回滚",
+    "origin": "added",
+    "goal": "在不动账的条件下验证新规则，避免用历史结果自证正确。",
+    "source_urls": [
+      "https://www.gao.gov/assets/890/882014.pdf",
+      "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/finance_reconciliation.md"
+  },
+  {
+    "role_id": "06",
+    "role_name": "文员与行政",
+    "runtime_role_id": "administration",
+    "scenario_id": "ADM-01",
+    "title": "收件与文件完整性",
+    "origin": "baseline",
+    "goal": "确认实际收到了什么，再整理，不把正文提及当附件已到。",
+    "source_urls": [
+      "https://github.com/paperless-ngx/paperless-ngx/blob/a74256cd2aaad34eefc386e95bd1129b95ddd5a4/docs/usage.md"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/administration.md"
+  },
+  {
+    "role_id": "06",
+    "role_name": "文员与行政",
+    "runtime_role_id": "administration",
+    "scenario_id": "ADM-02",
+    "title": "文档类型与业务归属",
+    "origin": "baseline",
+    "goal": "分类有可观察依据，业务归属不靠名称猜测。",
+    "source_urls": [
+      "https://github.com/paperless-ngx/paperless-ngx/blob/a74256cd2aaad34eefc386e95bd1129b95ddd5a4/docs/usage.md",
+      "https://github.com/paperless-ngx/paperless-ngx/blob/a74256cd2aaad34eefc386e95bd1129b95ddd5a4/docs/advanced_usage.md"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/administration.md"
+  },
+  {
+    "role_id": "06",
+    "role_name": "文员与行政",
+    "runtime_role_id": "administration",
+    "scenario_id": "ADM-03",
+    "title": "提取字段与生成登记表",
+    "origin": "baseline",
+    "goal": "从现行样表提取必要字段，留下可查原文。",
+    "source_urls": [
+      "https://github.com/paperless-ngx/paperless-ngx/blob/a74256cd2aaad34eefc386e95bd1129b95ddd5a4/docs/usage.md",
+      "https://docassemble.org/docs/fields.html"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/administration.md"
+  },
+  {
+    "role_id": "06",
+    "role_name": "文员与行政",
+    "runtime_role_id": "administration",
+    "scenario_id": "ADM-04",
+    "title": "命名与归档路径",
+    "origin": "baseline",
+    "goal": "形成安全可逆的命名与归档计划，不绕过源应用管理。",
+    "source_urls": [
+      "https://github.com/paperless-ngx/paperless-ngx/blob/a74256cd2aaad34eefc386e95bd1129b95ddd5a4/docs/advanced_usage.md",
+      "https://github.com/paperless-ngx/paperless-ngx/blob/a74256cd2aaad34eefc386e95bd1129b95ddd5a4/docs/usage.md"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/administration.md"
+  },
+  {
+    "role_id": "06",
+    "role_name": "文员与行政",
+    "runtime_role_id": "administration",
+    "scenario_id": "ADM-05",
+    "title": "重复件 修订版与有效版本",
+    "origin": "baseline",
+    "goal": "把字节副本、修订稿、补充文件与有效版本分开。",
+    "source_urls": [
+      "https://github.com/paperless-ngx/paperless-ngx/blob/a74256cd2aaad34eefc386e95bd1129b95ddd5a4/docs/usage.md",
+      "https://commonpaper.com/standards/mutual-nda/1.0"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/administration.md"
+  },
+  {
+    "role_id": "06",
+    "role_name": "文员与行政",
+    "runtime_role_id": "administration",
+    "scenario_id": "ADM-06",
+    "title": "审批与负责人分派",
+    "origin": "baseline",
+    "goal": "依有效职责分工分派，不让AI发明批准权。",
+    "source_urls": [
+      "https://docs.frappe.io/hr/expense-claim",
+      "https://docs.frappe.io/hr/leave-application"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/administration.md"
+  },
+  {
+    "role_id": "06",
+    "role_name": "文员与行政",
+    "runtime_role_id": "administration",
+    "scenario_id": "ADM-07",
+    "title": "会议记录与行动项",
+    "origin": "baseline",
+    "goal": "把会议讨论、决定和行动项分开，避免伪造承诺。",
+    "source_urls": [
+      "https://github.com/paperless-ngx/paperless-ngx/blob/a74256cd2aaad34eefc386e95bd1129b95ddd5a4/docs/usage.md",
+      "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/administration.md"
+  },
+  {
+    "role_id": "06",
+    "role_name": "文员与行政",
+    "runtime_role_id": "administration",
+    "scenario_id": "ADM-08",
+    "title": "通知与受控分发",
+    "origin": "baseline",
+    "goal": "受控分发正确版本给正确接收人，防止批量错发。",
+    "source_urls": [
+      "https://github.com/paperless-ngx/paperless-ngx/blob/a74256cd2aaad34eefc386e95bd1129b95ddd5a4/docs/usage.md",
+      "https://www.nist.gov/privacy-framework/using-privacy-framework-11"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/administration.md"
+  },
+  {
+    "role_id": "06",
+    "role_name": "文员与行政",
+    "runtime_role_id": "administration",
+    "scenario_id": "ADM-09",
+    "title": "待办跟进与提醒",
+    "origin": "baseline",
+    "goal": "按已确认任务与时区适度跟进，完成后停止。",
+    "source_urls": [
+      "https://github.com/paperless-ngx/paperless-ngx/blob/a74256cd2aaad34eefc386e95bd1129b95ddd5a4/docs/usage.md"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/administration.md"
+  },
+  {
+    "role_id": "06",
+    "role_name": "文员与行政",
+    "runtime_role_id": "administration",
+    "scenario_id": "ADM-10",
+    "title": "归档 保存与处置",
+    "origin": "baseline",
+    "goal": "按已确认保留规则整理归档与待处置清单，避免无依据删除。",
+    "source_urls": [
+      "https://www.archives.gov/frc/arcis/freeze-faq",
+      "https://www.samr.gov.cn/wljys/gzzd/art/2023/art_3ef1e889c1e644d4b65b5f5c7f432386.html"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/administration.md"
+  },
+  {
+    "role_id": "06",
+    "role_name": "文员与行政",
+    "runtime_role_id": "administration",
+    "scenario_id": "ADM-11",
+    "title": "异常队列与岗位交接",
+    "origin": "baseline",
+    "goal": "让接手者能继续，不以自动化失败掩盖未完成工作。",
+    "source_urls": [
+      "https://github.com/paperless-ngx/paperless-ngx/blob/a74256cd2aaad34eefc386e95bd1129b95ddd5a4/docs/usage.md",
+      "https://www.gao.gov/assets/890/882014.pdf"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/administration.md"
+  },
+  {
+    "role_id": "06",
+    "role_name": "文员与行政",
+    "runtime_role_id": "administration",
+    "scenario_id": "ADM-12",
+    "title": "资产领用 归还与实物交接核验",
+    "origin": "added",
+    "goal": "把台账变更和真实实物交接分开，形成保管责任链。",
+    "source_urls": [
+      "https://docs.frappe.io/erpnext/asset-movement"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/administration.md"
+  },
+  {
+    "role_id": "06",
+    "role_name": "文员与行政",
+    "runtime_role_id": "administration",
+    "scenario_id": "ADM-13",
+    "title": "费用申请预审与财务交接",
+    "origin": "added",
+    "goal": "只核材料和已批准规则，将核准、记账、支付分开。",
+    "source_urls": [
+      "https://docs.frappe.io/hr/expense-claim"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/administration.md"
+  },
+  {
+    "role_id": "06",
+    "role_name": "文员与行政",
+    "runtime_role_id": "administration",
+    "scenario_id": "ADM-14",
+    "title": "合同条款 义务与期限登记",
+    "origin": "added",
+    "goal": "以合同原文建立履约提醒与审查清单，不输出合同有效性法律结论。",
+    "source_urls": [
+      "https://commonpaper.com/standards/mutual-nda/1.0",
+      "https://github.com/CommonPaper/Mutual-NDA",
+      "https://docassemble.org/docs/fields.html"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/administration.md"
+  },
+  {
+    "role_id": "06",
+    "role_name": "文员与行政",
+    "runtime_role_id": "administration",
+    "scenario_id": "ADM-15",
+    "title": "暂缓处置与跨副本保留核验",
+    "origin": "added",
+    "goal": "执行经有权人员确认的保留范围设计，防止原件保留而衍生副本被清除。",
+    "source_urls": [
+      "https://www.archives.gov/frc/arcis/freeze-faq",
+      "https://www.nist.gov/privacy-framework/using-privacy-framework-11"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/administration.md"
+  },
+  {
+    "role_id": "07",
+    "role_name": "客服与售后",
+    "runtime_role_id": "customer_service",
+    "scenario_id": "CS-01",
+    "title": "收到问题，识别诉求与关联记录",
+    "origin": "baseline",
+    "goal": "识别全部诉求并正确关联客户、订单和会话。",
+    "source_urls": [
+      "https://github.com/frappe/helpdesk/blob/develop/helpdesk/helpdesk/doctype/hd_ticket/hd_ticket.json",
+      "https://docs.frappe.io/helpdesk/ticket-status"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/customer_service.md"
+  },
+  {
+    "role_id": "07",
+    "role_name": "客服与售后",
+    "runtime_role_id": "customer_service",
+    "scenario_id": "CS-02",
+    "title": "查询政策，生成有依据的答复",
+    "origin": "baseline",
+    "goal": "基于适用政策给出有依据的答复草稿，不新增承诺。",
+    "source_urls": [
+      "https://github.com/frappe/helpdesk/blob/develop/helpdesk/helpdesk/doctype/hd_ticket/hd_ticket.json",
+      "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/customer_service.md"
+  },
+  {
+    "role_id": "07",
+    "role_name": "客服与售后",
+    "runtime_role_id": "customer_service",
+    "scenario_id": "CS-03",
+    "title": "物流与履约异常跟进",
+    "origin": "baseline",
+    "goal": "按包裹与履约节点核实异常，不把状态文字等同客户实际收到。",
+    "source_urls": [
+      "https://github.com/frappe/helpdesk/blob/develop/helpdesk/helpdesk/doctype/hd_ticket/hd_ticket.json",
+      "https://docs.frappe.io/helpdesk/ticket-status"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/customer_service.md"
+  },
+  {
+    "role_id": "07",
+    "role_name": "客服与售后",
+    "runtime_role_id": "customer_service",
+    "scenario_id": "CS-04",
+    "title": "售后资格与材料完整性核对",
+    "origin": "baseline",
+    "goal": "核对售后材料与既定条件，不将缺材料变成否定权利。",
+    "source_urls": [
+      "https://github.com/frappe/helpdesk/blob/develop/helpdesk/helpdesk/doctype/hd_ticket/hd_ticket.json",
+      "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/customer_service.md"
+  },
+  {
+    "role_id": "07",
+    "role_name": "客服与售后",
+    "runtime_role_id": "customer_service",
+    "scenario_id": "CS-05",
+    "title": "退款、换货与补发动作核实",
+    "origin": "baseline",
+    "goal": "对已批准售后动作核实参数与真实结果，避免重复执行。",
+    "source_urls": [
+      "https://docs.frappe.io/helpdesk/ticket-status",
+      "https://docs.stripe.com/disputes/responding"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/customer_service.md"
+  },
+  {
+    "role_id": "07",
+    "role_name": "客服与售后",
+    "runtime_role_id": "customer_service",
+    "scenario_id": "CS-06",
+    "title": "投诉与跨团队升级",
+    "origin": "baseline",
+    "goal": "让跨团队接手者看到原话、事实、争议与下一步，而不是情绪标签。",
+    "source_urls": [
+      "https://github.com/frappe/helpdesk/blob/develop/helpdesk/helpdesk/doctype/hd_ticket/hd_ticket.json",
+      "https://docs.frappe.io/helpdesk/ticket-status"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/customer_service.md"
+  },
+  {
+    "role_id": "07",
+    "role_name": "客服与售后",
+    "runtime_role_id": "customer_service",
+    "scenario_id": "CS-07",
+    "title": "服务时限与质量检查",
+    "origin": "baseline",
+    "goal": "用明确事件与工作日历检查服务时限，并逐维评价答复质量。",
+    "source_urls": [
+      "https://docs.frappe.io/helpdesk/service-level-agreement",
+      "https://github.com/frappe/helpdesk/blob/develop/helpdesk/helpdesk/doctype/hd_service_level_agreement/hd_service_level_agreement.py"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/customer_service.md"
+  },
+  {
+    "role_id": "07",
+    "role_name": "客服与售后",
+    "runtime_role_id": "customer_service",
+    "scenario_id": "CS-08",
+    "title": "复盘、规则修订与知识入库",
+    "origin": "baseline",
+    "goal": "从失败、重开和成功案例中形成可验证改进，不自我循环训练。",
+    "source_urls": [
+      "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+      "https://github.com/frappe/helpdesk/blob/develop/helpdesk/helpdesk/doctype/hd_ticket/hd_ticket.json"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/customer_service.md"
+  },
+  {
+    "role_id": "07",
+    "role_name": "客服与售后",
+    "runtime_role_id": "customer_service",
+    "scenario_id": "CS-09",
+    "title": "服务中断与批量受影响订单分流",
+    "origin": "added",
+    "goal": "将同一故障下的多工单关联，但仍逐订单保留个体处理结果。",
+    "source_urls": [
+      "https://github.com/frappe/helpdesk/blob/develop/helpdesk/helpdesk/doctype/hd_ticket/hd_ticket.json",
+      "https://docs.frappe.io/helpdesk/ticket-status"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/customer_service.md"
+  },
+  {
+    "role_id": "07",
+    "role_name": "客服与售后",
+    "runtime_role_id": "customer_service",
+    "scenario_id": "CS-10",
+    "title": "多语言答复与无障碍服务质检",
+    "origin": "added",
+    "goal": "保证语言转换不改变事实、条件或可获得服务的路径。",
+    "source_urls": [
+      "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+      "https://github.com/frappe/helpdesk/blob/develop/helpdesk/helpdesk/doctype/hd_ticket/hd_ticket.json"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/customer_service.md"
+  },
+  {
+    "role_id": "07",
+    "role_name": "客服与售后",
+    "runtime_role_id": "customer_service",
+    "scenario_id": "CS-11",
+    "title": "个人信息请求的身份核验与受控移交",
+    "origin": "added",
+    "goal": "受理查阅、更正或删除请求并移交授权隐私流程，不直接泄露或删除。",
+    "source_urls": [
+      "https://www.samr.gov.cn/wljys/gzzd/art/2023/art_3ef1e889c1e644d4b65b5f5c7f432386.html",
+      "https://www.nist.gov/privacy-framework/using-privacy-framework-11"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/customer_service.md"
+  },
+  {
+    "role_id": "07",
+    "role_name": "客服与售后",
+    "runtime_role_id": "customer_service",
+    "scenario_id": "CS-12",
+    "title": "支付争议材料准备与提交前核对",
+    "origin": "added",
+    "goal": "汇集真实交易和服务证据供有权人决定接受或抗辩。",
+    "source_urls": [
+      "https://docs.stripe.com/disputes/responding"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/customer_service.md"
+  },
+  {
+    "role_id": "08",
+    "role_name": "销售与客户管理",
+    "runtime_role_id": "sales_crm",
+    "scenario_id": "SAL-01",
+    "title": "线索接收与身份去重",
+    "origin": "baseline",
+    "goal": "接收线索但不误合身份",
+    "source_urls": [
+      "https://github.com/frappe/crm/blob/develop/crm/fcrm/doctype/crm_deal/crm_deal.json",
+      "https://docs.frappe.io/erpnext/quotation",
+      "https://docs.frappe.io/crm/lead"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/sales_crm.md"
+  },
+  {
+    "role_id": "08",
+    "role_name": "销售与客户管理",
+    "runtime_role_id": "sales_crm",
+    "scenario_id": "SAL-02",
+    "title": "会谈纪要与需求分解",
+    "origin": "baseline",
+    "goal": "从客户原话形成有证需求",
+    "source_urls": [
+      "https://github.com/frappe/crm/blob/develop/crm/fcrm/doctype/crm_deal/crm_deal.json",
+      "https://docs.frappe.io/erpnext/quotation",
+      "https://docs.frappe.io/crm/lead"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/sales_crm.md"
+  },
+  {
+    "role_id": "08",
+    "role_name": "销售与客户管理",
+    "runtime_role_id": "sales_crm",
+    "scenario_id": "SAL-03",
+    "title": "商机阶段与推进门槛",
+    "origin": "baseline",
+    "goal": "按阶段门槛提出推进建议",
+    "source_urls": [
+      "https://github.com/frappe/crm/blob/develop/crm/fcrm/doctype/crm_deal/crm_deal.json",
+      "https://docs.frappe.io/erpnext/quotation",
+      "https://docs.frappe.io/crm/lead"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/sales_crm.md"
+  },
+  {
+    "role_id": "08",
+    "role_name": "销售与客户管理",
+    "runtime_role_id": "sales_crm",
+    "scenario_id": "SAL-04",
+    "title": "产品适配与方案准备",
+    "origin": "baseline",
+    "goal": "匹配需求与可承诺产品能力",
+    "source_urls": [
+      "https://github.com/frappe/crm/blob/develop/crm/fcrm/doctype/crm_deal/crm_deal.json",
+      "https://docs.frappe.io/erpnext/quotation",
+      "https://docs.frappe.io/crm/lead"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/sales_crm.md"
+  },
+  {
+    "role_id": "08",
+    "role_name": "销售与客户管理",
+    "runtime_role_id": "sales_crm",
+    "scenario_id": "SAL-05",
+    "title": "报价与商业条件核对",
+    "origin": "baseline",
+    "goal": "形成可复算且条件完整的报价草稿",
+    "source_urls": [
+      "https://github.com/frappe/crm/blob/develop/crm/fcrm/doctype/crm_deal/crm_deal.json",
+      "https://docs.frappe.io/erpnext/quotation",
+      "https://docs.frappe.io/crm/lead"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/sales_crm.md"
+  },
+  {
+    "role_id": "08",
+    "role_name": "销售与客户管理",
+    "runtime_role_id": "sales_crm",
+    "scenario_id": "SAL-06",
+    "title": "下一步跟进与交接",
+    "origin": "baseline",
+    "goal": "明确下一步而非伪造客户承诺",
+    "source_urls": [
+      "https://github.com/frappe/crm/blob/develop/crm/fcrm/doctype/crm_deal/crm_deal.json",
+      "https://docs.frappe.io/erpnext/quotation",
+      "https://docs.frappe.io/crm/lead"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/sales_crm.md"
+  },
+  {
+    "role_id": "08",
+    "role_name": "销售与客户管理",
+    "runtime_role_id": "sales_crm",
+    "scenario_id": "SAL-07",
+    "title": "销售进度与结果核对",
+    "origin": "baseline",
+    "goal": "用一致群体核销售进度",
+    "source_urls": [
+      "https://github.com/frappe/crm/blob/develop/crm/fcrm/doctype/crm_deal/crm_deal.json",
+      "https://docs.frappe.io/erpnext/quotation",
+      "https://docs.frappe.io/crm/lead"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/sales_crm.md"
+  },
+  {
+    "role_id": "08",
+    "role_name": "销售与客户管理",
+    "runtime_role_id": "sales_crm",
+    "scenario_id": "SAL-08",
+    "title": "赢单失单复盘与经验发布",
+    "origin": "baseline",
+    "goal": "从赢失单和无反馈中提炼受限经验",
+    "source_urls": [
+      "https://github.com/frappe/crm/blob/develop/crm/fcrm/doctype/crm_deal/crm_deal.json",
+      "https://docs.frappe.io/erpnext/quotation",
+      "https://docs.frappe.io/crm/lead"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/sales_crm.md"
+  },
+  {
+    "role_id": "08",
+    "role_name": "销售与客户管理",
+    "runtime_role_id": "sales_crm",
+    "scenario_id": "SAL-09",
+    "title": "客户决策网络与采购程序梳理",
+    "origin": "added",
+    "goal": "把谁提出需求、谁评估、谁审批和客户采购程序的已知事实分开，避免把一个积极联系人当唯一决策者。",
+    "source_urls": [
+      "https://docs.frappe.io/crm/deal",
+      "https://github.com/frappe/crm/blob/develop/crm/fcrm/doctype/crm_deal/crm_deal.json"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/sales_crm.md"
+  },
+  {
+    "role_id": "08",
+    "role_name": "销售与客户管理",
+    "runtime_role_id": "sales_crm",
+    "scenario_id": "SAL-10",
+    "title": "多轮商务谈判与让步台账",
+    "origin": "added",
+    "goal": "在报价核对之外跟踪各轮条件交换、红线、备选方案和未决承诺，帮助有权者谈判而不代其承诺。",
+    "source_urls": [
+      "https://docs.frappe.io/erpnext/quotation",
+      "https://docs.frappe.io/crm/deal"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/sales_crm.md"
+  },
+  {
+    "role_id": "08",
+    "role_name": "销售与客户管理",
+    "runtime_role_id": "sales_crm",
+    "scenario_id": "SAL-11",
+    "title": "RFP招标响应与偏离清单",
+    "origin": "added",
+    "goal": "按客户正式采购文件逐条准备有证回应，暴露不满足项和需专业签署内容，不把文本生成当投标完成。",
+    "source_urls": [
+      "https://docs.frappe.io/erpnext/quotation",
+      "https://docs.frappe.io/crm/deal",
+      "https://docs.frappe.io/framework/user/en/api/rest"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/sales_crm.md"
+  },
+  {
+    "role_id": "08",
+    "role_name": "销售与客户管理",
+    "runtime_role_id": "sales_crm",
+    "scenario_id": "SAL-12",
+    "title": "试用与PoC验证及销售交接",
+    "origin": "added",
+    "goal": "把试用从体验不错变成双方认可的目标、证据和停止条件，并明确售前到交付的责任边界。",
+    "source_urls": [
+      "https://docs.frappe.io/crm/deal",
+      "https://docs.frappe.io/erpnext/quotation",
+      "https://kitsu.cg-wire.com/guides/review-publishing/review/"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/sales_crm.md"
+  },
+  {
+    "role_id": "08",
+    "role_name": "销售与客户管理",
+    "runtime_role_id": "sales_crm",
+    "scenario_id": "SAL-13",
+    "title": "续约扩容与客户健康证据整理",
+    "origin": "added",
+    "goal": "在到期前核服务范围、真实使用/问题和采购时间，准备续约/扩容谈话，不把健康评分当必然流失。",
+    "source_urls": [
+      "https://github.com/frappe/crm/blob/develop/crm/fcrm/doctype/crm_deal/crm_deal.json",
+      "https://docs.frappe.io/erpnext/quotation"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/sales_crm.md"
+  },
+  {
+    "role_id": "08",
+    "role_name": "销售与客户管理",
+    "runtime_role_id": "sales_crm",
+    "scenario_id": "SAL-14",
+    "title": "渠道伙伴报备与归属争议准备",
+    "origin": "added",
+    "goal": "区分直销、转介绍、经销和合作伙伴机会，准备报备与冲突证据，而非凭先联系就自动分佣。",
+    "source_urls": [
+      "https://docs.frappe.io/crm/deal",
+      "https://docs.frappe.io/erpnext/quotation"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/sales_crm.md"
+  },
+  {
+    "role_id": "08",
+    "role_name": "销售与客户管理",
+    "runtime_role_id": "sales_crm",
+    "scenario_id": "SAL-15",
+    "title": "达人候选评估与合作方式匹配",
+    "origin": "added",
+    "goal": "将达人商务作为销售/合作关系的一种垂类，用可核公开或授权事实匹配合作，不凭粉丝数保证销量。",
+    "source_urls": [
+      "https://ads.tiktok.com/resources/help/article/spark-ads-creation-guide?lang=en",
+      "https://support.tiktok.com/en/business-and-creator/creator-and-business-accounts/promoting-a-brand-product-or-service?invalid_lang=ms",
+      "https://docs.frappe.io/crm/deal"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/sales_crm.md"
+  },
+  {
+    "role_id": "08",
+    "role_name": "销售与客户管理",
+    "runtime_role_id": "sales_crm",
+    "scenario_id": "SAL-16",
+    "title": "达人档期寄样与内容交付验收",
+    "origin": "added",
+    "goal": "从谈妥合作到交片/发布逐项核义务、版本、档期和回执，不能用已寄样代替履约完成。",
+    "source_urls": [
+      "https://kitsu.cg-wire.com/guides/review-publishing/review/",
+      "https://kitsu.cg-wire.com/guides/review-publishing/publish/",
+      "https://docs.frappe.io/erpnext/delivery-note",
+      "https://ads.tiktok.com/resources/help/article/spark-ads-creation-guide?lang=en"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/sales_crm.md"
+  },
+  {
+    "role_id": "08",
+    "role_name": "销售与客户管理",
+    "runtime_role_id": "sales_crm",
+    "scenario_id": "SAL-17",
+    "title": "达人使用权与佣金结算交接",
+    "origin": "added",
+    "goal": "在内容履约之后分开核素材使用权、投放许可、计佣订单和财务付款，形成可审结算证据。",
+    "source_urls": [
+      "https://ads.tiktok.com/resources/help/article/spark-ads-creation-guide?lang=en",
+      "https://docs.frappe.io/erpnext/quotation",
+      "https://shopify.dev/docs/apps/build/orders-fulfillment/returns-apps",
+      "https://docs.frappe.io/crm/deal"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/sales_crm.md"
+  },
+  {
+    "role_id": "09",
+    "role_name": "人事事务",
+    "runtime_role_id": "human_resources",
+    "scenario_id": "HR-01",
+    "title": "岗位要求与招聘材料组织",
+    "origin": "baseline",
+    "goal": "整理岗位要求与材料证据，不评分淘汰或决定适岗。",
+    "source_urls": [
+      "https://github.com/frappe/hrms/blob/develop/hrms/hr/doctype/job_applicant/job_applicant.json",
+      "https://www.ada.gov/resources/ai-guidance/"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/human_resources.md"
+  },
+  {
+    "role_id": "09",
+    "role_name": "人事事务",
+    "runtime_role_id": "human_resources",
+    "scenario_id": "HR-02",
+    "title": "重复申请与材料版本管理",
+    "origin": "baseline",
+    "goal": "保持人员、岗位申请和文件版本三个独立身份。",
+    "source_urls": [
+      "https://github.com/frappe/hrms/blob/develop/hrms/hr/doctype/job_applicant/job_applicant.json",
+      "https://www.nist.gov/privacy-framework/using-privacy-framework-11"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/human_resources.md"
+  },
+  {
+    "role_id": "09",
+    "role_name": "人事事务",
+    "runtime_role_id": "human_resources",
+    "scenario_id": "HR-03",
+    "title": "面试安排与事实纪要",
+    "origin": "baseline",
+    "goal": "安排已批准面试并保留事实纪要，不替人做评价决定。",
+    "source_urls": [
+      "https://github.com/frappe/hrms/blob/develop/hrms/hr/doctype/job_applicant/job_applicant.json",
+      "https://www.ada.gov/resources/ai-guidance/"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/human_resources.md"
+  },
+  {
+    "role_id": "09",
+    "role_name": "人事事务",
+    "runtime_role_id": "human_resources",
+    "scenario_id": "HR-04",
+    "title": "入职清单与跨部门交接",
+    "origin": "baseline",
+    "goal": "将批准录用转成可核查入职清单，与权限开通分开。",
+    "source_urls": [
+      "https://docs.frappe.io/hr/employee-onboarding",
+      "https://github.com/frappe/hrms/blob/develop/hrms/hr/doctype/employee_onboarding/employee_onboarding.json"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/human_resources.md"
+  },
+  {
+    "role_id": "09",
+    "role_name": "人事事务",
+    "runtime_role_id": "human_resources",
+    "scenario_id": "HR-05",
+    "title": "考勤、假期与申请记录核对",
+    "origin": "baseline",
+    "goal": "用规则核对记录差异，不自动认定旷工、加班或扣薪。",
+    "source_urls": [
+      "https://docs.frappe.io/hr/leave-application"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/human_resources.md"
+  },
+  {
+    "role_id": "09",
+    "role_name": "人事事务",
+    "runtime_role_id": "human_resources",
+    "scenario_id": "HR-06",
+    "title": "员工制度问答与申请准备",
+    "origin": "baseline",
+    "goal": "回答适用制度与材料准备问题，不代替批准或法律解释。",
+    "source_urls": [
+      "https://docs.frappe.io/hr/leave-application",
+      "https://www.samr.gov.cn/wljys/gzzd/art/2023/art_3ef1e889c1e644d4b65b5f5c7f432386.html"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/human_resources.md"
+  },
+  {
+    "role_id": "09",
+    "role_name": "人事事务",
+    "runtime_role_id": "human_resources",
+    "scenario_id": "HR-07",
+    "title": "培训安排、完成证据与改进",
+    "origin": "baseline",
+    "goal": "追踪培训要求的完成证据，不把签到或考试成绩等同胜任力。",
+    "source_urls": [
+      "https://github.com/frappe/hrms/blob/develop/hrms/hr/doctype/employee_onboarding/employee_onboarding.json",
+      "https://www.ada.gov/resources/ai-guidance/"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/human_resources.md"
+  },
+  {
+    "role_id": "09",
+    "role_name": "人事事务",
+    "runtime_role_id": "human_resources",
+    "scenario_id": "HR-08",
+    "title": "离职或内部调动交接",
+    "origin": "baseline",
+    "goal": "按已批准人事事项组织交接，不决定终止关系或擅自销毁资料。",
+    "source_urls": [
+      "https://docs.frappe.io/hr/employee-onboarding",
+      "https://docs.frappe.io/erpnext/asset-movement",
+      "https://www.archives.gov/frc/arcis/freeze-faq"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/human_resources.md"
+  },
+  {
+    "role_id": "09",
+    "role_name": "人事事务",
+    "runtime_role_id": "human_resources",
+    "scenario_id": "HR-09",
+    "title": "员工档案更正与数据访问核验",
+    "origin": "added",
+    "goal": "处理员工资料纠正和受限查阅，让事实更正不扩展为人事决定。",
+    "source_urls": [
+      "https://www.samr.gov.cn/wljys/gzzd/art/2023/art_3ef1e889c1e644d4b65b5f5c7f432386.html",
+      "https://www.nist.gov/privacy-framework/using-privacy-framework-11"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/human_resources.md"
+  },
+  {
+    "role_id": "09",
+    "role_name": "人事事务",
+    "runtime_role_id": "human_resources",
+    "scenario_id": "HR-10",
+    "title": "用人需求与编制申请材料核对",
+    "origin": "added",
+    "goal": "组织已有人力需求的理由与预算材料，不决定雇佣谁或自动裁员。",
+    "source_urls": [
+      "https://docs.frappe.io/hr/job-requisition"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/human_resources.md"
+  },
+  {
+    "role_id": "09",
+    "role_name": "人事事务",
+    "runtime_role_id": "human_resources",
+    "scenario_id": "HR-11",
+    "title": "人事文件送达 版本确认与期限提醒",
+    "origin": "added",
+    "goal": "核验合同或制度文件的版本和接收证据，不把阅读回执当法律同意。",
+    "source_urls": [
+      "https://commonpaper.com/standards/mutual-nda/1.0",
+      "https://www.samr.gov.cn/wljys/gzzd/art/2023/art_3ef1e889c1e644d4b65b5f5c7f432386.html"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/human_resources.md"
+  },
+  {
+    "role_id": "09",
+    "role_name": "人事事务",
+    "runtime_role_id": "human_resources",
+    "scenario_id": "HR-12",
+    "title": "受限人事个案的材料整理与转介",
+    "origin": "added",
+    "goal": "对申诉、工作支持等敏感个案做受限流程管理，不裁定事实或权益。",
+    "source_urls": [
+      "https://www.nist.gov/privacy-framework/using-privacy-framework-11",
+      "https://www.ada.gov/resources/ai-guidance/",
+      "https://www.samr.gov.cn/wljys/gzzd/art/2023/art_3ef1e889c1e644d4b65b5f5c7f432386.html"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/human_resources.md"
+  },
+  {
+    "role_id": "09",
+    "role_name": "人事事务",
+    "runtime_role_id": "human_resources",
+    "scenario_id": "HR-13",
+    "title": "薪酬输入变更与交付核对",
+    "origin": "added",
+    "goal": "核验交给薪酬岗位的已批准输入，不计算默认税率或自动发薪。",
+    "source_urls": [
+      "https://docs.frappe.io/hr/leave-application",
+      "https://www.gao.gov/assets/890/882014.pdf"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/human_resources.md"
+  },
+  {
+    "role_id": "10",
+    "role_name": "采购与供应商",
+    "runtime_role_id": "procurement",
+    "scenario_id": "PUR-01",
+    "title": "需求澄清与规格版本",
+    "origin": "baseline",
+    "goal": "形成可验收的需求规格与版本，而非直接生成采购承诺",
+    "source_urls": [
+      "https://github.com/frappe/erpnext/blob/03afa43c7cfea9fc9b67488e3d9e309e194cd003/erpnext/buying/doctype/request_for_quotation/request_for_quotation.json",
+      "https://docs.frappe.io/erpnext/purchase-order"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/procurement.md"
+  },
+  {
+    "role_id": "10",
+    "role_name": "采购与供应商",
+    "runtime_role_id": "procurement",
+    "scenario_id": "PUR-02",
+    "title": "供应商材料与适用资格",
+    "origin": "baseline",
+    "goal": "以品类和主体为单位核对资格证据，区分收到材料与实际适用",
+    "source_urls": [
+      "https://github.com/frappe/erpnext/blob/03afa43c7cfea9fc9b67488e3d9e309e194cd003/erpnext/buying/doctype/request_for_quotation/request_for_quotation.json",
+      "https://docs.frappe.io/erpnext/purchase-order"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/procurement.md"
+  },
+  {
+    "role_id": "10",
+    "role_name": "采购与供应商",
+    "runtime_role_id": "procurement",
+    "scenario_id": "PUR-03",
+    "title": "询价包与对外发送",
+    "origin": "baseline",
+    "goal": "产生各供应商同版本且不泄密的询价包",
+    "source_urls": [
+      "https://github.com/frappe/erpnext/blob/03afa43c7cfea9fc9b67488e3d9e309e194cd003/erpnext/buying/doctype/request_for_quotation/request_for_quotation.json",
+      "https://docs.frappe.io/framework/user/en/api/rest"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/procurement.md"
+  },
+  {
+    "role_id": "10",
+    "role_name": "采购与供应商",
+    "runtime_role_id": "procurement",
+    "scenario_id": "PUR-04",
+    "title": "报价标准化与可比性",
+    "origin": "baseline",
+    "goal": "把真正可比报价放到统一口径，显式保留未知成本",
+    "source_urls": [
+      "https://github.com/frappe/erpnext/blob/03afa43c7cfea9fc9b67488e3d9e309e194cd003/erpnext/buying/report/supplier_quotation_comparison/supplier_quotation_comparison.py",
+      "https://docs.frappe.io/erpnext/purchase-invoice"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/procurement.md"
+  },
+  {
+    "role_id": "10",
+    "role_name": "采购与供应商",
+    "runtime_role_id": "procurement",
+    "scenario_id": "PUR-05",
+    "title": "评审材料与选商决定",
+    "origin": "baseline",
+    "goal": "为有权者呈现取舍与反证，不自动定标",
+    "source_urls": [
+      "https://github.com/frappe/erpnext/blob/03afa43c7cfea9fc9b67488e3d9e309e194cd003/erpnext/buying/report/supplier_quotation_comparison/supplier_quotation_comparison.py",
+      "https://docs.frappe.io/erpnext/purchase-order"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/procurement.md"
+  },
+  {
+    "role_id": "10",
+    "role_name": "采购与供应商",
+    "runtime_role_id": "procurement",
+    "scenario_id": "PUR-06",
+    "title": "订单草稿、审批与变更",
+    "origin": "baseline",
+    "goal": "把已批准选商转成与授权一致的订单并管理变更",
+    "source_urls": [
+      "https://docs.frappe.io/erpnext/purchase-order",
+      "https://docs.frappe.io/framework/user/en/api/rest"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/procurement.md"
+  },
+  {
+    "role_id": "10",
+    "role_name": "采购与供应商",
+    "runtime_role_id": "procurement",
+    "scenario_id": "PUR-07",
+    "title": "收货、验收与单据差异",
+    "origin": "baseline",
+    "goal": "逐行对齐采购、实收或服务验收和账单差异",
+    "source_urls": [
+      "https://github.com/frappe/erpnext/blob/03afa43c7cfea9fc9b67488e3d9e309e194cd003/erpnext/stock/doctype/purchase_receipt/purchase_receipt.py",
+      "https://docs.frappe.io/erpnext/purchase-invoice",
+      "https://github.com/frappe/erpnext/blob/03afa43c7cfea9fc9b67488e3d9e309e194cd003/erpnext/stock/doctype/quality_inspection/quality_inspection.py"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/procurement.md"
+  },
+  {
+    "role_id": "10",
+    "role_name": "采购与供应商",
+    "runtime_role_id": "procurement",
+    "scenario_id": "PUR-08",
+    "title": "供应商表现与经验更新",
+    "origin": "baseline",
+    "goal": "用可比交付事实复盘供应表现并产生限定经验",
+    "source_urls": [
+      "https://docs.frappe.io/erpnext/purchase-order",
+      "https://github.com/frappe/erpnext/blob/03afa43c7cfea9fc9b67488e3d9e309e194cd003/erpnext/stock/doctype/purchase_receipt/purchase_receipt.py",
+      "https://github.com/frappe/erpnext/blob/03afa43c7cfea9fc9b67488e3d9e309e194cd003/erpnext/stock/doctype/quality_inspection/quality_inspection.py"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/procurement.md"
+  },
+  {
+    "role_id": "10",
+    "role_name": "采购与供应商",
+    "runtime_role_id": "procurement",
+    "scenario_id": "PUR-09",
+    "title": "框架协议额度与分次调用核对",
+    "origin": "added",
+    "goal": "管控一个框架协议被多个分次订单消耗的期间、数量、币种和额度，不把框架批准当每笔采购授权。",
+    "source_urls": [
+      "https://github.com/frappe/erpnext/blob/03afa43c7cfea9fc9b67488e3d9e309e194cd003/erpnext/manufacturing/doctype/blanket_order/blanket_order.py",
+      "https://docs.frappe.io/erpnext/purchase-order",
+      "https://docs.frappe.io/framework/user/en/api/rest"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/procurement.md"
+  },
+  {
+    "role_id": "10",
+    "role_name": "采购与供应商",
+    "runtime_role_id": "procurement",
+    "scenario_id": "PUR-10",
+    "title": "供应中断与替代采购影响协调",
+    "origin": "added",
+    "goal": "在供应方无法履约时评估下游影响和替代方案，同时保留原合同、预付款和取消责任的未闭环事项。",
+    "source_urls": [
+      "https://docs.frappe.io/erpnext/purchase-order",
+      "https://github.com/frappe/erpnext/blob/03afa43c7cfea9fc9b67488e3d9e309e194cd003/erpnext/stock/doctype/purchase_receipt/purchase_receipt.py",
+      "https://github.com/frappe/erpnext/blob/03afa43c7cfea9fc9b67488e3d9e309e194cd003/erpnext/stock/doctype/quality_inspection/quality_inspection.py"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/procurement.md"
+  },
+  {
+    "role_id": "11",
+    "role_name": "仓储与物流",
+    "runtime_role_id": "warehouse_logistics",
+    "scenario_id": "WH-01",
+    "title": "到货计划与实收核对",
+    "origin": "baseline",
+    "goal": "识别真实到货余量而不把累计快照重复相加",
+    "source_urls": [
+      "https://github.com/frappe/erpnext/blob/03afa43c7cfea9fc9b67488e3d9e309e194cd003/erpnext/stock/doctype/purchase_receipt/purchase_receipt.py",
+      "https://github.com/frappe/erpnext/blob/03afa43c7cfea9fc9b67488e3d9e309e194cd003/erpnext/stock/doctype/stock_entry/services/material_transfer.py"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/warehouse_logistics.md"
+  },
+  {
+    "role_id": "11",
+    "role_name": "仓储与物流",
+    "runtime_role_id": "warehouse_logistics",
+    "scenario_id": "WH-02",
+    "title": "验收、隔离与可用库存",
+    "origin": "baseline",
+    "goal": "把实收、待检、隔离与可用库存分开",
+    "source_urls": [
+      "https://github.com/frappe/erpnext/blob/03afa43c7cfea9fc9b67488e3d9e309e194cd003/erpnext/stock/doctype/quality_inspection/quality_inspection.py",
+      "https://github.com/frappe/erpnext/blob/03afa43c7cfea9fc9b67488e3d9e309e194cd003/erpnext/stock/doctype/purchase_receipt/purchase_receipt.py"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/warehouse_logistics.md"
+  },
+  {
+    "role_id": "11",
+    "role_name": "仓储与物流",
+    "runtime_role_id": "warehouse_logistics",
+    "scenario_id": "WH-03",
+    "title": "上架与库位安排",
+    "origin": "baseline",
+    "goal": "提供合规库位候选并验证实际上架",
+    "source_urls": [
+      "https://docs.frappe.io/erpnext/stock-entry",
+      "https://docs.frappe.io/framework/user/en/api/rest"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/warehouse_logistics.md"
+  },
+  {
+    "role_id": "11",
+    "role_name": "仓储与物流",
+    "runtime_role_id": "warehouse_logistics",
+    "scenario_id": "WH-04",
+    "title": "订单分配、拣货与复核",
+    "origin": "baseline",
+    "goal": "防止重复分配并形成可核验拣货结果",
+    "source_urls": [
+      "https://docs.frappe.io/erpnext/stock-reservation",
+      "https://github.com/frappe/erpnext/blob/03afa43c7cfea9fc9b67488e3d9e309e194cd003/erpnext/stock/doctype/stock_reservation_entry/stock_reservation_entry.py",
+      "https://docs.frappe.io/erpnext/pick-list"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/warehouse_logistics.md"
+  },
+  {
+    "role_id": "11",
+    "role_name": "仓储与物流",
+    "runtime_role_id": "warehouse_logistics",
+    "scenario_id": "WH-05",
+    "title": "面单、发运与物流跟踪",
+    "origin": "baseline",
+    "goal": "准确表达包裹物流状态与异常，区分面单和交运",
+    "source_urls": [
+      "https://docs.frappe.io/erpnext/delivery-note",
+      "https://docs.frappe.io/framework/user/en/api/rest"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/warehouse_logistics.md"
+  },
+  {
+    "role_id": "11",
+    "role_name": "仓储与物流",
+    "runtime_role_id": "warehouse_logistics",
+    "scenario_id": "WH-06",
+    "title": "仓间调拨与在途核对",
+    "origin": "baseline",
+    "goal": "核对源仓、在途和目标仓数量守恒",
+    "source_urls": [
+      "https://github.com/frappe/erpnext/blob/03afa43c7cfea9fc9b67488e3d9e309e194cd003/erpnext/stock/doctype/stock_entry/services/material_transfer.py",
+      "https://docs.frappe.io/erpnext/stock-entry"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/warehouse_logistics.md"
+  },
+  {
+    "role_id": "11",
+    "role_name": "仓储与物流",
+    "runtime_role_id": "warehouse_logistics",
+    "scenario_id": "WH-07",
+    "title": "盘点差异与库存调整",
+    "origin": "baseline",
+    "goal": "同一时点比对账实并形成可审调整证据",
+    "source_urls": [
+      "https://docs.frappe.io/erpnext/stock-entry",
+      "https://docs.frappe.io/erpnext/immutable-ledger-in-erpnext"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/warehouse_logistics.md"
+  },
+  {
+    "role_id": "11",
+    "role_name": "仓储与物流",
+    "runtime_role_id": "warehouse_logistics",
+    "scenario_id": "WH-08",
+    "title": "退货、拒收与重新入库",
+    "origin": "baseline",
+    "goal": "让真实退回、检验与再次可用数量闭环",
+    "source_urls": [
+      "https://docs.frappe.io/erpnext/sales-return",
+      "https://github.com/frappe/erpnext/blob/03afa43c7cfea9fc9b67488e3d9e309e194cd003/erpnext/stock/doctype/quality_inspection/quality_inspection.py"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/warehouse_logistics.md"
+  },
+  {
+    "role_id": "11",
+    "role_name": "仓储与物流",
+    "runtime_role_id": "warehouse_logistics",
+    "scenario_id": "WH-09",
+    "title": "库龄、缺货与补货建议",
+    "origin": "baseline",
+    "goal": "用确认口径提出库存和补货建议，不自动采购",
+    "source_urls": [
+      "https://docs.frappe.io/erpnext/stock-entry",
+      "https://docs.frappe.io/erpnext/purchase-order"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/warehouse_logistics.md"
+  },
+  {
+    "role_id": "11",
+    "role_name": "仓储与物流",
+    "runtime_role_id": "warehouse_logistics",
+    "scenario_id": "WH-10",
+    "title": "批次风险定位与召回证据准备",
+    "origin": "added",
+    "goal": "从指定风险批次追溯现存、在途、已发与退回去向，量化链路缺口，为专业召回决定准备证据。",
+    "source_urls": [
+      "https://docs.frappe.io/erpnext/batch",
+      "https://docs.frappe.io/erpnext/stock-entry",
+      "https://github.com/frappe/erpnext/blob/03afa43c7cfea9fc9b67488e3d9e309e194cd003/erpnext/stock/doctype/stock_entry/services/material_transfer.py",
+      "https://docs.frappe.io/erpnext/sales-return"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/warehouse_logistics.md"
+  },
+  {
+    "role_id": "11",
+    "role_name": "仓储与物流",
+    "runtime_role_id": "warehouse_logistics",
+    "scenario_id": "WH-11",
+    "title": "运输损坏与丢失索赔材料闭环",
+    "origin": "added",
+    "goal": "区别物流异常调查与正式索赔，把包裹、交接、损坏、价值和时效证据交给授权负责人。",
+    "source_urls": [
+      "https://docs.frappe.io/erpnext/delivery-note",
+      "https://docs.frappe.io/erpnext/stock-entry"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/warehouse_logistics.md"
+  },
+  {
+    "role_id": "12",
+    "role_name": "项目交付与协调",
+    "runtime_role_id": "project_delivery",
+    "scenario_id": "PM-01",
+    "title": "需求澄清与交付边界",
+    "origin": "baseline",
+    "goal": "分清承诺、建议和未定范围，建立可追溯交付边界",
+    "source_urls": [
+      "https://www.openproject.org/docs/system-admin-guide/manage-work-packages/work-package-types/workflows/",
+      "https://github.com/frappe/erpnext/blob/03afa43c7cfea9fc9b67488e3d9e309e194cd003/erpnext/projects/doctype/task/task.py"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/project_delivery.md"
+  },
+  {
+    "role_id": "12",
+    "role_name": "项目交付与协调",
+    "runtime_role_id": "project_delivery",
+    "scenario_id": "PM-02",
+    "title": "任务拆分、负责人和完成定义",
+    "origin": "baseline",
+    "goal": "建立可独立验收的工作包与已确认责任",
+    "source_urls": [
+      "https://www.openproject.org/docs/api/endpoints/work-packages/",
+      "https://www.openproject.org/docs/system-admin-guide/manage-work-packages/work-package-types/workflows/"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/project_delivery.md"
+  },
+  {
+    "role_id": "12",
+    "role_name": "项目交付与协调",
+    "runtime_role_id": "project_delivery",
+    "scenario_id": "PM-03",
+    "title": "计划排期与依赖检查",
+    "origin": "baseline",
+    "goal": "在资源、日历和依赖约束下产生可解释计划",
+    "source_urls": [
+      "https://www.openproject.org/docs/user-guide/work-packages/work-package-relations-hierarchies/",
+      "https://github.com/frappe/erpnext/blob/03afa43c7cfea9fc9b67488e3d9e309e194cd003/erpnext/projects/doctype/task/task.py"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/project_delivery.md"
+  },
+  {
+    "role_id": "12",
+    "role_name": "项目交付与协调",
+    "runtime_role_id": "project_delivery",
+    "scenario_id": "PM-04",
+    "title": "状态收集、逾期与周报",
+    "origin": "baseline",
+    "goal": "把证实进展、待验收、阻塞与过期信息分开",
+    "source_urls": [
+      "https://www.openproject.org/docs/api/endpoints/work-packages/",
+      "https://www.openproject.org/docs/system-admin-guide/manage-work-packages/work-package-types/workflows/"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/project_delivery.md"
+  },
+  {
+    "role_id": "12",
+    "role_name": "项目交付与协调",
+    "runtime_role_id": "project_delivery",
+    "scenario_id": "PM-05",
+    "title": "会议纪要与行动项闭环",
+    "origin": "baseline",
+    "goal": "从会议提真实行动候选并避免重复和错派",
+    "source_urls": [
+      "https://www.openproject.org/docs/api/endpoints/work-packages/",
+      "https://www.openproject.org/docs/system-admin-guide/manage-work-packages/work-package-types/workflows/"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/project_delivery.md"
+  },
+  {
+    "role_id": "12",
+    "role_name": "项目交付与协调",
+    "runtime_role_id": "project_delivery",
+    "scenario_id": "PM-06",
+    "title": "变更评估与风险处理",
+    "origin": "baseline",
+    "goal": "在变更执行前明确影响、决定与原基线",
+    "source_urls": [
+      "https://www.openproject.org/docs/api/endpoints/work-packages/",
+      "https://www.openproject.org/docs/user-guide/work-packages/work-package-relations-hierarchies/"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/project_delivery.md"
+  },
+  {
+    "role_id": "12",
+    "role_name": "项目交付与协调",
+    "runtime_role_id": "project_delivery",
+    "scenario_id": "PM-07",
+    "title": "交付检查、验收与移交",
+    "origin": "baseline",
+    "goal": "用版本化证据逐项验收并完整移交",
+    "source_urls": [
+      "https://www.openproject.org/docs/system-admin-guide/manage-work-packages/work-package-types/workflows/",
+      "https://www.openproject.org/docs/api/endpoints/work-packages/"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/project_delivery.md"
+  },
+  {
+    "role_id": "12",
+    "role_name": "项目交付与协调",
+    "runtime_role_id": "project_delivery",
+    "scenario_id": "PM-08",
+    "title": "复盘、案例归档与模板更新",
+    "origin": "baseline",
+    "goal": "从计划、实际和失败案例形成受控经验更新",
+    "source_urls": [
+      "https://www.openproject.org/docs/api/endpoints/work-packages/",
+      "https://www.openproject.org/docs/user-guide/work-packages/work-package-relations-hierarchies/"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/project_delivery.md"
+  },
+  {
+    "role_id": "12",
+    "role_name": "项目交付与协调",
+    "runtime_role_id": "project_delivery",
+    "scenario_id": "PM-09",
+    "title": "跨项目容量与资源承诺核对",
+    "origin": "added",
+    "goal": "跨多个项目识别同一资源的容量冲突，给出取舍方案而不替经理做人员或交期承诺。",
+    "source_urls": [
+      "https://www.openproject.org/docs/user-guide/resource-management/",
+      "https://www.openproject.org/docs/user-guide/work-packages/work-package-relations-hierarchies/",
+      "https://www.openproject.org/docs/api/endpoints/work-packages/"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/project_delivery.md"
+  },
+  {
+    "role_id": "12",
+    "role_name": "项目交付与协调",
+    "runtime_role_id": "project_delivery",
+    "scenario_id": "PM-10",
+    "title": "上线切换、观察与回退交接",
+    "origin": "added",
+    "goal": "管理交付进入运行环境的前置、批准、观察与恢复证据，区别于普通文件验收。",
+    "source_urls": [
+      "https://www.openproject.org/docs/api/endpoints/work-packages/",
+      "https://www.openproject.org/docs/system-admin-guide/manage-work-packages/work-package-types/workflows/"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/project_delivery.md"
+  },
+  {
+    "role_id": "13",
+    "role_name": "数据报表与经营分析",
+    "runtime_role_id": "business_analytics",
+    "scenario_id": "BA-01",
+    "title": "数据接收、粒度与时间范围确认",
+    "origin": "baseline",
+    "goal": "明确数据粒度、完整性和时段，不把行数错当业务量",
+    "source_urls": [
+      "https://docs.getdbt.com/docs/build/data-tests",
+      "https://docs.getdbt.com/reference/artifacts/manifest-json"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/business_analytics.md"
+  },
+  {
+    "role_id": "13",
+    "role_name": "数据报表与经营分析",
+    "runtime_role_id": "business_analytics",
+    "scenario_id": "BA-02",
+    "title": "指标口径整理与历史对齐",
+    "origin": "baseline",
+    "goal": "先形成批准指标契约再计算或对齐历史",
+    "source_urls": [
+      "https://www.metabase.com/docs/latest/data-modeling/metrics",
+      "https://docs.getdbt.com/docs/build/data-tests"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/business_analytics.md"
+  },
+  {
+    "role_id": "13",
+    "role_name": "数据报表与经营分析",
+    "runtime_role_id": "business_analytics",
+    "scenario_id": "BA-03",
+    "title": "数据质量检查与问题隔离",
+    "origin": "baseline",
+    "goal": "在保留问题证据的前提下隔离不合格数据",
+    "source_urls": [
+      "https://docs.getdbt.com/docs/build/data-tests",
+      "https://docs.getdbt.com/reference/artifacts/run-results-json",
+      "https://docs.getdbt.com/reference/commands/source"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/business_analytics.md"
+  },
+  {
+    "role_id": "13",
+    "role_name": "数据报表与经营分析",
+    "runtime_role_id": "business_analytics",
+    "scenario_id": "BA-04",
+    "title": "多表关联、聚合与比率",
+    "origin": "baseline",
+    "goal": "控制关联扩行和比率聚合，产出可复算结果",
+    "source_urls": [
+      "https://docs.getdbt.com/docs/build/data-tests",
+      "https://docs.getdbt.com/reference/artifacts/manifest-json"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/business_analytics.md"
+  },
+  {
+    "role_id": "13",
+    "role_name": "数据报表与经营分析",
+    "runtime_role_id": "business_analytics",
+    "scenario_id": "BA-05",
+    "title": "报表生成、解释与发布",
+    "origin": "baseline",
+    "goal": "发布具有口径、时效和权限证据的报表",
+    "source_urls": [
+      "https://www.metabase.com/docs/latest/data-modeling/metrics",
+      "https://www.metabase.com/docs/latest/permissions/introduction",
+      "https://docs.getdbt.com/reference/artifacts/run-results-json"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/business_analytics.md"
+  },
+  {
+    "role_id": "13",
+    "role_name": "数据报表与经营分析",
+    "runtime_role_id": "business_analytics",
+    "scenario_id": "BA-06",
+    "title": "异常发现与错误因子分析",
+    "origin": "baseline",
+    "goal": "把异常信号变成有证据的排查而非立即归因",
+    "source_urls": [
+      "https://docs.getdbt.com/docs/build/data-tests",
+      "https://docs.getdbt.com/reference/commands/source",
+      "https://www.metabase.com/docs/latest/data-modeling/metrics"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/business_analytics.md"
+  },
+  {
+    "role_id": "13",
+    "role_name": "数据报表与经营分析",
+    "runtime_role_id": "business_analytics",
+    "scenario_id": "BA-07",
+    "title": "方案对比与效果复盘",
+    "origin": "baseline",
+    "goal": "评价方案实施与结果，保留失败和不确定性",
+    "source_urls": [
+      "https://www.metabase.com/docs/latest/data-modeling/metrics",
+      "https://docs.getdbt.com/docs/build/data-tests",
+      "https://docs.getdbt.com/reference/artifacts/run-results-json"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/business_analytics.md"
+  },
+  {
+    "role_id": "13",
+    "role_name": "数据报表与经营分析",
+    "runtime_role_id": "business_analytics",
+    "scenario_id": "BA-08",
+    "title": "口径变更、回补与知识更新",
+    "origin": "baseline",
+    "goal": "可审计地修改口径和重算，不静默覆盖历史",
+    "source_urls": [
+      "https://docs.getdbt.com/reference/artifacts/manifest-json",
+      "https://docs.getdbt.com/reference/artifacts/run-results-json",
+      "https://www.metabase.com/docs/latest/data-modeling/metrics"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/business_analytics.md"
+  },
+  {
+    "role_id": "13",
+    "role_name": "数据报表与经营分析",
+    "runtime_role_id": "business_analytics",
+    "scenario_id": "BA-09",
+    "title": "自助取数、受众权限与报表交付治理",
+    "origin": "added",
+    "goal": "让业务提问转成受限、可复算查询与正确受众的输出，不让自然语言查询扩大数据访问。",
+    "source_urls": [
+      "https://www.metabase.com/docs/latest/data-modeling/metrics",
+      "https://www.metabase.com/docs/latest/data-modeling/models/models",
+      "https://www.metabase.com/docs/latest/permissions/introduction"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/business_analytics.md"
+  },
+  {
+    "role_id": "13",
+    "role_name": "数据报表与经营分析",
+    "runtime_role_id": "business_analytics",
+    "scenario_id": "BA-10",
+    "title": "客群生命周期、留存与回流分析",
+    "origin": "added",
+    "goal": "以稳定身份、同期群与成熟观察窗解释客群变化，不把不同入组时间或分母混为留存。",
+    "source_urls": [
+      "https://docs.getdbt.com/docs/build/data-tests",
+      "https://www.metabase.com/docs/latest/data-modeling/metrics",
+      "https://docs.getdbt.com/reference/artifacts/manifest-json"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/business_analytics.md"
+  },
+  {
+    "role_id": "13",
+    "role_name": "数据报表与经营分析",
+    "runtime_role_id": "business_analytics",
+    "scenario_id": "BA-11",
+    "title": "预测、情景测算与滚动预算支持",
+    "origin": "added",
+    "goal": "把历史观测与假设分开，提供有回测和区间的预测/情景，不自动形成预算或采购决定。",
+    "source_urls": [
+      "https://docs.getdbt.com/docs/build/data-tests",
+      "https://docs.getdbt.com/reference/artifacts/run-results-json",
+      "https://www.metabase.com/docs/latest/data-modeling/metrics"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/business_analytics.md"
+  },
+  {
+    "role_id": "14",
+    "role_name": "IT 服务台与内部支持",
+    "runtime_role_id": "it_service_desk",
+    "scenario_id": "IT-01",
+    "title": "工单受理与资料补全",
+    "origin": "baseline",
+    "goal": "整理可接手工单并只补最必要信息",
+    "source_urls": [
+      "https://user-docs.zammad.org/en/latest/basics/ticket-basics.html",
+      "https://docs.frappe.io/helpdesk/ticket-status"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/it_service_desk.md"
+  },
+  {
+    "role_id": "14",
+    "role_name": "IT 服务台与内部支持",
+    "runtime_role_id": "it_service_desk",
+    "scenario_id": "IT-02",
+    "title": "分类、影响范围与优先级",
+    "origin": "baseline",
+    "goal": "依据影响与紧急程度而非语气建议优先级",
+    "source_urls": [
+      "https://user-docs.zammad.org/en/latest/basics/ticket-basics.html",
+      "https://admin-docs.zammad.org/en/latest/manage/slas.html"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/it_service_desk.md"
+  },
+  {
+    "role_id": "14",
+    "role_name": "IT 服务台与内部支持",
+    "runtime_role_id": "it_service_desk",
+    "scenario_id": "IT-03",
+    "title": "知识检索与逐步排查",
+    "origin": "baseline",
+    "goal": "检索适用手册并通过一步一证据逐步排查",
+    "source_urls": [
+      "https://admin-docs.zammad.org/en/latest/system/core-workflows/learn-by-example.html",
+      "https://admin-docs.zammad.org/en/latest/system/core-workflows.html"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/it_service_desk.md"
+  },
+  {
+    "role_id": "14",
+    "role_name": "IT 服务台与内部支持",
+    "runtime_role_id": "it_service_desk",
+    "scenario_id": "IT-04",
+    "title": "分派、升级与服务时间跟踪",
+    "origin": "baseline",
+    "goal": "正确路由、交接并按实际产品语义计算时钟",
+    "source_urls": [
+      "https://admin-docs.zammad.org/en/latest/manage/slas.html",
+      "https://docs.frappe.io/helpdesk/service-level-agreement",
+      "https://admin-docs.zammad.org/en/latest/system/core-workflows/learn-by-example.html"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/it_service_desk.md"
+  },
+  {
+    "role_id": "14",
+    "role_name": "IT 服务台与内部支持",
+    "runtime_role_id": "it_service_desk",
+    "scenario_id": "IT-05",
+    "title": "账号、权限与软件服务请求",
+    "origin": "baseline",
+    "goal": "把服务请求与有效授权绑定到正确账号和期限",
+    "source_urls": [
+      "https://admin-docs.zammad.org/en/latest/system/core-workflows/learn-by-example.html",
+      "https://admin-docs.zammad.org/en/latest/system/core-workflows.html"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/it_service_desk.md"
+  },
+  {
+    "role_id": "14",
+    "role_name": "IT 服务台与内部支持",
+    "runtime_role_id": "it_service_desk",
+    "scenario_id": "IT-06",
+    "title": "标准处理执行与结果验证",
+    "origin": "baseline",
+    "goal": "只执行已授权标准步骤并验证业务恢复",
+    "source_urls": [
+      "https://user-docs.zammad.org/en/latest/basics/ticket-basics.html",
+      "https://admin-docs.zammad.org/en/latest/system/core-workflows/learn-by-example.html"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/it_service_desk.md"
+  },
+  {
+    "role_id": "14",
+    "role_name": "IT 服务台与内部支持",
+    "runtime_role_id": "it_service_desk",
+    "scenario_id": "IT-07",
+    "title": "关联问题、故障集中与重复工单",
+    "origin": "baseline",
+    "goal": "识别共同事件同时保留各工单隐私和结果",
+    "source_urls": [
+      "https://user-docs.zammad.org/en/latest/basics/ticket-basics.html",
+      "https://docs.frappe.io/helpdesk/ticket-status"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/it_service_desk.md"
+  },
+  {
+    "role_id": "14",
+    "role_name": "IT 服务台与内部支持",
+    "runtime_role_id": "it_service_desk",
+    "scenario_id": "IT-08",
+    "title": "解决确认、关闭与重开",
+    "origin": "baseline",
+    "goal": "把技术恢复、用户确认、管理关闭与重开分开",
+    "source_urls": [
+      "https://user-docs.zammad.org/en/latest/basics/ticket-basics.html",
+      "https://docs.frappe.io/helpdesk/ticket-status",
+      "https://admin-docs.zammad.org/en/latest/manage/slas.html"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/it_service_desk.md"
+  },
+  {
+    "role_id": "14",
+    "role_name": "IT 服务台与内部支持",
+    "runtime_role_id": "it_service_desk",
+    "scenario_id": "IT-09",
+    "title": "解决案例沉淀与知识发布",
+    "origin": "baseline",
+    "goal": "从有验证结果的真实案例产生可控知识版本",
+    "source_urls": [
+      "https://admin-docs.zammad.org/en/latest/system/core-workflows.html",
+      "https://admin-docs.zammad.org/en/latest/system/core-workflows/learn-by-example.html",
+      "https://user-docs.zammad.org/en/latest/basics/ticket-basics.html"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/it_service_desk.md"
+  },
+  {
+    "role_id": "14",
+    "role_name": "IT 服务台与内部支持",
+    "runtime_role_id": "it_service_desk",
+    "scenario_id": "IT-10",
+    "title": "服务目录与多系统入转离职履约",
+    "origin": "added",
+    "goal": "把已批准人员生命周期事件编成有依赖、权限和完成证据的服务清单，不由工单系统决定人事或自动扩权。",
+    "source_urls": [
+      "https://admin-docs.zammad.org/en/latest/system/core-workflows.html",
+      "https://admin-docs.zammad.org/en/latest/system/core-workflows/learn-by-example.html",
+      "https://user-docs.zammad.org/en/latest/basics/ticket-basics.html"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/it_service_desk.md"
+  },
+  {
+    "role_id": "14",
+    "role_name": "IT 服务台与内部支持",
+    "runtime_role_id": "it_service_desk",
+    "scenario_id": "IT-11",
+    "title": "服务台积压、容量与服务改进",
+    "origin": "added",
+    "goal": "从队列状态、等待原因和可用容量发现服务瓶颈，输出改进试验而不按原始工单数评价个人。",
+    "source_urls": [
+      "https://admin-docs.zammad.org/en/latest/manage/slas.html",
+      "https://docs.frappe.io/helpdesk/service-level-agreement",
+      "https://user-docs.zammad.org/en/latest/basics/ticket-basics.html"
+    ],
+    "readiness": "reference_method",
+    "reference": "references/roles/it_service_desk.md"
+  }
+]

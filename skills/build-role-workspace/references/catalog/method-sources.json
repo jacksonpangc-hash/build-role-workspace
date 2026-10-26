@@ -1,0 +1,40 @@
+{
+  "upstream": "https://github.com/anthropics/knowledge-work-plugins",
+  "commit": "33d3dea41a341b341d4f5da2e8801ae0c89be2b8",
+  "upstream_license": "Apache-2.0",
+  "usage": "Methods reviewed and independently implemented; upstream Skill prose/code not bundled. Five relevant source sections rechecked for this implementation; other module mapping comes from frozen specification, not a claim of full rereading.",
+  "reviewed_sources": [
+    {
+      "path": "data/skills/data-context-extractor/SKILL.md",
+      "sha256": "6d05dec52ac3667b551898b9eb943f5ee08141bc8d2fabb69a8e39bb9ce7c754",
+      "url": "https://github.com/anthropics/knowledge-work-plugins/blob/33d3dea41a341b341d4f5da2e8801ae0c89be2b8/data/skills/data-context-extractor/SKILL.md"
+    },
+    {
+      "path": "finance/skills/variance-analysis/SKILL.md",
+      "sha256": "467db7de3fb118550d013409254e2d4a9f87385a661e154655bf3431919b0ba1",
+      "url": "https://github.com/anthropics/knowledge-work-plugins/blob/33d3dea41a341b341d4f5da2e8801ae0c89be2b8/finance/skills/variance-analysis/SKILL.md"
+    },
+    {
+      "path": "small-business/skills/inventory-planner/SKILL.md",
+      "sha256": "e7a1b6955c2a992f7d688f9976400face8993ce2573a18bd1aa5f6a834b1cb8a",
+      "url": "https://github.com/anthropics/knowledge-work-plugins/blob/33d3dea41a341b341d4f5da2e8801ae0c89be2b8/small-business/skills/inventory-planner/SKILL.md"
+    },
+    {
+      "path": "enterprise-search/skills/source-management/SKILL.md",
+      "sha256": "221d8acdc5c686033bb073d2bba83841892f6b8be0888c0267247fd1dd34461d",
+      "url": "https://github.com/anthropics/knowledge-work-plugins/blob/33d3dea41a341b341d4f5da2e8801ae0c89be2b8/enterprise-search/skills/source-management/SKILL.md"
+    },
+    {
+      "path": "productivity/skills/memory-management/SKILL.md",
+      "sha256": "ad42fd09cbab585b8ae8fcce54e711d37105d5d5b7d9ceaf9b29bf6441f7a88d",
+      "url": "https://github.com/anthropics/knowledge-work-plugins/blob/33d3dea41a341b341d4f5da2e8801ae0c89be2b8/productivity/skills/memory-management/SKILL.md"
+    }
+  ],
+  "adaptations": [
+    "Private context outside shared Skill",
+    "Real read checks instead of tool-prefix availability",
+    "Reconciled two-factor bridge instead of unreconciled three-factor example",
+    "Explicit demand/lead-time/budget/life instead of fixed 60-day cover",
+    "No scheduling or execution inferred from saved definitions"
+  ]
+}

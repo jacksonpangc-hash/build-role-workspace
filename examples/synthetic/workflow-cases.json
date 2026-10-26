@@ -1,0 +1,422 @@
+[
+  {
+    "id": "01-W1",
+    "role": "video_analysis",
+    "title": "商品视频参考库",
+    "normal": "原片v1只提供字幕：00:00“250g”，00:04“仅展示包装，不说明疗效”；已批内部培训至2025-06-30，无音轨和画面。做商品参考索引。",
+    "missing": "授权期限页缺失，其余同正常资料。",
+    "correction": "授权更正为内部培训至2025-05-31，素材版本未变。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "01-W2",
+    "role": "video_analysis",
+    "title": "直播切片候选",
+    "normal": "场次2025-05-01 20:00+08:00，字幕00:10“今天券后18元”，00:14“仅本场”；规划复用2025-06-01，未提供原片。做切片候选。",
+    "missing": "缺场次开始时间和时区；保留相对字幕。",
+    "correction": "场次实际开始20:05+08:00，字幕不变。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "01-W3",
+    "role": "video_analysis",
+    "title": "多语版本与误解检查",
+    "normal": "基准字幕00:02“不含赠品”，英文版00:02“includes gift”；产品事实无赠品，评论一条“以为送勺”。做版本误解检查。",
+    "missing": "英文版本缺时间码，只能逐句比。",
+    "correction": "英文版更新为“no gift included”，位置仍00:02。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "02-W1",
+    "role": "director_script",
+    "title": "短视频拍摄包",
+    "normal": "商品仅证实250g辣椒面，面向首次购买者，做3镜头拍摄包，禁止健康功效主张。",
+    "missing": "无净重依据页，不可确认250g，其余仍可拍。",
+    "correction": "净重更正为200g，仅改受影响镜头和字幕。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "02-W2",
+    "role": "director_script",
+    "title": "直播台本与场中变化",
+    "normal": "场次2025-06-01，商品A定价20，优惠仅20:00–21:00；商品B价格未确认。做开播台本。",
+    "missing": "A活动生效审批缺失，20元仍为商品标价。",
+    "correction": "A优惠时段改为20:30–21:00，商品标价不变。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "02-W3",
+    "role": "director_script",
+    "title": "达人和多载体修订",
+    "normal": "达人同意抖音中文发布，不含英文站转载；基准稿“250g”，作者备注“保留开场问句”。做合作和多语修订。",
+    "missing": "达人授权仅口头转述，无签署或确认记录。",
+    "correction": "净重证据改为200g；保持开场问句和原载体限制。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "03-W1",
+    "role": "ecommerce_operations",
+    "title": "多源日报与异常",
+    "normal": "五月订单O1应付30，支付30，退款5发生六月；两条广告归因20和15无法关联订单。购买件数和成本缺。做五月日报。",
+    "missing": "支付流水缺失，其余同正常资料。",
+    "correction": "六月退款更正为7；五月订单原件不变。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "03-W2",
+    "role": "ecommerce_operations",
+    "title": "新品大促就绪",
+    "normal": "商品A规格v2、价格20已批，素材仍v1写18；抖音已回读在售，另一渠道无回读。做大促就绪检查。",
+    "missing": "价格审批页缺失。",
+    "correction": "素材更新v2写20，另一渠道仍无回读。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "03-W3",
+    "role": "ecommerce_operations",
+    "title": "拆单换货与反馈",
+    "normal": "订单O1购买3件，包裹P1发2件已签收，P2发1件运输中；一件申请换货，退款请求R1超时未知。做剩余义务表。",
+    "missing": "P1签收证据缺失，只有发出记录。",
+    "correction": "P2已签收；R1查证已退5，换货新包裹尚无记录。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "04-W1",
+    "role": "advertising_operations",
+    "title": "测量核查与诊断",
+    "normal": "同窗口消耗100，归因支付150，点击20购买2；两个平台都归因订单O1，店铺仅O1应付100；无成本。做测量诊断。",
+    "missing": "归因窗口与成熟期缺失。",
+    "correction": "一笔归因支付50撤回，其余不变。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "04-W2",
+    "role": "advertising_operations",
+    "title": "创意测试与变更单",
+    "normal": "素材A点击20成交2，B点击10成交2；预算总额300，仅测试开头一句，其余价格受众一致。做实验方案与变更单。",
+    "missing": "B观察期间不详，不可直接比较。",
+    "correction": "B纠正为点击10成交1，预算仍300。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "04-W3",
+    "role": "advertising_operations",
+    "title": "达人授权和拒登",
+    "normal": "达人原帖仅准抖音至2025-05-31，拟6月1日复用；拒登原因“含无证功效”，产品只证实食品规格。做授权及申诉包。",
+    "missing": "原帖授权页缺失，只有同事说可以用。",
+    "correction": "收到延期到6月30日确认；功效证据仍缺。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "05-W1",
+    "role": "finance_reconciliation",
+    "title": "银行与账簿差异",
+    "normal": "银行CNY流水B1=100，B2=50；账簿业务键B1=100、B2=40；另有USD5独立记录。做银行差异表。",
+    "missing": "B2账簿记录缺失，不填0。",
+    "correction": "B2账簿更正为50；USD仍单列。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "05-W2",
+    "role": "finance_reconciliation",
+    "title": "平台结算到银行到账",
+    "normal": "平台期初100，销售200，费用20，退款10，打款150，期末120，均CNY；银行只收到打款100，剩余50日期未知。做桥接。",
+    "missing": "缺平台期初余额，不反推成确认事实。",
+    "correction": "银行又收到同一打款50，平台期末不变。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "05-W3",
+    "role": "finance_reconciliation",
+    "title": "部分分配与变更",
+    "normal": "发票I1=100、I2=80 CNY；收款P1=120，明确分给I1=100、I2=20。做分配和余额。",
+    "missing": "分配依据缺失，不允许按金额猜配。",
+    "correction": "P1更正为110，I1仍100，I2分配改10。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "06-W1",
+    "role": "administration",
+    "title": "合同包版本和义务",
+    "normal": "合同C1及附件A已给，签署页缺失，条款“交付后30天付款”；交付日未知。做合同包登记。",
+    "missing": "附件A缺失，仅正文引用。",
+    "correction": "补到签署页，交付日仍未知。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "06-W2",
+    "role": "administration",
+    "title": "调动离职资产交接",
+    "normal": "已批员工E1于6月1日调动，电脑A1收件人已签，门卡A2无回执；资料库已发链接未接受。做交接包。",
+    "missing": "调动审批页缺失，只保留交接候选。",
+    "correction": "门卡A2收到签收，资料接收仍未接受。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "06-W3",
+    "role": "administration",
+    "title": "费用预审交接",
+    "normal": "政策6月交通费限200 CNY；票据T1=120导入两次、T2=100，人员证件在原件。做费用预审。",
+    "missing": "公司政策缺失，不套通用限额。",
+    "correction": "T2更正为70，T1仍重复两份。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "07-W1",
+    "role": "customer_service",
+    "title": "一条咨询多个诉求",
+    "normal": "客户问物流、退款和删除个人资料；五月订单适用v1，v2六月生效；相似工单曾补发。做答复草稿。",
+    "missing": "v1政策正文缺失，不套v2。",
+    "correction": "退款查询超时未知，其余诉求保留。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "07-W2",
+    "role": "customer_service",
+    "title": "部分退款补发",
+    "normal": "订单2件，已批退1件10 CNY并补发1件；退款R1已到账10，补发S1已发未签。做售后核验。",
+    "missing": "退款R1结果未知。",
+    "correction": "补发S1已签收，退款仍按各分支现有记录。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "07-W3",
+    "role": "customer_service",
+    "title": "中断投诉与争议",
+    "normal": "09:00客户称未收到，09:05物流写已签，09:10客服答复，未获客户认可；无赔付授权。做争议升级包。",
+    "missing": "物流签收原凭证缺失。",
+    "correction": "物流更正为误扫，包裹仍运输中。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "08-W1",
+    "role": "sales_crm",
+    "title": "商机到报价交付",
+    "normal": "客户说价格合适再考虑，销售填80%，CRM已成交；无合同，报价Q1缺税运。做商机到报价交付包。",
+    "missing": "客户原话无记录，只有销售转述。",
+    "correction": "客户书面接受Q1商品价，但税运与实施时间仍待定。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "08-W2",
+    "role": "sales_crm",
+    "title": "达人合作履约",
+    "normal": "达人D1收到样品，Brief要视频2条，已发布1条未验收；授权仅抖音；约定验收后付款。做合作履约表。",
+    "missing": "Brief签收记录缺失，只能列候选要求。",
+    "correction": "第二条发布，仍只有第一条通过验收。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "08-W3",
+    "role": "sales_crm",
+    "title": "续约与渠道冲突",
+    "normal": "合同6月30日到期，客户说再讨论；渠道A和B都称负责同一客户，无正式归属裁定。做续约清单。",
+    "missing": "到期合同原件缺失，日期仅口头。",
+    "correction": "客户接受7月1日续约沟通时间，未接受续约价格。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "09-W1",
+    "role": "human_resources",
+    "title": "已批准入职交接",
+    "normal": "已批E1于6月1日入职，行政工位就绪，IT邮件提交开通未回读；原件有证件号码。做入职交接。",
+    "missing": "入职批准页缺失，不能确认已录用。",
+    "correction": "邮件账号回读已启用，业务系统账号仍未知。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "09-W2",
+    "role": "human_resources",
+    "title": "考勤到薪酬输入",
+    "normal": "E1六月班表8小时，考勤6小时，已批请假2小时；E2缺打卡，无请假证据。做考勤输入候选。",
+    "missing": "请假批准页缺失，不能认定已批。",
+    "correction": "E2补到打卡8小时，其余不变。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "09-W3",
+    "role": "human_resources",
+    "title": "调动离职与保留",
+    "normal": "已批E1于6月1日离职；电脑已签收，CRM仍启用，邮件已停用；公司档案保留期限未知。做离职交接。",
+    "missing": "离职批准缺失，只能做候选事项。",
+    "correction": "CRM回读已禁用，保留期限仍待公司政策。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "10-W1",
+    "role": "procurement",
+    "title": "可批准采购方案",
+    "normal": "48件需求，A每件10含税运30天账期；B每件9但税运未知需预付。做可批准采购方案。",
+    "missing": "需求规格版本缺失，不直接认定可比。",
+    "correction": "B补税运共60，其他不变。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "10-W2",
+    "role": "procurement",
+    "title": "收货验收到发票差异",
+    "normal": "采购10，收8其中合格6待检2；发票7件单价10 CNY，已付40。做三单差异。",
+    "missing": "质检放行记录缺失，不能称收货8都可计费。",
+    "correction": "待检2中放行1，其余待检；付款不变。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "10-W3",
+    "role": "procurement",
+    "title": "框架调用与中断",
+    "normal": "框架上限100件，已承诺60；新增计划50；已申请取消20但供应商未接受。做调用和中断方案。",
+    "missing": "框架上限原件缺失。",
+    "correction": "供应商接受取消20；新增50仍待批准。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "11-W1",
+    "role": "warehouse_logistics",
+    "title": "到货到放行上架",
+    "normal": "批次B1实收20，合格12待检8，系统上架10；效期2025-06-30。做放行上架差异。",
+    "missing": "质量合格证明缺失，不能认定合格12。",
+    "correction": "另6件获放行，系统仍上架10。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "11-W2",
+    "role": "warehouse_logistics",
+    "title": "拣货到签收",
+    "normal": "订单O1需10件，预留10，已拣8；包裹P1发5已签，P2发3运输中，P1签收消息重复两次。做履约异常表。",
+    "missing": "P1签收原凭证缺失，只有发出记录。",
+    "correction": "P2签收3，剩余2未拣发，重复P1不增加签收。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "11-W3",
+    "role": "warehouse_logistics",
+    "title": "调拨盘点和追溯",
+    "normal": "A库期初50，调拨单T1发20到B，B实收15，5在途；A盘点28，系统30。做影子库存与批次追溯。",
+    "missing": "B收货凭证缺失，只有调拨发出20。",
+    "correction": "B补收5，A盘点28和系统30仍有差2。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "12-W1",
+    "role": "project_delivery",
+    "title": "计划基线和容量",
+    "normal": "项目A需6小时，B需5小时且依赖A；本周容量8小时，两项均已批。做计划基线。",
+    "missing": "B估时未知，不假填0。",
+    "correction": "容量更正为12小时，依赖不变。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "12-W2",
+    "role": "project_delivery",
+    "title": "周报变更与行动",
+    "normal": "任务T1负责人E1，会议两次都说周五交付；周四证据仍未完成，另一个通知重复。做周报和行动。",
+    "missing": "负责人确认记录缺失，仅候选E1。",
+    "correction": "周五收到产物，但接收人未验收。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "12-W3",
+    "role": "project_delivery",
+    "title": "验收切换和回退",
+    "normal": "三个交付件A/B已被接受，C仅收到；切换依赖权限开通未完成，回退备份未验证。做验收切换包。",
+    "missing": "A接受回执缺失，不能保持已接受。",
+    "correction": "C接受文档，权限和回退验证仍未完成。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "13-W1",
+    "role": "business_analytics",
+    "title": "支付退款周报",
+    "normal": "五月P1=100 CNY，P2=50 CNY；P1重复快照；六月退款R1=20属于P1；另有USD5。按事件发生月做周报范围说明。",
+    "missing": "R1发生日期缺失，不强归五月或六月。",
+    "correction": "R1更正为30 CNY，发生月仍六月。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "13-W2",
+    "role": "business_analytics",
+    "title": "异常调查与比较",
+    "normal": "预算10000件×50，实际11000×48；同期促销、缺货两天，月末缺一天；无实验。做异常调查和情景比较。",
+    "missing": "预算单价缺失，不造价格贡献。",
+    "correction": "实际价更正47，其他限制不变。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "13-W3",
+    "role": "business_analytics",
+    "title": "指标改版与回补",
+    "normal": "v1销量=订单数2；新v2销量=商品件数，O1=2件、O2=3件；六月生效，需解释五月可比重算；旧报告有人改备注。",
+    "missing": "O2购买件数缺失，新口径五月总量未知。",
+    "correction": "O2件数更正4，保留原v1与人工备注。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "14-W1",
+    "role": "it_service_desk",
+    "title": "无法登录排查",
+    "normal": "09:00账号E1不能登录，09:10接口200，09:20仍登录失败；手册只准只读检查。做排查接手记录。",
+    "missing": "适用版本手册缺失，不猜重置步骤。",
+    "correction": "09:30 E1实际登录成功，但付款仍失败。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "14-W2",
+    "role": "it_service_desk",
+    "title": "标准请求受控履行",
+    "normal": "已批E1六月1日访问系统A/B；A回读已授权，B请求超时；外层返回200。做请求履行核验。",
+    "missing": "批准快照缺失，只能做差异草稿。",
+    "correction": "B查询仍未知，A权限被撤回。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  },
+  {
+    "id": "14-W3",
+    "role": "it_service_desk",
+    "title": "集中故障与SLA",
+    "normal": "三工单关联同故障，09:00开始，09:20接口恢复；一用户成功、两用户未验证；SLA政策缺，系统已关2单。做复盘与积压。",
+    "missing": "恢复测试证据缺失，只有接口200。",
+    "correction": "第二用户验证成功，第三仍待验证，SLA仍缺。",
+    "synthetic": true,
+    "business_actions": "not_authorized"
+  }
+]

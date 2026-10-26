@@ -1,0 +1,168 @@
+[
+  {
+    "scenario_id": "LEX-01",
+    "title": "合同版本比较与条款义务提取",
+    "readiness": "reference_only",
+    "source_urls": [
+      "https://support.microsoft.com/en-us/word/compare-document-differences-using-the-legal-blackline-option",
+      "https://commonpaper.com/standards/mutual-nda/1.0",
+      "https://github.com/CommonPaper/Mutual-NDA"
+    ],
+    "review_contract": {
+      "fields": [
+        "原条款及定位",
+        "适用公司立场及证据/UNKNOWN",
+        "差异与影响",
+        "替代建议及理由",
+        "地区/有效期",
+        "复核人/待定"
+      ],
+      "limitation": "reference_only; no professional approval, signing, filing or transmission implied"
+    }
+  },
+  {
+    "scenario_id": "LEX-02",
+    "title": "证据时间线与卷宗索引",
+    "readiness": "reference_only",
+    "source_urls": [
+      "https://github.com/paperless-ngx/paperless-ngx/blob/a74256cd2aaad34eefc386e95bd1129b95ddd5a4/docs/usage.md",
+      "https://docassemble.org/docs/fields.html",
+      "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf"
+    ],
+    "review_contract": {
+      "fields": [
+        "原条款及定位",
+        "适用公司立场及证据/UNKNOWN",
+        "差异与影响",
+        "替代建议及理由",
+        "地区/有效期",
+        "复核人/待定"
+      ],
+      "limitation": "reference_only; no professional approval, signing, filing or transmission implied"
+    }
+  },
+  {
+    "scenario_id": "LEX-03",
+    "title": "司法辖区与有效法源研究清单",
+    "readiness": "reference_only",
+    "source_urls": [
+      "https://flk.npc.gov.cn/search",
+      "https://www.court.gov.cn/zixun/xiangqing/426222.html"
+    ],
+    "review_contract": {
+      "fields": [
+        "原条款及定位",
+        "适用公司立场及证据/UNKNOWN",
+        "差异与影响",
+        "替代建议及理由",
+        "地区/有效期",
+        "复核人/待定"
+      ],
+      "limitation": "reference_only; no professional approval, signing, filing or transmission implied"
+    }
+  },
+  {
+    "scenario_id": "LEX-04",
+    "title": "案件材料完整性与依赖式事实补问",
+    "readiness": "reference_only",
+    "source_urls": [
+      "https://docassemble.org/docs/interviews.html",
+      "https://docassemble.org/docs/logic.html",
+      "https://docassemble.org/docs/fields.html"
+    ],
+    "review_contract": {
+      "fields": [
+        "原条款及定位",
+        "适用公司立场及证据/UNKNOWN",
+        "差异与影响",
+        "替代建议及理由",
+        "地区/有效期",
+        "复核人/待定"
+      ],
+      "limitation": "reference_only; no professional approval, signing, filing or transmission implied"
+    }
+  },
+  {
+    "scenario_id": "LEX-05",
+    "title": "文书草拟与逐条引用核验",
+    "readiness": "reference_only",
+    "source_urls": [
+      "https://docassemble.org/docs/interviews.html",
+      "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+      "https://flk.npc.gov.cn/search"
+    ],
+    "review_contract": {
+      "fields": [
+        "原条款及定位",
+        "适用公司立场及证据/UNKNOWN",
+        "差异与影响",
+        "替代建议及理由",
+        "地区/有效期",
+        "复核人/待定"
+      ],
+      "limitation": "reference_only; no professional approval, signing, filing or transmission implied"
+    }
+  },
+  {
+    "scenario_id": "LEX-06",
+    "title": "基于人工确认触发日的期限日历",
+    "readiness": "reference_only",
+    "source_urls": [
+      "https://docassemble.org/docs/fields.html",
+      "https://flk.npc.gov.cn/search"
+    ],
+    "review_contract": {
+      "fields": [
+        "原条款及定位",
+        "适用公司立场及证据/UNKNOWN",
+        "差异与影响",
+        "替代建议及理由",
+        "地区/有效期",
+        "复核人/待定"
+      ],
+      "limitation": "reference_only; no professional approval, signing, filing or transmission implied"
+    }
+  },
+  {
+    "scenario_id": "LEX-07",
+    "title": "保密事项的访问与资料最小化检查",
+    "readiness": "reference_only",
+    "source_urls": [
+      "https://www.nist.gov/privacy-framework/using-privacy-framework-11",
+      "https://www.samr.gov.cn/wljys/gzzd/art/2023/art_3ef1e889c1e644d4b65b5f5c7f432386.html",
+      "https://commonpaper.com/standards/mutual-nda/1.0"
+    ],
+    "review_contract": {
+      "fields": [
+        "原条款及定位",
+        "适用公司立场及证据/UNKNOWN",
+        "差异与影响",
+        "替代建议及理由",
+        "地区/有效期",
+        "复核人/待定"
+      ],
+      "limitation": "reference_only; no professional approval, signing, filing or transmission implied"
+    }
+  },
+  {
+    "scenario_id": "LEX-08",
+    "title": "尽职调查问题清单与证据闭环",
+    "readiness": "reference_only",
+    "source_urls": [
+      "https://docassemble.org/docs/fields.html",
+      "https://www.gao.gov/assets/890/882014.pdf",
+      "https://www.nist.gov/privacy-framework/using-privacy-framework-11"
+    ],
+    "review_contract": {
+      "fields": [
+        "原条款及定位",
+        "适用公司立场及证据/UNKNOWN",
+        "差异与影响",
+        "替代建议及理由",
+        "地区/有效期",
+        "复核人/待定"
+      ],
+      "limitation": "reference_only; no professional approval, signing, filing or transmission implied"
+    }
+  }
+]

@@ -1,0 +1,555 @@
+{
+  "version": "0.2.0-rc.4",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 87,
+      "sha256": "d2f17be9cb71591f898c503764b2afbd0258136ec72e5f879be48b5114ad5926"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 3256,
+      "sha256": "f0ec6d7d592553317ff7d4f3c5ecface5f4a526a75cdba4046af859edcb9ab38"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 1462,
+      "sha256": "1aa1dfaf762df839309b7dc0b7c02dd8654e1f38d0b7c5486f916a25293a5e6c"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1090,
+      "sha256": "b117c5221f71dcdf6a18a33197b09e0fb66f7c6a9e5b7761b4bbc48eae045ce8"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2460,
+      "sha256": "ad628dbbf067da90d1c019bdf145ca8a114581027ef32fd5c15bacd3aac1cfb1"
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 926,
+      "sha256": "f01955bcd674f6270635ea68289dcb79a5820ec2b80e771c4670841cdd5b2e7d"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 2638,
+      "sha256": "971f2853157bdf2c59016c6c049f3aa99aef824aed545f54ba553bf73f6379bf"
+    },
+    {
+      "path": "docs/compatibility.md",
+      "bytes": 2389,
+      "sha256": "33d61bfae821e017c1f92d689ddd2fb0153932e777dabe10b38ecbbe79418519"
+    },
+    {
+      "path": "docs/release/acceptance-report.md",
+      "bytes": 4916,
+      "sha256": "249c0be2a31cfc3d754d39205c4e18c65a78c5f5b48ad7f841ff835c8b6076d4"
+    },
+    {
+      "path": "docs/release/support-matrix.md",
+      "bytes": 2198,
+      "sha256": "5e6d57ea2b5554eb2c02f13d266252d8f905e65ff5da042a5d8d9b0787842101"
+    },
+    {
+      "path": "docs/user-guide.md",
+      "bytes": 4772,
+      "sha256": "9b765bd1726c2aa8797d5601ff0ff576b6fd2c6a280af9ae1d71240e626b1498"
+    },
+    {
+      "path": "examples/synthetic/actual-model-input-output.json",
+      "bytes": 9287,
+      "sha256": "1eac2074aaabff89a0ecab6ae6bc4917747421e2032b95e392c5a71cc96d0e99"
+    },
+    {
+      "path": "examples/synthetic/commerce/README.md",
+      "bytes": 565,
+      "sha256": "0b0984778d883a60ce41b29cd6437a35c6a15208cb1e9b7df24f5a1e19b92733"
+    },
+    {
+      "path": "examples/synthetic/commerce/metrics.csv",
+      "bytes": 90,
+      "sha256": "1e5c02cd1a2657d7d2f002260b7b6f7303210b682ee9c7e7b7b0606200ab6627"
+    },
+    {
+      "path": "examples/synthetic/commerce/policy.md",
+      "bytes": 324,
+      "sha256": "da463febc570c85e2134d62a60dd8ba7630e2346cf9946b0a2ea4096d2fd0560"
+    },
+    {
+      "path": "examples/synthetic/complete-example.md",
+      "bytes": 2052,
+      "sha256": "74ba6ade5a596f70bfa8d6595e2d1c89bf52e24fed5acd79159fb5587641c298"
+    },
+    {
+      "path": "examples/synthetic/complete-file-sources.json",
+      "bytes": 23784,
+      "sha256": "3e0c0bce86623d45079841422f1e093306224bb07d1c2d40e9ec702699ec0c67"
+    },
+    {
+      "path": "examples/synthetic/media/LICENSE.txt",
+      "bytes": 261,
+      "sha256": "2377866e115f407b2211331d5213f24af7eecf0d04f4b625408874bd2fa1d841"
+    },
+    {
+      "path": "examples/synthetic/media/en.srt",
+      "bytes": 115,
+      "sha256": "a11ff7106cebac031a58a3620a4db39312af714e190911c9d1c26d66de288720"
+    },
+    {
+      "path": "examples/synthetic/media/frame-0.png",
+      "bytes": 1858,
+      "sha256": "ea1a956f61f907fe26aba99293d1b0f7293fd928f4ff3a12dd991e6a6ece11d4"
+    },
+    {
+      "path": "examples/synthetic/media/frame-1.png",
+      "bytes": 2114,
+      "sha256": "e81d55f693ff53232394e4aead6ea41aec85031d53062026dd067bc8a37565be"
+    },
+    {
+      "path": "examples/synthetic/media/frame-2.png",
+      "bytes": 1820,
+      "sha256": "3138e796be705f4e7f9c9b197d6e36daa1ba248d35f9689a321a9eee532b2c7a"
+    },
+    {
+      "path": "examples/synthetic/media/metadata.json",
+      "bytes": 173,
+      "sha256": "20c466a2aab213ace2a03800314510ae5561a55beeb438c77fe9687fe5b3bbd5"
+    },
+    {
+      "path": "examples/synthetic/media/silent-demo.mp4",
+      "bytes": 2255,
+      "sha256": "1a2c21d3379c84d5060ead2185e66784eeba9f2a41eeafe8db1f3c42a3cff000"
+    },
+    {
+      "path": "examples/synthetic/media/source-manifest.json",
+      "bytes": 903,
+      "sha256": "49f86b44c51ee74955ce2381558aeefe2575ec7a7afd8317459c001bafb32e33"
+    },
+    {
+      "path": "examples/synthetic/media/zh.srt",
+      "bytes": 99,
+      "sha256": "33b3ab738bd0d2df4e197ced822ff1c11eae1bb9c8da8f28ff67255f7426c7fd"
+    },
+    {
+      "path": "examples/synthetic/representative-trials.json",
+      "bytes": 10022,
+      "sha256": "431378a7a1d4ff4a54d060e39687b38776000bcf066953c074a04a6059e8a64e"
+    },
+    {
+      "path": "examples/synthetic/workflow-cases.json",
+      "bytes": 18558,
+      "sha256": "49f5a832e84083f1f591842b38c1092f23364ad6896ecc04f7084d445f143fb1"
+    },
+    {
+      "path": "examples/synthetic/workflow-expected-results.json",
+      "bytes": 38164,
+      "sha256": "33bc803ecb893b44f2ee5a9ccf61a51e197ca3175989049a46d92507f07de335"
+    },
+    {
+      "path": "skills/build-role-workspace/COMPATIBILITY.md",
+      "bytes": 2389,
+      "sha256": "33d61bfae821e017c1f92d689ddd2fb0153932e777dabe10b38ecbbe79418519"
+    },
+    {
+      "path": "skills/build-role-workspace/LICENSE",
+      "bytes": 1090,
+      "sha256": "b117c5221f71dcdf6a18a33197b09e0fb66f7c6a9e5b7761b4bbc48eae045ce8"
+    },
+    {
+      "path": "skills/build-role-workspace/SKILL.md",
+      "bytes": 7217,
+      "sha256": "0425efd9a26c202e35ac82a4d50c22b20c5e106a2be808a27a01f09fcc042b49"
+    },
+    {
+      "path": "skills/build-role-workspace/START_HERE.md",
+      "bytes": 1262,
+      "sha256": "7bdaa05d719a57b9bda18ce9df0cf3b78d4ca1ebbfd74b9a12b4d7b4cd7f2ff3"
+    },
+    {
+      "path": "skills/build-role-workspace/THIRD_PARTY_NOTICES.md",
+      "bytes": 2638,
+      "sha256": "971f2853157bdf2c59016c6c049f3aa99aef824aed545f54ba553bf73f6379bf"
+    },
+    {
+      "path": "skills/build-role-workspace/USER_GUIDE.md",
+      "bytes": 4772,
+      "sha256": "9b765bd1726c2aa8797d5601ff0ff576b6fd2c6a280af9ae1d71240e626b1498"
+    },
+    {
+      "path": "skills/build-role-workspace/agents/openai.yaml",
+      "bytes": 362,
+      "sha256": "e04b7bb9c9cf127a094115147150366dd8fc5e0d26b8d66bfdcf8872be318f45"
+    },
+    {
+      "path": "skills/build-role-workspace/licenses/Apache-2.0.txt",
+      "bytes": 11607,
+      "sha256": "a6946284993aeec75c7d75906064b66210c46051e562077efb30eb6dcfe72e26"
+    },
+    {
+      "path": "skills/build-role-workspace/references/catalog/blueprints.json",
+      "bytes": 1551,
+      "sha256": "4b36d01ae244245b8ea7ed50ef86b6af03c1d9d69c5c234e6b6412c65a263e2b"
+    },
+    {
+      "path": "skills/build-role-workspace/references/catalog/capabilities.json",
+      "bytes": 7070,
+      "sha256": "f0a2ad68cfe48d63a186439ffce363b80bebf785a9cca3853cab486b6bac999f"
+    },
+    {
+      "path": "skills/build-role-workspace/references/catalog/inventory-example.json",
+      "bytes": 518,
+      "sha256": "e2ad2fd7a36152dce2f88042d34bbf030367e995b36ac45cdf732ae4ef46402f"
+    },
+    {
+      "path": "skills/build-role-workspace/references/catalog/legal.json",
+      "bytes": 5438,
+      "sha256": "98d8a5039a419df309d11e7313adbd25ada8d61e8529bef47acd0a10509256cd"
+    },
+    {
+      "path": "skills/build-role-workspace/references/catalog/method-sources.json",
+      "bytes": 2401,
+      "sha256": "8c743d2f26ecf650b78bb63848834736713b7a9deaa62413d934929075aa0f96"
+    },
+    {
+      "path": "skills/build-role-workspace/references/catalog/roles.json",
+      "bytes": 1855,
+      "sha256": "051ad6a9c86a005a1ee7989ba674dc0a580b0ec37fa2c15ce646462e7d2ccb9b"
+    },
+    {
+      "path": "skills/build-role-workspace/references/catalog/scenarios.json",
+      "bytes": 121212,
+      "sha256": "7f35e479ebf5fbcf57bcd78927ea33f6bd92621125b1a47c91000da9b7233b67"
+    },
+    {
+      "path": "skills/build-role-workspace/references/catalog/workflows.json",
+      "bytes": 116083,
+      "sha256": "b2d2d4c31f10b01ba1b1e89711fc517b213f072eef3d963a3d528131ad8aee69"
+    },
+    {
+      "path": "skills/build-role-workspace/references/core/automation.md",
+      "bytes": 3943,
+      "sha256": "e960bea64070557201db4bbf66e406ac7f67ba64d032a14c4c94041bd9d71fd2"
+    },
+    {
+      "path": "skills/build-role-workspace/references/core/calculation-and-reporting.md",
+      "bytes": 4819,
+      "sha256": "fcad91590e660a3bebf1845361acfb1ad067e542cf6815c2b28903575e32d38f"
+    },
+    {
+      "path": "skills/build-role-workspace/references/core/discovery-and-context.md",
+      "bytes": 3949,
+      "sha256": "a0b93d856207beb1ee05cd6a9ea9d2da9da35a4eeeb5f5bb04a1fdf2de46486b"
+    },
+    {
+      "path": "skills/build-role-workspace/references/core/evidence-and-state.md",
+      "bytes": 2577,
+      "sha256": "7596619e98c2bc5af18a2a4915ac01f2f85b98319173f33addbbe106acff2045"
+    },
+    {
+      "path": "skills/build-role-workspace/references/core/knowledge-and-repair.md",
+      "bytes": 3942,
+      "sha256": "12a08d7921107903c633e842fd74a0136c333c0141d2a194d03947f6bb9628cb"
+    },
+    {
+      "path": "skills/build-role-workspace/references/core/script-usage.md",
+      "bytes": 5287,
+      "sha256": "64724d0fbf56e0f7634824ee5a44614a908542cf03f8788e2b250723acc23264"
+    },
+    {
+      "path": "skills/build-role-workspace/references/core/tools-and-hosts.md",
+      "bytes": 2148,
+      "sha256": "3d7c2df55e1e699c939ff61f85166b6fc0a31ddebe6f5840f6cdd974e650e298"
+    },
+    {
+      "path": "skills/build-role-workspace/references/core/upgrade-and-portability.md",
+      "bytes": 1671,
+      "sha256": "19b947e7281e29a57cc8d807fdc6400d9f49e781f3905757feb3d32d4b38888c"
+    },
+    {
+      "path": "skills/build-role-workspace/references/core/workflow.md",
+      "bytes": 2456,
+      "sha256": "70150b8094a0e0cad1b9e1ebb4bfe1af00245f06df1eac811c7e7685bb80f698"
+    },
+    {
+      "path": "skills/build-role-workspace/references/roles/administration.md",
+      "bytes": 6231,
+      "sha256": "e828a1dec0e8a38c4d62229bd1cf47fbe5fc1590a0d0d25632f18391b65f0e75"
+    },
+    {
+      "path": "skills/build-role-workspace/references/roles/advertising_operations.md",
+      "bytes": 7493,
+      "sha256": "5209449be0dbbccb1b93c6ed827a8ab2079ebf020055b2455dbb0a68aca9e102"
+    },
+    {
+      "path": "skills/build-role-workspace/references/roles/business_analytics.md",
+      "bytes": 5635,
+      "sha256": "76a93286354167a80da2646ee4ab673cb9d52c0e1c064ea0f6cf29c71e1b38ec"
+    },
+    {
+      "path": "skills/build-role-workspace/references/roles/customer_service.md",
+      "bytes": 5829,
+      "sha256": "d5a66c81c847234780f84259e00583707df826971daca230656e20cc73c4c776"
+    },
+    {
+      "path": "skills/build-role-workspace/references/roles/director_script.md",
+      "bytes": 6419,
+      "sha256": "58bf357b0b7244d24841ba8e3619d35916b61ada75168f9d35515c443998b651"
+    },
+    {
+      "path": "skills/build-role-workspace/references/roles/ecommerce_operations.md",
+      "bytes": 7487,
+      "sha256": "a5e42e5991c08bb7fa7e80d3e40abfb9fcbe3b863c33bd07c7bf3b8051736b1d"
+    },
+    {
+      "path": "skills/build-role-workspace/references/roles/finance_reconciliation.md",
+      "bytes": 6438,
+      "sha256": "452f0398e44e25f6a770993f62f229c4c46e00b1663f622c96d64d2a1cb52a65"
+    },
+    {
+      "path": "skills/build-role-workspace/references/roles/human_resources.md",
+      "bytes": 6149,
+      "sha256": "21d9f1cc94e3ac6a83f87e4c8ff6c7da1c15cc19a99441000461bed74b4fe857"
+    },
+    {
+      "path": "skills/build-role-workspace/references/roles/it_service_desk.md",
+      "bytes": 5580,
+      "sha256": "415dedb74655329ccb5aa7b86e613645913458444321d7e31f80bdc9ceed749b"
+    },
+    {
+      "path": "skills/build-role-workspace/references/roles/procurement.md",
+      "bytes": 5811,
+      "sha256": "d3622750eeba23bce071833c444178205c9f82f3d55c9f3273621f87375a551d"
+    },
+    {
+      "path": "skills/build-role-workspace/references/roles/project_delivery.md",
+      "bytes": 5291,
+      "sha256": "22f6115bd224bdb9ff02f1a8b0a571b9cbc2c4d680e1ce7745db9ce7a55b2771"
+    },
+    {
+      "path": "skills/build-role-workspace/references/roles/sales_crm.md",
+      "bytes": 6711,
+      "sha256": "9624ff4589366ca378fa718b0a4d38e16ed15d4a4f064e95b61d29b05e27819c"
+    },
+    {
+      "path": "skills/build-role-workspace/references/roles/video_analysis.md",
+      "bytes": 6447,
+      "sha256": "f9f38b4cb4505289b63e2768370e2a19aab09c8a8a5f218315c3974246ceef91"
+    },
+    {
+      "path": "skills/build-role-workspace/references/roles/warehouse_logistics.md",
+      "bytes": 5948,
+      "sha256": "bfc5b9e5566347f5cb091f8419a8b7931dbface99479a69dbd4a93a229ebef2f"
+    },
+    {
+      "path": "skills/build-role-workspace/schemas/README.md",
+      "bytes": 368,
+      "sha256": "444112bea9a4c482d8bda8781c4fcc4ccc24017b46409c6ecdad729284dd9d1e"
+    },
+    {
+      "path": "skills/build-role-workspace/schemas/legacy-v1/annotation.schema.json",
+      "bytes": 9539,
+      "sha256": "facad197f6e09db0c02a4147e03418342d270e26aff47b7c188b0d7ab51ab939"
+    },
+    {
+      "path": "skills/build-role-workspace/schemas/legacy-v1/automation_assessment.schema.json",
+      "bytes": 6571,
+      "sha256": "a9c1e11717d8dbe1ff0a5c4a619d6f007f59f75098ddd779fc302512e16e2af2"
+    },
+    {
+      "path": "skills/build-role-workspace/schemas/legacy-v1/evaluation_record.schema.json",
+      "bytes": 3916,
+      "sha256": "4a2ec4d72c5ef64e9db6e6373659ac49f82f60c2a1e221bd8052e204d6cf61ce"
+    },
+    {
+      "path": "skills/build-role-workspace/schemas/legacy-v1/example_envelope.schema.json",
+      "bytes": 818,
+      "sha256": "1ea24eef1f34c72040b5ec025b1d01a2d67dad7db5aea9f73758532b4d1c8829"
+    },
+    {
+      "path": "skills/build-role-workspace/schemas/legacy-v1/execution_record.schema.json",
+      "bytes": 4569,
+      "sha256": "0ff60e9c0fc5388bab860a33629d715a8f87a050bb34628b5a451c01a2e7f77e"
+    },
+    {
+      "path": "skills/build-role-workspace/schemas/legacy-v1/learning_record.schema.json",
+      "bytes": 6003,
+      "sha256": "21811a93a4a32c44a77691a781009dfb576c96fc660a1dd420ef78154b9cface"
+    },
+    {
+      "path": "skills/build-role-workspace/schemas/legacy-v1/project_state.schema.json",
+      "bytes": 7853,
+      "sha256": "e9e95dd99ddf3e9e1cd0d25c30a6c26046d0b6886afd20cd45c8fec969606ad5"
+    },
+    {
+      "path": "skills/build-role-workspace/schemas/legacy-v1/rule_card.schema.json",
+      "bytes": 10689,
+      "sha256": "88b211307a551106079fff52e81b3d4932bdc65b4380cca75c00aaeb73dc548e"
+    },
+    {
+      "path": "skills/build-role-workspace/schemas/legacy-v1/task_result.schema.json",
+      "bytes": 8791,
+      "sha256": "2d3aaa309ccbad1f11400c9418e08fe978d9c5af7e016ca2c35e46b4194f9262"
+    },
+    {
+      "path": "skills/build-role-workspace/schemas/private-records.schema.json",
+      "bytes": 1439,
+      "sha256": "2a275ffd3b78696361f8ba119d7d56b080348973a3988bffbe95533e39430b0a"
+    },
+    {
+      "path": "skills/build-role-workspace/schemas/workspace-index.schema.json",
+      "bytes": 1941,
+      "sha256": "c4cc72381a4a4f7942c5c892c837d8ff72ae324929077439e20ee027dd3ccc24"
+    },
+    {
+      "path": "skills/build-role-workspace/scripts/actions.py",
+      "bytes": 3508,
+      "sha256": "bcb531a7b229eb36bdd85d88a6517b0ffe362fe5a9f739f18fe458c4d58e01bd"
+    },
+    {
+      "path": "skills/build-role-workspace/scripts/discovery.py",
+      "bytes": 7798,
+      "sha256": "ff0915fcf893f3fc53b2de9bcec464160d4ea80eb348bf190adba974af13aaf7"
+    },
+    {
+      "path": "skills/build-role-workspace/scripts/ledger.py",
+      "bytes": 3455,
+      "sha256": "23e694511b9da76454b57e635e23a838d09c7cda31c00b75a8c7ab3403a422fc"
+    },
+    {
+      "path": "skills/build-role-workspace/scripts/manifest.py",
+      "bytes": 3267,
+      "sha256": "dbc23baa15b618763c25e463c218fff83a11a96b7366b7122888960b67ccddb1"
+    },
+    {
+      "path": "skills/build-role-workspace/scripts/planning.py",
+      "bytes": 6503,
+      "sha256": "d1164a168bb6ef221bb3d2caea8cfab40050722f68a98f90fbeadda14e214b8c"
+    },
+    {
+      "path": "skills/build-role-workspace/scripts/quality.py",
+      "bytes": 2694,
+      "sha256": "2780cdf217fd866ab3b7066f09944fc341f3bcec6cfa86be45c5adbcad801f6d"
+    },
+    {
+      "path": "skills/build-role-workspace/scripts/reconcile.py",
+      "bytes": 4675,
+      "sha256": "c06379b6263d321b2bd6819c48864877dee542400daed1b5a40f42f069fa9b1e"
+    },
+    {
+      "path": "skills/build-role-workspace/scripts/records.py",
+      "bytes": 8530,
+      "sha256": "fb8ea489f0cb2e0fd4a2192dcf663f5493427e05f28139b44acd34355fc51793"
+    },
+    {
+      "path": "skills/build-role-workspace/scripts/workspace.py",
+      "bytes": 16212,
+      "sha256": "dc643d1ae54c3559fe87be083daf7a87ece53f97138fa2c958dfad5b8a705b3a"
+    },
+    {
+      "path": "skills/build-role-workspace/templates/automation-contract.md",
+      "bytes": 614,
+      "sha256": "6ff13144fab8ad3ef5b672b903d7e955af55b41d031994396a50cdcff0387c4e"
+    },
+    {
+      "path": "skills/build-role-workspace/templates/private-context.md",
+      "bytes": 1401,
+      "sha256": "2fa6ff4f8afac3578852f92ee3e51b3a3652c0bd30b441d7ac021a2f58e4836f"
+    },
+    {
+      "path": "skills/build-role-workspace/templates/rule-and-repair.md",
+      "bytes": 505,
+      "sha256": "0172a3d8b01f0138e80a1b33c68a73519e52e1b41e24441b2f8b99f76a6b9093"
+    },
+    {
+      "path": "skills/build-role-workspace/templates/task-and-handoff.md",
+      "bytes": 1137,
+      "sha256": "f44256e597f92f86daeea3eb44a20e9f9273fcb1bb0129c48f685e828e092801"
+    },
+    {
+      "path": "tests/test_delivery.py",
+      "bytes": 6477,
+      "sha256": "f0bcf6a8a2d56de2aa7d982ab7c557cd67239fb110ea24a9a313b9d3a192c96e"
+    },
+    {
+      "path": "tests/test_financial_scale.py",
+      "bytes": 1473,
+      "sha256": "df88f16ad0f11540b7e6bf30794cc7b4b1e1c0c9e0cb37c54722adf5b028743a"
+    },
+    {
+      "path": "tests/test_resources.py",
+      "bytes": 2349,
+      "sha256": "8be6391ddd8e068b277fb80299861bfdbbfa3d2f4d72f488df5aa48579933040"
+    },
+    {
+      "path": "tests/test_review_regressions.py",
+      "bytes": 9023,
+      "sha256": "d743e3ff278d2c6d639a9ed7c2b63b1a02631a90d314e38ee83be153ef13eb02"
+    },
+    {
+      "path": "tests/test_runtime.py",
+      "bytes": 12690,
+      "sha256": "74ab52bcf08fc80709ff465384436a7c9cfed89a5894f642af1452fca041489b"
+    },
+    {
+      "path": "tests/test_upgrade.py",
+      "bytes": 15783,
+      "sha256": "630474d6393f4911eab3cea9b911437876474fbee47bb5d6b70eb26989f7c829"
+    },
+    {
+      "path": "tools/build_release.py",
+      "bytes": 5029,
+      "sha256": "7a5a9696a7e575e0fd0c55656887145b84f932d818288df9a05bbb9342dbde19"
+    },
+    {
+      "path": "tools/install_release.py",
+      "bytes": 3263,
+      "sha256": "819c949b5a359e1d42d30758b999fa6bccb93222f6ee4df0297833daca153d87"
+    },
+    {
+      "path": "tools/make_synthetic_media.m",
+      "bytes": 4122,
+      "sha256": "41b67eba50660f0b487cc9544a5d6ab193e77f963b44df84807d54a8524bd694"
+    },
+    {
+      "path": "tools/public-content-approvals.json",
+      "bytes": 19724,
+      "sha256": "647bd9d6e9a9f00e1203c2f0014974dde50cebd1474bb5555535f937c805a2f5"
+    },
+    {
+      "path": "tools/release-files.json",
+      "bytes": 5802,
+      "sha256": "5e6bf756028ce6e0a35fddba79d19e27c59de9c01fca7c9f7537ee8ceea8d4e3"
+    },
+    {
+      "path": "tools/run_comparison.py",
+      "bytes": 5487,
+      "sha256": "09a2209d0eb0b79acbeb5692e4b8b3eaa5064c52c689cd23011d6c5105454b2f"
+    },
+    {
+      "path": "tools/run_complete_file_evaluations.py",
+      "bytes": 7419,
+      "sha256": "8f8fc1c80f001c76d352da79cb375f27da914c78fee633a8e23b7026663b260b"
+    },
+    {
+      "path": "tools/run_financial_scale_check.py",
+      "bytes": 6978,
+      "sha256": "9858a8407693d102f7bc5f052c5501c5ad3c3d863dd0cb109c0798bdc2db8337"
+    },
+    {
+      "path": "tools/run_lifecycle_check.py",
+      "bytes": 5189,
+      "sha256": "027a0d24fea7dde5ca760191dd105379b1bb5dea7242fdcb9b66e8c2f11d9cef"
+    },
+    {
+      "path": "tools/run_model_evaluations.py",
+      "bytes": 13073,
+      "sha256": "2993345f094afce930e9e1293805d25260db7355df28475ee1b8b0cc9b58e834"
+    },
+    {
+      "path": "tools/run_scale_check.py",
+      "bytes": 2257,
+      "sha256": "2e2fa52607c1a1091cadd4098475ec151128f5d761d494852d04a76929d3f3d6"
+    }
+  ]
+}

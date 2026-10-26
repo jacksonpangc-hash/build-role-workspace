@@ -1,0 +1,128 @@
+[
+  {
+    "role": "video_analysis",
+    "flow": "01-W1",
+    "request": "只有字幕00:00“效果好”，00:03“仅限本次试用”；无音轨；素材授权不明。",
+    "author_first_result": "仅可交字幕片段候选。00:00–00:03必须连同“仅限本次试用”；不能写完整声画已看或功效已证实。缺音轨、画面和复用授权，阻止公开切片，内部索引可继续。",
+    "new_information": "新增授权：仅内部教学，有效至2025-06-30。",
+    "author_correction": "允许内部教学索引；到期复查，仍不能公开发布。",
+    "status": "authored_synthetic_example; not independent or business acceptance"
+  },
+  {
+    "role": "director_script",
+    "flow": "02-W1",
+    "request": "商品事实仅250g辣椒面，目标是让首次购买者理解规格；无健康功效证据。",
+    "author_first_result": "拍摄包草稿：镜头1展示250g标识，字幕“250g”；镜头2演示家庭用法，口播保留个人口味表达；镜头3展示真实包装。删除“治疗”“人人适合”等无依据主张。价格和活动未知不口播。",
+    "new_information": "用户将镜头2改为只拍拌面，不出现人物。",
+    "author_correction": "保留无人物拌面镜头，更新道具和分镜；事实与250g主张不变。",
+    "status": "authored_synthetic_example; not independent or business acceptance"
+  },
+  {
+    "role": "ecommerce_operations",
+    "flow": "03-W1",
+    "request": "主订单O1应付30，两个商品行；支付20+10，退款5，广告归因40；商品件数缺失。",
+    "author_first_result": "O1应付30，支付记录合计30，退款5需核结算时点；不能把广告归因40加到销售收入。两个商品行不能和两个支付行直接连接后求和。缺购买件数不报袋数，缺成本不报利润。",
+    "new_information": "退款5发生在下个观察窗口。",
+    "author_correction": "保持原窗口支付观察30，迟到退款5另列；按实际退款期间或经确认归属重算，不静默回写净收入。",
+    "status": "authored_synthetic_example; not independent or business acceptance"
+  },
+  {
+    "role": "advertising_operations",
+    "flow": "04-W1",
+    "request": "同渠道同窗口消耗100，归因支付150；20次点击2次购买；无成本和退款成熟信息。",
+    "author_first_result": "归因支付/消耗1.5，观察转化2/20=10%。这不是利润；先查归因成熟、成本及素材原片。预算调整只作草稿，低样本不自动停投。",
+    "new_information": "一笔归因支付50撤回。",
+    "author_correction": "重算为归因支付100、比值1；保留旧1.5及撤回证据，不据此自动修改账户。",
+    "status": "authored_synthetic_example; not independent or business acceptance"
+  },
+  {
+    "role": "finance_reconciliation",
+    "flow": "05-W1",
+    "request": "PO1数量10；收货8，其中待检2；发票数量7，单价10 CNY；付款40 CNY。另有USD票据5。",
+    "author_first_result": "合格收货6，待检2不算已验收；发票7与合格6差1件需调查。70 CNY发票与40 CNY付款有30 CNY未分配余额，不能据此自动核销。USD5单列，不跨币种合并。没有到期日不编账龄。",
+    "new_information": "待检2中放行1，1继续待检。",
+    "author_correction": "合格收货变7，与发票数量一致；付款余额仍30 CNY且需要关系/时点证据，数量对平不等于已付款关闭。",
+    "status": "authored_synthetic_example; not independent or business acceptance"
+  },
+  {
+    "role": "administration",
+    "flow": "06-W1",
+    "request": "合同草稿写“交付后30天付款”，缺签署页及公司底线；含员工身份证。",
+    "author_first_result": "义务候选：触发为交付，付款期限30天，主体/生效待核。缺签署页不能认定合同生效，公司底线未知不能自拟为正式政策。向采购仅传条款和缺件，不传员工身份证。",
+    "new_information": "收到双方签署页，但交付日期未知。",
+    "author_correction": "签署证据可登记；付款到期日仍未知，不能从今天直接加30天。",
+    "status": "authored_synthetic_example; not independent or business acceptance"
+  },
+  {
+    "role": "customer_service",
+    "flow": "07-W1",
+    "request": "客户同时问包裹延迟、退款、个人资料删除；订单2025-05-01。政策v1适用该日，v2六月生效；相似工单曾补发。",
+    "author_first_result": "拆成物流、退款、隐私三项。物流先核包裹节点，退款按订单时点v1，个人资料请求移交身份核验流程。相似补发仅作线索，不能直接补发或泄露个人资料。回复草稿不等于退款成功或问题解决。",
+    "new_information": "查到退款请求超时，状态未知。",
+    "author_correction": "先查询真实退款结果；保留物流和隐私事项进度，不重复退款，不将整条工单关闭。",
+    "status": "authored_synthetic_example; not independent or business acceptance"
+  },
+  {
+    "role": "sales_crm",
+    "flow": "08-W1",
+    "request": "客户说“价格合适再考虑”；销售记录80%成功、CRM已成交；无客户接受报价或合同。",
+    "author_first_result": "客户原话是有条件意向，非承诺。80%为销售主观估计，非客户承诺或确定收入。建议回核CRM进入/退出条件并列差异草稿，不能自动改字段或外发。",
+    "new_information": "客户书面接受报价Q1，实施日期待协商。",
+    "author_correction": "新增已接受报价Q1证据，实施日期仍未知；是否成交按公司正式阶段标准，缺标准保持待核。",
+    "status": "authored_synthetic_example; not independent or business acceptance"
+  },
+  {
+    "role": "human_resources",
+    "flow": "09-W1",
+    "request": "员工问试用期带薪假；只有别家公司手册；资料含年龄和证件，当前公司政策缺失。",
+    "author_first_result": "另一家公司政策不适用于本公司；答复当前政策待核，不推断用工权利细节或使用年龄决定资格。问题摘要只传岗位/适用范围所需字段，不传完整证件。",
+    "new_information": "当前公司提供已批准手册，明确本岗位符合条件，但生效日下月。",
+    "author_correction": "保存本公司独立scope及生效日；当前期间仍不能套用下月政策，可说明未来适用条件。",
+    "status": "authored_synthetic_example; not independent or business acceptance"
+  },
+  {
+    "role": "procurement",
+    "flow": "10-W1",
+    "request": "A报价10/件含税运、30天账期；B报价9/件未说明税运，需预付；需求48件。",
+    "author_first_result": "A已知48件总480；B已知商品价432但总成本未知，不能宣称节省48。税运、账期、质量、到货和现金约束未对齐，给可比报价缺口和方案草稿，不直接选商或付款。",
+    "new_information": "B补充税运60，其他条件未变。",
+    "author_correction": "B已知总492，仍要比较预付现金与交期；不据价差单独定标。",
+    "status": "authored_synthetic_example; not independent or business acceptance"
+  },
+  {
+    "role": "warehouse_logistics",
+    "flow": "11-W1",
+    "request": "混装每套A1+B1，实际3套；A现存10含预留2，待检4；在途5第三天到；今日需求8。",
+    "author_first_result": "已知混装需求A3+B3。A现存扣预留后8可用，待检4不计可售；第三天在途5不能支持今日发货。今日需求8是否已含预留需核，避免重复扣减；B库存未知不出完整补货量。",
+    "new_information": "台账确认现存10已经扣过预留。",
+    "author_correction": "A当前可用10，不再减2；待检仍不算可售，B未知仍阻止完整采购量。",
+    "status": "authored_synthetic_example; not independent or business acceptance"
+  },
+  {
+    "role": "project_delivery",
+    "flow": "12-W1",
+    "request": "三个交付件均已发出，A/B接收人已接受，C仅收到邮件；C依赖权限开通未完成。",
+    "author_first_result": "发送3，收到证据至少C，接受2，C待接受且依赖未完成。若按交付件等权接受率为2/3，应说明定义，不称项目完成。给C接手资料与阻塞清单，提醒仅草稿。",
+    "new_information": "C接受文档但权限仍未开通。",
+    "author_correction": "文档接受3/3可记录，实际切换仍受权限阻塞，不能据此关闭整项目。",
+    "status": "authored_synthetic_example; not independent or business acceptance"
+  },
+  {
+    "role": "business_analytics",
+    "flow": "13-W1",
+    "request": "预算10000×50，实际11000×48；比率两组1/2和9/90；月底缺一天，缺货两天。",
+    "author_first_result": "差额28000，数量50000，价格-22000，逐商品两因素对平；加权比率10/92约10.87%，不平均50%和10%。月底和缺货观察限制单列，不把算术贡献当需求变化原因。",
+    "new_information": "实际价格更正为47。",
+    "author_correction": "差额17000，数量50000，价格-33000；保留旧结果和更正来源，需求与缺货限制不变。",
+    "status": "authored_synthetic_example; not independent or business acceptance"
+  },
+  {
+    "role": "it_service_desk",
+    "flow": "14-W1",
+    "request": "09:00用户无法结账；09:10接口200，09:12登录恢复；09:20仍无法付款。无SLA。",
+    "author_first_result": "时间线保留实际时区待核；接口可达与登录恢复属于部分缓解，结账未恢复，事件不关闭。不猜SLA，不自动重启或重置账号；移交付款链路证据和待核事项。",
+    "new_information": "09:40测试订单付款成功，但只有单个账户。",
+    "author_correction": "记录该账户路径已恢复证据，其他受影响账户及根因仍待核；测试通过不自动等于全体业务恢复。",
+    "status": "authored_synthetic_example; not independent or business acceptance"
+  }
+]

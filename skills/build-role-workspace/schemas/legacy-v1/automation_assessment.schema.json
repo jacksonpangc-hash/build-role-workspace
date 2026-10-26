@@ -1,0 +1,333 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:role-builder:automation_assessment:2",
+  "title": "automation_assessment",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "2.0"
+    },
+    "assessment_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "project_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "workflow_ref": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "version"
+      ],
+      "additionalProperties": false
+    },
+    "business_workflow_status": {
+      "const": "accepted"
+    },
+    "workflow_acceptance_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "step_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "checks": {
+      "type": "object",
+      "properties": {
+        "recurring": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "stable_input": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "explicit_rules": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "exceptions_defined": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "verifiable_output": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "authorized": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "recoverable": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "worth_maintaining": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "ui_required": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "human_judgment_required": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "recurring",
+        "stable_input",
+        "explicit_rules",
+        "exceptions_defined",
+        "verifiable_output",
+        "authorized",
+        "recoverable",
+        "worth_maintaining",
+        "ui_required",
+        "human_judgment_required"
+      ],
+      "additionalProperties": false
+    },
+    "verdict": {
+      "enum": [
+        "manual_keep",
+        "ai_assisted",
+        "standard_automation",
+        "rpa_candidate",
+        "blocked"
+      ]
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "continue_guidance": {
+      "type": "boolean"
+    },
+    "missing_conditions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "authorization_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reopen_condition": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "assessment_id",
+    "project_id",
+    "workflow_ref",
+    "business_workflow_status",
+    "workflow_acceptance_ref",
+    "step_id",
+    "checks",
+    "verdict",
+    "reason",
+    "continue_guidance",
+    "missing_conditions",
+    "authorization_ref",
+    "reopen_condition"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "verdict": {
+            "enum": [
+              "manual_keep",
+              "ai_assisted",
+              "blocked"
+            ]
+          }
+        },
+        "required": [
+          "verdict"
+        ]
+      },
+      "then": {
+        "properties": {
+          "continue_guidance": {
+            "const": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "verdict": {
+            "enum": [
+              "standard_automation",
+              "rpa_candidate"
+            ]
+          }
+        },
+        "required": [
+          "verdict"
+        ]
+      },
+      "then": {
+        "properties": {
+          "continue_guidance": {
+            "const": true
+          },
+          "authorization_ref": {
+            "type": "string",
+            "minLength": 1
+          },
+          "missing_conditions": {
+            "maxItems": 0
+          },
+          "checks": {
+            "properties": {
+              "recurring": {
+                "const": true
+              },
+              "stable_input": {
+                "const": true
+              },
+              "explicit_rules": {
+                "const": true
+              },
+              "exceptions_defined": {
+                "const": true
+              },
+              "verifiable_output": {
+                "const": true
+              },
+              "authorized": {
+                "const": true
+              },
+              "recoverable": {
+                "const": true
+              },
+              "worth_maintaining": {
+                "const": true
+              },
+              "human_judgment_required": {
+                "const": false
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "verdict": {
+            "const": "rpa_candidate"
+          }
+        },
+        "required": [
+          "verdict"
+        ]
+      },
+      "then": {
+        "properties": {
+          "checks": {
+            "properties": {
+              "ui_required": {
+                "const": true
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "verdict": {
+            "const": "standard_automation"
+          }
+        },
+        "required": [
+          "verdict"
+        ]
+      },
+      "then": {
+        "properties": {
+          "checks": {
+            "properties": {
+              "ui_required": {
+                "const": false
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "verdict": {
+            "const": "blocked"
+          }
+        },
+        "required": [
+          "verdict"
+        ]
+      },
+      "then": {
+        "properties": {
+          "missing_conditions": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true,
+            "minItems": 1
+          }
+        }
+      }
+    }
+  ]
+}

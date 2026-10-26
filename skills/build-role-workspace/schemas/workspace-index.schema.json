@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Independent workspace index v1",
+  "type": "object",
+  "required": [
+    "record_type",
+    "format_version",
+    "project_id",
+    "role_ids",
+    "goal",
+    "revision",
+    "stage",
+    "sources",
+    "artifacts",
+    "rules",
+    "tasks",
+    "feedback",
+    "events",
+    "next_action",
+    "updated_at"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "workspace_index"
+    },
+    "format_version": {
+      "const": 1
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "project_id": {
+      "type": "string"
+    },
+    "role_ids": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "video_analysis",
+          "director_script",
+          "ecommerce_operations",
+          "advertising_operations",
+          "finance_reconciliation",
+          "administration",
+          "customer_service",
+          "sales_crm",
+          "human_resources",
+          "procurement",
+          "warehouse_logistics",
+          "project_delivery",
+          "business_analytics",
+          "it_service_desk"
+        ]
+      }
+    },
+    "goal": {
+      "type": "string"
+    },
+    "stage": {
+      "enum": [
+        "intake",
+        "workflow_mapping",
+        "rule_elicitation",
+        "sample_calibration",
+        "working_result",
+        "workflow_acceptance",
+        "automation_assessment",
+        "automation_build",
+        "completed_manual",
+        "completed_assisted",
+        "ready_for_scoped_run"
+      ]
+    },
+    "sources": {
+      "type": "object"
+    },
+    "artifacts": {
+      "type": "object"
+    },
+    "rules": {
+      "type": "object"
+    },
+    "tasks": {
+      "type": "object"
+    },
+    "feedback": {
+      "type": "array"
+    },
+    "events": {
+      "type": "array"
+    },
+    "next_action": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    }
+  }
+}

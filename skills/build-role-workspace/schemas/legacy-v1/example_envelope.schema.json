@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:role-builder:example_envelope:2",
+  "title": "example_envelope",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "2.0"
+    },
+    "example_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "role": {
+      "type": "string",
+      "minLength": 1
+    },
+    "is_synthetic": {
+      "const": true
+    },
+    "approval_status": {
+      "const": "unapproved_demo"
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 1
+    },
+    "payload": {
+      "type": [
+        "object",
+        "array"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "example_id",
+    "role",
+    "is_synthetic",
+    "approval_status",
+    "purpose",
+    "payload"
+  ],
+  "additionalProperties": false
+}

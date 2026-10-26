@@ -1,0 +1,1 @@
+Original synthetic solid-color silent video, frames and subtitle fixtures: MIT, build-role-workspace contributors. No real product, person, company data, audio, font or third-party artwork. Frames were decoded from the generated video with system AVFoundation.

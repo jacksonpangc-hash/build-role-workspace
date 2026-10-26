@@ -1,0 +1,213 @@
+[
+  {
+    "id": "C-FILE",
+    "name": "已有文档/表格连接或文件导出",
+    "role_ids": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "08"
+    ],
+    "official_urls": [
+      "https://developers.google.com/workspace/drive/api/guides/api-specific-auth",
+      "https://developers.google.com/workspace/sheets/api/limits"
+    ],
+    "evidence_level": "P1_historical_documentation",
+    "current_environment": "not_verified",
+    "note": "按任务先发现现有工具，必要时以无副作用小读取验证；文件退路可先继续。"
+  },
+  {
+    "id": "C-SCENE",
+    "name": "镜头边界与关键帧",
+    "role_ids": [
+      "01",
+      "02",
+      "04"
+    ],
+    "official_urls": [
+      "https://www.scenedetect.com/download/",
+      "https://www.scenedetect.com/docs/latest/cli.html",
+      "https://github.com/Breakthrough/PySceneDetect/blob/main/LICENSE"
+    ],
+    "evidence_level": "P1_historical_documentation",
+    "current_environment": "not_verified",
+    "note": "按任务先发现现有工具，必要时以无副作用小读取验证；文件退路可先继续。"
+  },
+  {
+    "id": "C-ASR",
+    "name": "语音转写与语言证据",
+    "role_ids": [
+      "01",
+      "02",
+      "04",
+      "08"
+    ],
+    "official_urls": [
+      "https://github.com/openai/whisper",
+      "https://github.com/openai/whisper/blob/main/model-card.md",
+      "https://github.com/openai/whisper/blob/main/LICENSE"
+    ],
+    "evidence_level": "P1_historical_documentation",
+    "current_environment": "not_verified",
+    "note": "按任务先发现现有工具，必要时以无副作用小读取验证；文件退路可先继续。"
+  },
+  {
+    "id": "C-OCR",
+    "name": "关键帧文字识别",
+    "role_ids": [
+      "01",
+      "02",
+      "03"
+    ],
+    "official_urls": [
+      "https://docs.cloud.google.com/vision/docs/ocr",
+      "https://cloud.google.com/vision/pricing?authuser=1&hl=en"
+    ],
+    "evidence_level": "P1_historical_documentation",
+    "current_environment": "not_verified",
+    "note": "按任务先发现现有工具，必要时以无副作用小读取验证；文件退路可先继续。"
+  },
+  {
+    "id": "C-REVIEW",
+    "name": "创作版本与审稿记录",
+    "role_ids": [
+      "01",
+      "02",
+      "08"
+    ],
+    "official_urls": [
+      "https://kitsu.cg-wire.com/guides/review-publishing/review/",
+      "https://kitsu.cg-wire.com/guides/review-publishing/publish/"
+    ],
+    "evidence_level": "P1_historical_documentation",
+    "current_environment": "not_verified",
+    "note": "按任务先发现现有工具，必要时以无副作用小读取验证；文件退路可先继续。"
+  },
+  {
+    "id": "C-DOUYIN-SHOP",
+    "name": "抖店订单与商品数据",
+    "role_ids": [
+      "02",
+      "03",
+      "04",
+      "08"
+    ],
+    "official_urls": [
+      "https://op.jinritemai.com/docs/guide-docs/133?docLabel=1",
+      "https://op.jinritemai.com/docs/api-docs/15/521",
+      "https://op.jinritemai.com/docs/guide-docs/127/17?docLabel=1"
+    ],
+    "evidence_level": "P1_historical_documentation",
+    "current_environment": "not_verified",
+    "note": "按任务先发现现有工具，必要时以无副作用小读取验证；文件退路可先继续。"
+  },
+  {
+    "id": "C-SHOPIFY",
+    "name": "Shopify商品订单库存退换",
+    "role_ids": [
+      "02",
+      "03",
+      "04",
+      "08"
+    ],
+    "official_urls": [
+      "https://shopify.dev/docs/api/usage/access-scopes",
+      "https://shopify.dev/docs/apps/launch/protected-customer-data",
+      "https://shopify.dev/docs/apps/build/inventory-management-apps/manage-quantities-states",
+      "https://shopify.dev/docs/api/admin-graphql/latest/objects/return",
+      "https://shopify.dev/docs/apps/build/webhooks"
+    ],
+    "evidence_level": "P1_historical_documentation",
+    "current_environment": "not_verified",
+    "note": "按任务先发现现有工具，必要时以无副作用小读取验证；文件退路可先继续。"
+  },
+  {
+    "id": "C-OCEAN",
+    "name": "巨量引擎/千川广告读取",
+    "role_ids": [
+      "01",
+      "03",
+      "04",
+      "08"
+    ],
+    "official_urls": [
+      "https://open.oceanengine.com/",
+      "https://open.oceanengine.com/labels/7/docs/1803016515293203"
+    ],
+    "evidence_level": "P1_historical_documentation",
+    "current_environment": "not_verified",
+    "note": "按任务先发现现有工具，必要时以无副作用小读取验证；文件退路可先继续。"
+  },
+  {
+    "id": "C-GADS",
+    "name": "Google Ads报表与搜索词",
+    "role_ids": [
+      "01",
+      "03",
+      "04"
+    ],
+    "official_urls": [
+      "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+      "https://developers.google.com/google-ads/api/docs/oauth/overview",
+      "https://developers.google.com/google-ads/api/docs/conversions/reporting",
+      "https://developers.google.com/google-ads/api/fields/v26/search_term_view"
+    ],
+    "evidence_level": "P1_historical_documentation",
+    "current_environment": "not_verified",
+    "note": "按任务先发现现有工具，必要时以无副作用小读取验证；文件退路可先继续。"
+  },
+  {
+    "id": "C-TIKTOK-ADS",
+    "name": "TikTok目录诊断与Spark授权",
+    "role_ids": [
+      "01",
+      "02",
+      "04",
+      "08"
+    ],
+    "official_urls": [
+      "https://ads.tiktok.com/resources/help/article/spark-ads-creation-guide?lang=en",
+      "https://ads.tiktok.com/resources/help/article/how-to-troubleshoot-catalog-with-diagnostics-dashboard",
+      "https://ads.tiktok.com/help/article/event-deduplication?lang=en",
+      "https://ads.tiktok.com/help/article/one-click-appeal-for-other-ad-types?lang=en"
+    ],
+    "evidence_level": "P1_historical_documentation",
+    "current_environment": "not_verified",
+    "note": "按任务先发现现有工具，必要时以无副作用小读取验证；文件退路可先继续。"
+  },
+  {
+    "id": "C-FRAPPE",
+    "name": "CRM/报价/库存源单据",
+    "role_ids": [
+      "03",
+      "04",
+      "08"
+    ],
+    "official_urls": [
+      "https://docs.frappe.io/framework/user/en/api/rest",
+      "https://docs.frappe.io/crm/deal",
+      "https://docs.frappe.io/erpnext/quotation",
+      "https://github.com/frappe/crm/blob/develop/LICENSE",
+      "https://github.com/frappe/erpnext/blob/develop/license.txt"
+    ],
+    "evidence_level": "P1_historical_documentation",
+    "current_environment": "not_verified",
+    "note": "按任务先发现现有工具，必要时以无副作用小读取验证；文件退路可先继续。"
+  },
+  {
+    "id": "C-COMMENTS",
+    "name": "授权观众评论样本",
+    "role_ids": [
+      "01",
+      "03",
+      "08"
+    ],
+    "official_urls": [
+      "https://developers.google.com/youtube/data/reference/rest/v3/commentThreads/list"
+    ],
+    "evidence_level": "P1_historical_documentation",
+    "current_environment": "not_verified",
+    "note": "按任务先发现现有工具，必要时以无副作用小读取验证；文件退路可先继续。"
+  }
+]

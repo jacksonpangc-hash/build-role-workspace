@@ -1,0 +1,72 @@
+[
+  {
+    "catalog_role_id": "01",
+    "runtime_role_id": "video_analysis",
+    "original_role_file": "01_video_analysis.md"
+  },
+  {
+    "catalog_role_id": "02",
+    "runtime_role_id": "director_script",
+    "original_role_file": "02_director_script.md"
+  },
+  {
+    "catalog_role_id": "03",
+    "runtime_role_id": "ecommerce_operations",
+    "original_role_file": "03_ecommerce_operations.md"
+  },
+  {
+    "catalog_role_id": "04",
+    "runtime_role_id": "advertising_operations",
+    "original_role_file": "04_advertising_operations.md"
+  },
+  {
+    "catalog_role_id": "05",
+    "runtime_role_id": "finance_reconciliation",
+    "original_role_file": "05_finance_reconciliation.md"
+  },
+  {
+    "catalog_role_id": "06",
+    "runtime_role_id": "administration",
+    "original_role_file": "06_administration.md"
+  },
+  {
+    "catalog_role_id": "07",
+    "runtime_role_id": "customer_service",
+    "original_role_file": "07_customer_service.md"
+  },
+  {
+    "catalog_role_id": "08",
+    "runtime_role_id": "sales_crm",
+    "original_role_file": "08_sales_crm.md"
+  },
+  {
+    "catalog_role_id": "09",
+    "runtime_role_id": "human_resources",
+    "original_role_file": "09_human_resources.md"
+  },
+  {
+    "catalog_role_id": "10",
+    "runtime_role_id": "procurement",
+    "original_role_file": "10_procurement.md"
+  },
+  {
+    "catalog_role_id": "11",
+    "runtime_role_id": "warehouse_logistics",
+    "original_role_file": "11_warehouse_logistics.md"
+  },
+  {
+    "catalog_role_id": "12",
+    "runtime_role_id": "project_delivery",
+    "original_role_file": "12_project_delivery.md"
+  },
+  {
+    "catalog_role_id": "13",
+    "runtime_role_id": "business_analytics",
+    "original_role_file": "13_business_analytics.md"
+  },
+  {
+    "catalog_role_id": "14",
+    "runtime_role_id": "it_service_desk",
+    "original_role_file": "14_it_service_desk.md"
+  }
+]

@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Private scoped records sidecar v1",
+  "type": "object",
+  "required": [
+    "format_version",
+    "record_type",
+    "scope",
+    "records"
+  ],
+  "properties": {
+    "format_version": {
+      "const": 1
+    },
+    "record_type": {
+      "const": "private_records"
+    },
+    "scope": {
+      "type": "string",
+      "minLength": 1
+    },
+    "records": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "required": [
+            "revision",
+            "value",
+            "dependencies",
+            "revoked",
+            "at",
+            "sha256"
+          ],
+          "properties": {
+            "revision": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "value": {
+              "type": "object"
+            },
+            "dependencies": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "integer",
+                "minimum": 1
+              }
+            },
+            "revoked": {
+              "type": "boolean"
+            },
+            "at": {
+              "type": "string"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          }
+        }
+      }
+    }
+  }
+}

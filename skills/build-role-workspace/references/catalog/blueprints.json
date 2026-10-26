@@ -1,0 +1,98 @@
+[
+  {
+    "id": "APP-C01",
+    "name": "月度销售复盘",
+    "required": [
+      "E01",
+      "E02",
+      "E06",
+      "E09",
+      "A16"
+    ],
+    "conditional": {},
+    "readiness": "reference_method"
+  },
+  {
+    "id": "APP-C02",
+    "name": "SKU分析",
+    "required": [
+      "E06",
+      "E07",
+      "E09",
+      "E04",
+      "A04",
+      "A16"
+    ],
+    "conditional": {},
+    "readiness": "reference_method"
+  },
+  {
+    "id": "APP-C03",
+    "name": "新品及主图变更核查",
+    "required": [
+      "E09",
+      "E11",
+      "E17",
+      "A06",
+      "A08",
+      "A12"
+    ],
+    "conditional": {},
+    "readiness": "reference_method"
+  },
+  {
+    "id": "APP-C04",
+    "name": "广告复盘与ROI口径",
+    "required": [
+      "A01",
+      "A02",
+      "A03",
+      "A04",
+      "A05",
+      "A06",
+      "A07",
+      "A08",
+      "A09",
+      "A16",
+      "A17",
+      "E01",
+      "E09"
+    ],
+    "conditional": {},
+    "readiness": "reference_method"
+  },
+  {
+    "id": "APP-C05",
+    "name": "上下架与库存独立动作",
+    "required": [
+      "E04",
+      "E07",
+      "E11",
+      "E19"
+    ],
+    "conditional": {
+      "ads_dependency": [
+        "A09"
+      ]
+    },
+    "readiness": "reference_method"
+  },
+  {
+    "id": "APP-C06",
+    "name": "活动资格与报名核查",
+    "required": [
+      "E05",
+      "E12",
+      "E07",
+      "E04",
+      "E19"
+    ],
+    "conditional": {
+      "creator_cooperation": [
+        "SAL-15",
+        "SAL-16"
+      ]
+    },
+    "readiness": "reference_method"
+  }
+]
